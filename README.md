@@ -1,6 +1,6 @@
 # CS 182 Extra Credit: LLM Participation Website
 
-**UC Berkeley CS 182/282A Deep Learning - Fall 2024**
+**UC Berkeley CS 182/282A Deep Learning - Fall 2025**
 
 ## Project Overview
 
@@ -141,7 +141,7 @@ The `website/` directory is designed to be dropped directly into the course webs
 
 ## Credits
 
-This project documents the incredible work of CS 182 students who shared their insights about working with large language models throughout Fall 2024. All submissions are attributed to their original authors with links to their profiles when available.
+This project documents the incredible work of CS 182 students who shared their insights about working with large language models throughout Fall 2025. All submissions are attributed to their original authors with links to their profiles when available.
 
 ## Contact & Support
 
@@ -150,5 +150,5 @@ For questions or issues, please post on the Ed discussion thread or open an issu
 ---
 
 **Extra Credit Categories:** Special Participation A & B  
-**Course:** CS 182/282A Deep Learning, UC Berkeley, Fall 2024  
+**Course:** CS 182/282A Deep Learning, UC Berkeley, Fall 2025  
 **Website Status:** ✅ Production Ready
