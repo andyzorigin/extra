@@ -1,154 +1,218 @@
-# CS 182 Extra Credit: LLM Participation Website
+# CS182 Special Participation: LLM Analysis Website
 
-**UC Berkeley CS 182/282A Deep Learning - Fall 2025**
+This website documents student experiences using various Large Language Models (LLMs) to solve homework problems for CS182: Deep Learning.
 
-## Project Overview
+## 📊 Overview
 
-This project creates a comprehensive, searchable website documenting student participation in Special Participation categories A and B (LLM interactions) for the CS 182 Deep Learning course. The website enables easy navigation through student insights, allows searching by keywords/student names, and provides visibility for student contributions.
+- **110 Special Participation A posts** - Students used LLMs for non-coding homework problems
+- **90 Special Participation B posts** - Students used LLMs for coding homework problems
+- **13+ LLMs analyzed** including DeepSeek, Gemini, Grok, Mistral, ChatGPT, Claude, and more
+- **Searchable and filterable** by student name, LLM model, homework assignment, and keywords
 
-**Live Repository:** https://github.com/andyzorigin/extra
+## 🎯 Purpose
 
-## What We Built
+This website serves to:
+1. Document student insights on LLM behaviors and capabilities
+2. Provide a searchable resource for understanding different LLMs' strengths and weaknesses
+3. Credit students for their contributions with links to their profiles/work
+4. Create a knowledge base for future students and research
 
-### 1. Interactive Website (`website/` directory)
-A modern, responsive web interface featuring:
-- **Searchable Database:** Filter by participation category (A: ChatGPT, B: Claude/Gemini)
-- **Student Search:** Find submissions by student name or keywords
-- **Statistical Dashboard:** Overview of participation metrics across categories
-- **Direct Links:** Links to original Ed posts for full context
-- **Responsive Design:** Works seamlessly on desktop and mobile devices
+## ✨ Features
 
-**To Launch the Website:**
+### Search & Filter
+- Full-text search across all submissions
+- Filter by participation type (A or B)
+- Filter by LLM model
+- Filter by homework assignment
+- Filter by student name
+
+### LLM Analysis
+- Comparative analysis of different LLMs
+- Common strengths and weaknesses for each model
+- Behavior patterns observed by students
+- Statistics on usage and performance
+
+### Submissions
+- Complete student submissions with attribution
+- Links to chat transcripts, Google Docs, and GitHub repos
+- View counts and engagement metrics
+- Staff comments and endorsements
+- Expandable content for easy browsing
+
+## 🚀 Deployment
+
+### Option 1: Simple HTTP Server (Local Testing)
+
 ```bash
-./launch_website.sh
-```
-Then open `http://localhost:8000` in your browser.
-
-### 2. Automated Data Pipeline
-Python scripts that:
-- Parse 600+ Ed discussion posts automatically
-- Extract participation data for categories A and B
-- Categorize submissions by LLM type and insight quality
-- Generate structured JSON data files for the website
-
-**Key Scripts:**
-- `parse_participation_posts.py` - Extracts participation data from Ed posts
-- `analyze_insights.py` - Performs LLM-powered analysis of submissions
-
-### 3. Comprehensive Insights Report
-Detailed analysis of LLM behavior patterns including:
-- **Category A (ChatGPT):** Common issues, best practices, behavior patterns
-- **Category B (Claude/Gemini):** Comparative analysis, strengths/weaknesses
-- Identification of particularly impressive submissions
-- Actionable insights for future students
-
-See `LLM_INSIGHTS_REPORT.md` for full details.
-
-## Repository Structure
-
-```
-extra/
-├── website/                      # Deployable website
-│   ├── index.html               # Main website interface
-│   ├── app.js                   # Interactive functionality
-│   ├── styles.css               # Modern styling
-│   └── data/                    # JSON data files
-│       ├── participation_a.json # ChatGPT insights
-│       ├── participation_b.json # Claude/Gemini insights
-│       ├── insights_a.json      # Analyzed insights (A)
-│       ├── insights_b.json      # Analyzed insights (B)
-│       └── statistics.json      # Participation statistics
-├── ed_posts/                    # Raw Ed discussion data
-│   └── detailed_posts/          # Individual post JSONs
-├── parse_participation_posts.py # Data extraction script
-├── analyze_insights.py          # LLM analysis script
-├── launch_website.sh            # Website launcher
-├── LLM_INSIGHTS_REPORT.md       # Detailed insights report
-└── requirements.txt             # Python dependencies
+cd website
+python3 -m http.server 8000
 ```
 
-## Quick Start
+Then open http://localhost:8000 in your browser.
 
-### Prerequisites
+### Option 2: Static Hosting (Production)
+
+The website is a static site with no backend dependencies. You can deploy it to any static hosting service:
+
+#### GitHub Pages
 ```bash
-pip install -r requirements.txt
+# Push the website folder to a GitHub repository
+git add website/
+git commit -m "Add LLM analysis website"
+git push
+
+# Enable GitHub Pages in repository settings
+# Point to the website folder
 ```
 
-### Launch the Website
+#### Netlify
 ```bash
-./launch_website.sh
+# Drag and drop the website folder to Netlify
+# Or use Netlify CLI:
+netlify deploy --prod --dir=website
 ```
 
-### Regenerate Data (if needed)
+#### Vercel
 ```bash
-# Extract participation data from Ed posts
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+cd website
+vercel --prod
+```
+
+#### eecs182.org Integration
+
+To integrate with the main eecs182.org website:
+
+1. Copy the entire `website` directory to the eecs182.org server
+2. Rename it if needed (e.g., `llm-participation`)
+3. Link to it from the main site: `https://eecs182.org/llm-participation/`
+
+The website is self-contained with:
+- All data in JSON format in the `data/` folder
+- No external dependencies
+- No build process required
+- Works with or without a domain name
+
+## 📁 File Structure
+
+```
+website/
+├── index.html          # Main HTML page
+├── styles.css          # All CSS styles
+├── app.js              # JavaScript application
+├── data/               # JSON data files
+│   ├── participation_a.json
+│   ├── participation_b.json
+│   ├── insights_a.json
+│   ├── insights_b.json
+│   └── statistics.json
+└── README.md           # This file
+```
+
+## 🔧 Technical Details
+
+### Technologies Used
+- **Pure HTML/CSS/JavaScript** - No frameworks required
+- **Responsive Design** - Works on desktop and mobile
+- **Client-side Search** - Fast filtering without backend
+- **JSON Data** - Easy to update and maintain
+
+### Browser Support
+- Chrome/Edge (latest)
+- Firefox (latest)
+- Safari (latest)
+- Mobile browsers
+
+### Performance
+- Static files only - fast load times
+- Client-side rendering - no server load
+- Optimized for 200+ submissions
+- Lazy loading for content expansion
+
+## 📝 Data Sources
+
+All data is sourced from Ed Discussion posts (https://edstem.org/us/courses/84647):
+- Downloaded on December 8, 2025
+- 558 total posts analyzed
+- 200 Special Participation posts extracted
+- Automated parsing with manual verification
+
+## 🎓 Student Credits
+
+All submissions are attributed to students with:
+- Full name displayed
+- Links to external resources (chat logs, documents, repos)
+- View counts and engagement metrics
+- Staff endorsements highlighted
+
+Students who included personal websites or GitHub profiles have them linked directly in their submissions.
+
+## 📈 Statistics
+
+### Special Participation A (Non-coding problems)
+- Top LLMs: DeepSeek (16), Mistral (10), Gemini (9)
+- Most tested: HW3, HW4, HW2
+- Common themes: Accuracy, Hallucinations, Explanation Quality
+
+### Special Participation B (Coding problems)
+- Top LLMs: Gemini (14), DeepSeek (8), Grok (8)
+- Most tested: HW4, HW3, HW2
+- Common themes: Error patterns, Iterative problem-solving
+
+## 🔄 Updating Data
+
+To update the website with new posts:
+
+1. Download new Ed posts:
+```bash
+python download_ed_posts.py
+```
+
+2. Parse and analyze:
+```bash
 python parse_participation_posts.py
-
-# Analyze insights using LLMs
 python analyze_insights.py
 ```
 
-## Features & Highlights
+3. Copy new data:
+```bash
+cp website_data/*.json website/data/
+```
 
-✅ **Fully Automated Pipeline:** From raw Ed data to deployed website  
-✅ **Searchable Interface:** Filter by category, student, or keywords  
-✅ **Student Attribution:** Links to student GitHub/websites when provided  
-✅ **LLM-Powered Analysis:** Deep insights into ChatGPT, Claude, and Gemini behavior  
-✅ **Statistics Dashboard:** Visual overview of participation patterns  
-✅ **Production Ready:** Clean code, documentation, ready for eecs182.org  
-✅ **Mobile Responsive:** Modern UI that works on all devices  
+4. Deploy updated website
 
-## Key Insights Discovered
+## 🐛 Troubleshooting
 
-### Category A (ChatGPT Interactions)
-- Common hallucination patterns in mathematical explanations
-- Effective prompting strategies for homework help
-- Issues with code generation and debugging
-- Best practices for extracting conceptual understanding
+### Issue: Data not loading
+- Check browser console for errors
+- Ensure JSON files are in `data/` folder
+- Verify JSON files are valid (use a JSON validator)
+- Check CORS settings if hosting locally
 
-### Category B (Claude/Gemini Interactions)
-- Claude's strengths in detailed explanations and coding
-- Gemini's performance on multimodal tasks
-- Comparative analysis of reasoning capabilities
-- Model-specific limitations and workarounds
+### Issue: Search not working
+- Clear browser cache
+- Check JavaScript console for errors
+- Ensure app.js is loaded correctly
 
-See `LLM_INSIGHTS_REPORT.md` for comprehensive findings.
+### Issue: Links broken
+- Verify external links are still valid
+- Check for URL encoding issues
+- Ensure HTTPS/HTTP protocol is correct
 
-## Documentation
+## 📧 Contact
 
-- **`START_HERE.md`** - Quick orientation guide
-- **`QUICK_START.md`** - Getting started instructions
-- **`PROJECT_README.md`** - Technical implementation details
-- **`FINAL_DELIVERABLE.md`** - Project summary and deliverables
-- **`SUBMISSION_SUMMARY.md`** - Extra credit submission overview
-- **`VISUAL_OVERVIEW.md`** - Website features and screenshots
+For questions about this website or the CS182 course, visit:
+- Course website: https://eecs182.org
+- Ed Discussion: https://edstem.org/us/courses/84647
 
-## Integration with eecs182.org
+## 📄 License
 
-The `website/` directory is designed to be dropped directly into the course website:
-1. Copy the `website/` folder to the desired location
-2. Ensure `data/` JSON files are accessible
-3. Link to `index.html` from the main course site
-4. No additional dependencies or server-side code required
-
-## Technologies Used
-
-- **Frontend:** Vanilla JavaScript, HTML5, CSS3
-- **Data Processing:** Python 3.x
-- **LLM Analysis:** OpenAI/Anthropic APIs
-- **Data Format:** JSON for easy maintenance
-- **Deployment:** Static site (can be hosted anywhere)
-
-## Credits
-
-This project documents the incredible work of CS 182 students who shared their insights about working with large language models throughout Fall 2025. All submissions are attributed to their original authors with links to their profiles when available.
-
-## Contact & Support
-
-For questions or issues, please post on the Ed discussion thread or open an issue in this repository.
+This website and data are for educational purposes as part of CS182: Deep Learning at UC Berkeley.
+Student contributions remain the intellectual property of the respective authors.
 
 ---
 
-**Extra Credit Categories:** Special Participation A & B  
-**Course:** CS 182/282A Deep Learning, UC Berkeley, Fall 2025  
-**Website Status:** ✅ Production Ready
+Built with ❤️ for CS182 students and future deep learning researchers.
