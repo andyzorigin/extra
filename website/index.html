@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS182 Special Participation: LLM Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CS182 Special Participation</h1>
+            <p class="subtitle">Student Interactions with LLMs: Analysis & Insights</p>
+            <nav>
+                <a href="#overview">Overview</a>
+                <a href="#insights">Insights</a>
+                <a href="#participation-a">Participation A</a>
+                <a href="#participation-b">Participation B</a>
+                <a href="#submissions">All Submissions</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Overview Section -->
+        <section id="overview" class="section">
+            <h2>Overview</h2>
+            <p class="lead">
+                This website documents student experiences using various Large Language Models (LLMs) 
+                to solve homework problems for CS182: Deep Learning. Students tested different LLMs 
+                and documented their observations about model behaviors, strengths, and weaknesses.
+            </p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="total-a-posts">0</div>
+                    <div class="stat-label">Participation A Posts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="total-b-posts">0</div>
+                    <div class="stat-label">Participation B Posts</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="total-students">0</div>
+                    <div class="stat-label">Contributing Students</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="total-llms">0</div>
+                    <div class="stat-label">LLMs Analyzed</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insights Section -->
+        <section id="insights" class="section">
+            <h2>Key Insights on LLM Behaviors</h2>
+            
+            <div class="insights-container">
+                <div class="insight-type">
+                    <h3>Special Participation A</h3>
+                    <p class="description">Students used LLMs to solve homework problems and documented their performance</p>
+                    <div id="insights-a-content"></div>
+                </div>
+                
+                <div class="insight-type">
+                    <h3>Special Participation B</h3>
+                    <p class="description">Students used LLMs to solve coding homework problems</p>
+                    <div id="insights-b-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LLM Comparison Section -->
+        <section id="llm-comparison" class="section">
+            <h2>LLM Comparison</h2>
+            <div class="tabs">
+                <button class="tab-button active" data-type="a">Participation A</button>
+                <button class="tab-button" data-type="b">Participation B</button>
+            </div>
+            <div id="llm-comparison-content"></div>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section id="submissions" class="section">
+            <h2>All Submissions</h2>
+            
+            <div class="search-filter-container">
+                <input type="text" id="search-input" placeholder="Search by student name, LLM, homework, or keywords...">
+                
+                <div class="filters">
+                    <select id="filter-type">
+                        <option value="all">All Types</option>
+                        <option value="A">Participation A</option>
+                        <option value="B">Participation B</option>
+                    </select>
+                    
+                    <select id="filter-llm">
+                        <option value="all">All LLMs</option>
+                    </select>
+                    
+                    <select id="filter-homework">
+                        <option value="all">All Homeworks</option>
+                    </select>
+                    
+                    <button id="reset-filters">Reset Filters</button>
+                </div>
+            </div>
+
+            <div id="results-count" class="results-info"></div>
+            <div id="submissions-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>CS182: Deep Learning - Special Participation Documentation</p>
+            <p>Generated from Ed Discussion posts - <a href="https://eecs182.org">eecs182.org</a></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

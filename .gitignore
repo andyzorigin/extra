@@ -1,0 +1,30 @@
+# Sensitive files
+cookies.json
+*.cookie
+*auth*
+*token*
+*credential*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.log
+project_structure.txt
