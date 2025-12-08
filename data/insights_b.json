@@ -1,0 +1,312 @@
+{
+  "participation_type": "B",
+  "total_posts": 90,
+  "total_students": 90,
+  "llm_behaviors": {
+    "ChatGPT 5.1": {
+      "llm_name": "ChatGPT 5.1",
+      "total_posts": 5,
+      "strengths": [
+        "Often provides correct answers",
+        "Provides explanations for solutions",
+        "Can solve problems in one shot"
+      ],
+      "weaknesses": [
+        "Prone to hallucinations",
+        "Makes errors on complex problems",
+        "Requires careful prompt engineering"
+      ],
+      "patterns": [
+        "Questions its own solutions",
+        "Provides step-by-step solutions"
+      ],
+      "key_quotes": [
+        "during the interaction.\n\nStrengths:\n\nThe model consistently produced correct and well-justified interpretations of the attention patterns on the first try\n\nWhen explaining its reasoning, the model frequently referenced particular examples (tokens, layers, heads, etc",
+        "Overall, GPT-5.1 demonstrated exceptional coding fluency but required human intervention for environment-specific engineering conflicts. It successfully \"one-shot\" the complex math for Scaled Dot Product Attention, but failed on trivial boilerplate imports.",
+        "Theoretical Depth (Q2): The model provided a superior theoretical explanation for the difference between \"Hand-Designed\" and \"Learned\" weight matrices than the solution key. It correctly identified that neural networks learn distributed representations (dense matrices) that are functionally equivale"
+      ],
+      "homework_distribution": {
+        "HW12": 1,
+        "HW0": 1,
+        "HW9": 1,
+        "HW5": 1,
+        "HW10": 1
+      },
+      "avg_view_count": 54.8
+    },
+    "Mistral": {
+      "llm_name": "Mistral",
+      "total_posts": 7,
+      "strengths": [
+        "Often provides correct answers",
+        "Provides explanations for solutions",
+        "Can solve problems in one shot"
+      ],
+      "weaknesses": [
+        "Prone to hallucinations",
+        "Makes errors on complex problems",
+        "Can be overly verbose",
+        "Requires careful prompt engineering"
+      ],
+      "patterns": [
+        "Questions its own solutions",
+        "Provides step-by-step solutions"
+      ],
+      "key_quotes": [
+        "For part b), Le Chat was able to arrive at the correct norm implementation on one shot. I am especially surprised by its capability for understanding the RMS-norm without any prompt engineering."
+      ],
+      "homework_distribution": {
+        "HW4": 1,
+        "HW3": 1,
+        "HW0": 1,
+        "HW1": 1,
+        "HW8": 1,
+        "HW2": 1,
+        "Not specified": 1
+      },
+      "avg_view_count": 122.57142857142857
+    },
+    "DeepSeek": {
+      "llm_name": "DeepSeek",
+      "total_posts": 8,
+      "strengths": [
+        "Often provides correct answers",
+        "Provides explanations for solutions",
+        "Can solve problems in one shot"
+      ],
+      "weaknesses": [
+        "Makes errors on complex problems",
+        "Can be overly verbose"
+      ],
+      "patterns": [
+        "Questions its own solutions",
+        "Provides step-by-step solutions"
+      ],
+      "key_quotes": [
+        ", I also noticed that it sometimes produced very smart intermediate reasoning during its “thinking” process but then left those insights out of its final answer"
+      ],
+      "homework_distribution": {
+        "HW4": 2,
+        "HW3": 1,
+        "HW6": 1,
+        "HW1": 1,
+        "HW10": 1,
+        "HW8": 1,
+        "HW02": 1
+      },
+      "avg_view_count": 102.125
+    },
+    "ChatGPT 5": {
+      "llm_name": "ChatGPT 5",
+      "total_posts": 2,
+      "strengths": [
+        "Often provides correct answers",
+        "Provides explanations for solutions"
+      ],
+      "weaknesses": [
+        "Makes errors on complex problems",
+        "Can be overly verbose",
+        "Can get confused on ambiguous questions"
+      ],
+      "patterns": [
+        "Provides step-by-step solutions"
+      ],
+      "key_quotes": [
+        "These factors solve different problems. For example, √(1/fan-in) keeps activations numerically stable; 1/fan-in (μP) keeps feature updates width-invariant under Adam."
+      ],
+      "homework_distribution": {
+        "HW3": 1,
+        "HW5": 1
+      },
+      "avg_view_count": 87.0
+    },
+    "GPT 5.1": {
+      "llm_name": "GPT 5.1",
+      "total_posts": 6,
+      "strengths": [
+        "Often provides correct answers",
+        "Provides explanations for solutions",
+        "Can solve problems in one shot"
+      ],
+      "weaknesses": [
+        "Makes errors on complex problems",
+        "Can be overly verbose"
+      ],
+      "patterns": [],
+      "key_quotes": [],
+      "homework_distribution": {
+        "HW3": 1,
+        "HW8": 1,
+        "HW4": 1,
+        "Not specified": 1,
+        "HW0": 1,
+        "HW2": 1
+      },
+      "avg_view_count": 38.166666666666664
+    },
+    "Gemini 3 Pro": {
+      "llm_name": "Gemini 3 Pro",
+      "total_posts": 6,
+      "strengths": [
+        "Often provides correct answers",
+        "Generally helpful for problem-solving",
+        "Provides explanations for solutions",
+        "Can solve problems in one shot"
+      ],
+      "weaknesses": [
+        "Prone to hallucinations",
+        "Makes errors on complex problems",
+        "Can be overly verbose"
+      ],
+      "patterns": [
+        "Questions its own solutions"
+      ],
+      "key_quotes": [
+        "Gemini Pro 3 handled the heavy coding tasks impressively. It was able to mostly one-shot every implementation with only minor reprompting needed for small corrections. It was good at piecing together logic even when I just copy-pasted disjointed notebook cells and helper files together. It successfu",
+        ":\n\nGemini followed the consistent 4 part template I requested in the 1st prompt (Reasoning, Code, Key Insights, Expected Output)"
+      ],
+      "homework_distribution": {
+        "HW8": 1,
+        "HW2": 1,
+        "HW5": 2,
+        "HW9": 1,
+        "HW0": 1
+      },
+      "avg_view_count": 56.333333333333336
+    },
+    "Gemini": {
+      "llm_name": "Gemini",
+      "total_posts": 14,
+      "strengths": [
+        "Often provides correct answers",
+        "Generally helpful for problem-solving",
+        "Provides explanations for solutions",
+        "Can solve problems in one shot"
+      ],
+      "weaknesses": [
+        "Prone to hallucinations",
+        "Makes errors on complex problems",
+        "Can be overly verbose",
+        "Can get confused on ambiguous questions"
+      ],
+      "patterns": [
+        "Questions its own solutions",
+        "Provides step-by-step solutions"
+      ],
+      "key_quotes": [
+        ", Gemini thought for significantly longer on average during this interaction compared to usual",
+        "was the one-shot rate was very low, almost 0 for complex, more than one line sections of code"
+      ],
+      "homework_distribution": {
+        "HW08": 1,
+        "HW10": 3,
+        "HW3": 1,
+        "HW8": 1,
+        "HW11": 1,
+        "HW2": 2,
+        "HW4": 2,
+        "HW0": 1,
+        "HW9": 2
+      },
+      "avg_view_count": 68.0
+    },
+    "Grok": {
+      "llm_name": "Grok",
+      "total_posts": 8,
+      "strengths": [
+        "Often provides correct answers",
+        "Provides explanations for solutions",
+        "Can solve problems in one shot"
+      ],
+      "weaknesses": [
+        "Prone to hallucinations",
+        "Makes errors on complex problems",
+        "Can be overly verbose",
+        "Requires careful prompt engineering"
+      ],
+      "patterns": [
+        "Engages in iterative problem-solving",
+        "Questions its own solutions"
+      ],
+      "key_quotes": [
+        "Grok needs clear guidance when the notation in hw differs from convention"
+      ],
+      "homework_distribution": {
+        "HW1": 2,
+        "HW0": 1,
+        "HW5": 1,
+        "HW11": 1,
+        "HW9": 1,
+        "HW7": 1,
+        "HW12": 1
+      },
+      "avg_view_count": 77.25
+    },
+    "Claude": {
+      "llm_name": "Claude",
+      "total_posts": 2,
+      "strengths": [
+        "Often provides correct answers",
+        "Provides explanations for solutions",
+        "Can solve problems in one shot"
+      ],
+      "weaknesses": [
+        "Prone to hallucinations",
+        "Makes errors on complex problems",
+        "Can be overly verbose",
+        "Can get confused on ambiguous questions"
+      ],
+      "patterns": [
+        "Engages in iterative problem-solving",
+        "Questions its own solutions",
+        "Provides step-by-step solutions"
+      ],
+      "key_quotes": [],
+      "homework_distribution": {
+        "HW4": 1,
+        "HW5": 1
+      },
+      "avg_view_count": 76.5
+    }
+  },
+  "common_themes": [
+    "Accuracy & Correctness",
+    "Hallucinations",
+    "Explanation Quality",
+    "Problem-Solving Approach",
+    "Prompt Engineering",
+    "Error Patterns"
+  ],
+  "category_distribution": {
+    "errors": 54,
+    "explanations": 56,
+    "one-shot solving": 23,
+    "iterative problem-solving": 5,
+    "prompt engineering": 54,
+    "correct solutions": 74,
+    "helpful": 25,
+    "confusion": 8,
+    "hallucinations": 14,
+    "general": 4
+  },
+  "homework_distribution": {
+    "Not specified": 4,
+    "HW1": 8,
+    "HW2": 8,
+    "HW4": 12,
+    "HW3": 6,
+    "HW0": 7,
+    "HW7": 4,
+    "HW6": 3,
+    "HW5": 8,
+    "HW8": 6,
+    "HW10": 6,
+    "HW08": 1,
+    "HW11": 4,
+    "HW9": 9,
+    "HW12": 2,
+    "HW03": 1,
+    "HW02": 1
+  },
+  "avg_views": 75.57777777777778
+}
