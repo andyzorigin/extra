@@ -116,6 +116,11 @@ main {
     transform: translateY(-5px);
 }
 
+.stat-card-link {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Keeps the original text color */
+}
+
 .stat-number {
     font-size: 3rem;
     font-weight: 700;
