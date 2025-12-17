@@ -167,6 +167,19 @@ def parse_post(post_file: Path) -> Dict[str, Any]:
     links = extract_links(content)
     categories = categorize_insights(content)
     
+    # Extract attachments from XML content
+    attachments = []
+    xml_content = thread.get('content', '')
+    if xml_content:
+        # Regex to find file tags: <file url="..." filename="..."/>
+        file_pattern = r'<file url="([^"]+)" filename="([^"]+)"/>'
+        found_files = re.findall(file_pattern, xml_content)
+        for url, filename in found_files:
+            attachments.append({
+                'url': url,
+                'filename': filename
+            })
+
     return {
         'id': thread['id'],
         'number': thread['number'],
@@ -178,6 +191,7 @@ def parse_post(post_file: Path) -> Dict[str, Any]:
         'llm_name': llm_name,
         'homework': homework,
         'links': links,
+        'attachments': attachments,
         'categories': categories,
         'view_count': thread['view_count'],
         'vote_count': thread['vote_count'],
@@ -195,8 +209,10 @@ def parse_post(post_file: Path) -> Dict[str, Any]:
 
 def main():
     """Main function to parse all posts."""
-    posts_dir = Path('/Users/anz/school/deep learning - cs282a/extra/ed_posts/detailed_posts')
-    output_dir = Path('/Users/anz/school/deep learning - cs282a/extra/website_data')
+    # Use relative paths
+    current_dir = Path.cwd()
+    posts_dir = current_dir / 'ed_posts' / 'detailed_posts'
+    output_dir = current_dir / 'website_data'
     output_dir.mkdir(exist_ok=True)
     
     participation_a = []

@@ -418,6 +418,7 @@ function renderSubmissions() {
     
     filteredSubmissions.forEach(submission => {
         const hasLinks = Object.values(submission.links).some(arr => arr.length > 0);
+        const hasAttachments = submission.attachments && submission.attachments.length > 0;
         
         html += `
             <div class="submission-card" data-id="${submission.id}">
@@ -452,9 +453,10 @@ function renderSubmissions() {
                     </div>
                 ` : ''}
                 
-                ${hasLinks ? `
+                ${(hasLinks || hasAttachments) ? `
                     <div class="submission-links">
-                        ${renderLinks(submission.links)}
+                        ${hasAttachments ? renderAttachments(submission.attachments) : ''}
+                        ${hasLinks ? renderLinks(submission.links) : ''}
                     </div>
                 ` : ''}
                 
@@ -474,6 +476,16 @@ function renderSubmissions() {
     });
     
     container.innerHTML = html;
+}
+
+// Helper function to render attachments
+function renderAttachments(attachments) {
+    if (!attachments) return '';
+    return attachments.map(file => `
+        <a href="${file.url}" target="_blank" class="link-button attachment-link" download>
+            <i class="fas fa-paperclip"></i> ${escapeHtml(file.filename)}
+        </a>
+    `).join('');
 }
 
 // Helper function to render links

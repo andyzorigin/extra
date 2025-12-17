@@ -20,6 +20,7 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [],
     "categories": [
       "errors",
       "explanations",
@@ -64,6 +65,7 @@
         "https://grok.com/share/c2hhcmQtNA%3D%3D_022c3b42-efd7-401d-b403-f216932c1c91"
       ]
     },
+    "attachments": [],
     "categories": [
       "hallucinations",
       "errors",
@@ -96,6 +98,7 @@
         "https://chat.qwen.ai/s/68228653-4e58-46ba-b8bc-1e11f7a10f6c?fev=0.0.222"
       ]
     },
+    "attachments": [],
     "categories": [
       "hallucinations",
       "prompt engineering"
@@ -123,6 +126,16 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/B7K1jJBzxWs8Vlj0O38UYoA0",
+        "filename": "Qwen4HW2.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/hJmjn7jcEaBp4kKA8hO8t30w",
+        "filename": "Qwen3-MAX.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "prompt engineering",
@@ -151,6 +164,16 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/FmLaweUH2PTr7huFaPeTupEZ",
+        "filename": "cs182_hw4_q6_deepseek.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/ED1XnYsZ9aK1awfafhSSknlh",
+        "filename": "cs182_hw4_q5_deepseek.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "prompt engineering",
@@ -180,6 +203,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/0ovt32aAieyxJcE42yryMUSQ",
+        "filename": "special_participation_B.pdf"
+      }
+    ],
     "categories": [
       "explanations",
       "correct solutions"
@@ -211,6 +240,7 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [],
     "categories": [
       "errors",
       "explanations",
@@ -242,6 +272,12 @@
         "https://chat.mistral.ai/chat/8c72d241-dd44-41a0-b8fc-a0469d84ff1d"
       ]
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/lOUNW0UbEzrSEvZjRhPaVhPw",
+        "filename": "Annotated log of conversation with Mistral AI coding.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -272,6 +308,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/QbrVZ0vTgiZNfVZEPnIHPxgU",
+        "filename": "EECS_182_HW_4_GPT_5_Trace.pdf"
+      }
+    ],
     "categories": [
       "correct solutions"
     ],
@@ -298,6 +340,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/jUdl7UZKBDsMtebjyUpP8yel",
+        "filename": "Special Participation B ChatGPT on HW1.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -328,6 +376,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/fXXi8cPu0HhKrfQjZMf6OTyo",
+        "filename": "grok_hw0.pdf"
+      }
+    ],
     "categories": [
       "explanations",
       "correct solutions"
@@ -355,6 +409,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/Ce4wVU5MIdQ148mA0fxjScdJ",
+        "filename": "hw7 code report.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "prompt engineering",
@@ -390,6 +450,7 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [],
     "categories": [
       "errors",
       "explanations",
@@ -420,6 +481,16 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/kIVDnXaigMUwDgANfgrQB5CG",
+        "filename": "Participation_B__HW_6_using_Deepseek_zkc.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/8I5rBh7PkUyZtxYAV9XmIldc",
+        "filename": "Participation_B__HW_6_using_Deepseek_Muon.pdf"
+      }
+    ],
     "categories": [
       "explanations",
       "prompt engineering",
@@ -448,6 +519,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/pf1VZL0wnQ0pbZTNs3XeFCcq",
+        "filename": "CS182 Special Participation B_ Mistral on HW0.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -477,6 +554,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/6fsY4vcf26u32YkHTwzMYlg0",
+        "filename": "Special Participation B, HW4, Llama 4.pdf"
+      }
+    ],
     "categories": [
       "hallucinations",
       "errors",
@@ -505,6 +588,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/ykODMieILdveJmWaOD7z7Pj5",
+        "filename": "Claude-CS282-specialParticipationB-HW2.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -537,6 +626,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/cRCmC83lFv5pr8ymAh5Tg0Ef",
+        "filename": "hw5-participationB-ChatGPT5-comments.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "prompt engineering",
@@ -568,6 +663,12 @@
         "https://www.kimi.com/share/19a68035-1a42-8042-8000-0000dd0233b5"
       ]
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/JO59CBnPjUV5ccYoOy3KXgbN",
+        "filename": "special participation b.pdf"
+      }
+    ],
     "categories": [
       "one-shot solving"
     ],
@@ -594,6 +695,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/1DYWQgprgx9cdeH2t5NxI9qt",
+        "filename": "deepseek.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -626,6 +733,12 @@
         "https://chat.mistral.ai/chat/3443f2c5-f486-44c5-b8f2-359d56793052"
       ]
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/Iy9zXbdrHit2JcHpAz5n3w26",
+        "filename": "annotated_mistral_hw01code.pdf"
+      }
+    ],
     "categories": [
       "explanations",
       "iterative problem-solving",
@@ -655,6 +768,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/wKra3uQ5sIVxQ1KV6JbVnwua",
+        "filename": "Le Chat.pdf"
+      }
+    ],
     "categories": [
       "hallucinations",
       "errors",
@@ -687,6 +806,12 @@
         "https://www.kimi.com/share/19a8f132-5652-855c-8000-0000f8c30b29"
       ]
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/dm26Wfcd2YaolJeHdfQaVNVt",
+        "filename": "Kimi_on_HW4_coding.pdf"
+      }
+    ],
     "categories": [
       "explanations",
       "prompt engineering",
@@ -719,6 +844,7 @@
         "https://chat.qwen.ai/s/d3dde69f-6dda-4327-858e-cc4f3c6dda60?fev=0.0.248"
       ]
     },
+    "attachments": [],
     "categories": [
       "errors",
       "explanations",
@@ -748,6 +874,20 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/BRwI6dhSZpNXdEWANdSlApoN",
+        "filename": "Participation_B_Claude_on_HW4_Coding.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/Ki2XJCcBQh0jDb26xI1QIS2f",
+        "filename": "HandDesignFilters.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/ygx9wkJq4d8EMbgIfJquiMQm",
+        "filename": "edge_detection.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -778,6 +918,7 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [],
     "categories": [
       "hallucinations",
       "errors",
@@ -811,6 +952,12 @@
         "https://nraultwang.github.io/"
       ]
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/4ZpLAC0HKOyN1o1AfHHqIvW4",
+        "filename": "Rault-Wang_Nicolas_Special-Participation-B.pdf"
+      }
+    ],
     "categories": [
       "hallucinations",
       "errors",
@@ -841,6 +988,16 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/rKMFdDSDK4gqRBTICA41ocVV",
+        "filename": "HW3_Q2_Annotated.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/RaCwwAmBGFUayBxZAfOpa9he",
+        "filename": "q_mup_coding_seedified.ipynb"
+      }
+    ],
     "categories": [
       "explanations",
       "prompt engineering",
@@ -869,6 +1026,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/c7EeiYByl3xocGmND7lUVQfY",
+        "filename": "CS182_Special_Participation_B (1).pdf"
+      }
+    ],
     "categories": [
       "hallucinations",
       "errors",
@@ -903,6 +1066,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/q5ljMKo93lSyS3Ryn12eFR5M",
+        "filename": "Special Participation B -- Deepseek on HW10.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -934,6 +1103,7 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [],
     "categories": [
       "errors",
       "explanations",
@@ -964,6 +1134,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/dOeN4GFgmXf3LSsIUU4mY5Wn",
+        "filename": "participationB.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -994,6 +1170,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/XCpBRahcb5ysDOFBUQXnAXWG",
+        "filename": "Special_Participation_B.pdf"
+      }
+    ],
     "categories": [
       "confusion"
     ],
@@ -1020,6 +1202,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/3QsI8zPy63E7fmXhmnfCSayo",
+        "filename": "Grok Chat.pdf"
+      }
+    ],
     "categories": [
       "correct solutions"
     ],
@@ -1046,6 +1234,20 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/vIcDULvZc0TZNR4H7O9gT7XM",
+        "filename": "Claude-Q6d_Implementing convolutional neural networks in PyTorch.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/ekmgfZK5CKLuZojILsfwFUUu",
+        "filename": "Claude-Q6abc_Batch normalization computational graph (1).pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/KjKHWht6S01qIDwcAQu4dAnM",
+        "filename": "Claude-Q5_Dropout neural networks homework implementation.pdf"
+      }
+    ],
     "categories": [
       "hallucinations",
       "errors",
@@ -1077,6 +1279,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/ZWIjJWNibSfJTgmq8pvneeXN",
+        "filename": "CS 182 Special Participation B_ Gemini Pro 3 on HW 8.pdf"
+      }
+    ],
     "categories": [
       "hallucinations",
       "errors",
@@ -1109,6 +1317,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/nKhuqUI2o1UajJWaDwmHcTyF",
+        "filename": "Special Participation B -- Gemini Pro on HW 8, Arvind Kruthiventy.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -1140,6 +1354,7 @@
         "https://chat.mistral.ai/chat/b5eaeee5-f01f-480e-bb74-65040dab6010"
       ]
     },
+    "attachments": [],
     "categories": [
       "errors",
       "explanations",
@@ -1168,6 +1383,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/TT2t86kCpskGO0MVyjfPS1wP",
+        "filename": "Special Participation B - Gemini 3 on HW2.pdf"
+      }
+    ],
     "categories": [
       "correct solutions"
     ],
@@ -1196,6 +1417,12 @@
         "https://grok.com/share/c2hhcmQtMw_8c73c897-085e-4f69-afbe-c4baf7fa44e4"
       ]
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/YhwQsmom77bSDJ1AkmjbJGCN",
+        "filename": "special_participation (1).pdf"
+      }
+    ],
     "categories": [
       "correct solutions"
     ],
@@ -1222,6 +1449,24 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/TMBxFojYAEDATqWeW8fFUvFG",
+        "filename": "HW5_Q5_Kimi.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/nSPe0s7iuNKKebiel6i0caWR",
+        "filename": "HW5_Q6_1_Kimi.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/ECfBIv78bw8JhpO3NPbitPwG",
+        "filename": "HW5_Q6_2_Kimi.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/N77QpsQJqLPjmGFTIEahYJzh",
+        "filename": "HW5_Q6_3_Kimi.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -1250,6 +1495,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/6dO1XXoIqjjj39cSAoPkMaCh",
+        "filename": "Special_Participation_B_HW11.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "helpful"
@@ -1277,6 +1528,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/LRd8kPvIQvJIepe4Mgx3zVdb",
+        "filename": "annotated-gemini_pro_3-hw10-coding.pdf"
+      }
+    ],
     "categories": [
       "one-shot solving",
       "correct solutions"
@@ -1304,6 +1561,24 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/CKgbMuNiTxyWKzBct9KzbBDG",
+        "filename": "GrokCode9Q12.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/HcYQmhWCwSXSvBfPSVzdxsxo",
+        "filename": "GrokCode9Q3456789.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/6ex3OdQgbnlwTxhQN6SL8nbL",
+        "filename": "GrokCode9_Q1011.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/Jbzalj1j2m7qesTazvr0RMn7",
+        "filename": "GrokCode9full.pdf"
+      }
+    ],
     "categories": [
       "hallucinations",
       "errors",
@@ -1335,6 +1610,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/boFM2uD7cqCxkXNA9W40a2aK",
+        "filename": "Special participation B.pdf"
+      }
+    ],
     "categories": [
       "general"
     ],
@@ -1363,6 +1644,7 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [],
     "categories": [
       "explanations",
       "prompt engineering",
@@ -1391,6 +1673,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/jo1tx2t2X89faN092Dsa3sGz",
+        "filename": "B_HW2.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -1420,6 +1708,16 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/8sHmZ8G0NlbgX9nbAYaLjNNd",
+        "filename": "hand_design_annotated.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/DzhTXXbEtIMbjZl39mntU9re",
+        "filename": "inductive_annotated.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -1449,6 +1747,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/us4I1Rjd1P1CCalB1rjI0dY7",
+        "filename": "networks.ipynb - Colab.pdf"
+      }
+    ],
     "categories": [
       "explanations",
       "correct solutions"
@@ -1476,6 +1780,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/iwVKlmVKfFEMOTnG7IYrLs6Z",
+        "filename": "Participation B.pdf"
+      }
+    ],
     "categories": [
       "hallucinations",
       "errors",
@@ -1505,6 +1815,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/3dNlOQaZhdIw8lE8sDkNxH66",
+        "filename": "Special-Participation-B.pdf"
+      }
+    ],
     "categories": [
       "explanations",
       "prompt engineering",
@@ -1534,6 +1850,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/1gBo2V4OrbhEvMcNZ4BAxxZ6",
+        "filename": "participation_b_hw5.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -1565,6 +1887,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/S3YXAY1Slasnul21dQGAXO5H",
+        "filename": "Special B-2.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -1593,6 +1921,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/VXpb50IHA1hITHGhT7UqzRNu",
+        "filename": "MR-B-182 2.pdf"
+      }
+    ],
     "categories": [
       "general"
     ],
@@ -1621,6 +1955,7 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [],
     "categories": [
       "errors",
       "prompt engineering",
@@ -1650,6 +1985,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/C77FL90cclfmYLcHFcpcdcuH",
+        "filename": "ParticipationB_ KIMI_HW1_QichengZhu.pdf"
+      }
+    ],
     "categories": [
       "prompt engineering",
       "correct solutions"
@@ -1677,6 +2018,16 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/KtVpMGp7GA4L8W0IhXS4mBjJ",
+        "filename": "hw12-q_maml.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/9Y7NLBFEjIVTQozbIwyM8NaD",
+        "filename": "hw12-q_vae.pdf"
+      }
+    ],
     "categories": [
       "correct solutions"
     ],
@@ -1703,6 +2054,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/94TrxdgeCMvhAy0hGRYaq00b",
+        "filename": "CS182_Special_Participation_B.pdf"
+      }
+    ],
     "categories": [
       "explanations"
     ],
@@ -1731,6 +2088,7 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [],
     "categories": [
       "hallucinations",
       "errors",
@@ -1763,6 +2121,16 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/2ixRAjecQD9JTBPY8u8Z0OaH",
+        "filename": "Participation B Annotated Part 1.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/Gm8NsQuuIXrIdgVbojJjlXkA",
+        "filename": "Participation B Annotated Part 2.pdf"
+      }
+    ],
     "categories": [
       "hallucinations",
       "errors",
@@ -1796,6 +2164,24 @@
         "https://gemini.google.com/share/75902048119a"
       ]
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/2chRd8EyBUa3ct01Bpl06UmX",
+        "filename": "Special_Participation_B_Part_1.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/fHqTamXCa3gnGH7cZ5IOcsRC",
+        "filename": "HandDesignFilters.ipynb"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/72QfsUNcGEEw89TyV8o6nP6e",
+        "filename": "Special_Participation_B_Part_2.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/1vTnjVSmGuqoRDfrPhKZul1I",
+        "filename": "edge_detection.ipynb"
+      }
+    ],
     "categories": [
       "explanations",
       "one-shot solving",
@@ -1824,6 +2210,16 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/p2pvkQtng5X7F6zaAWsDeslV",
+        "filename": "SpecialParticipationB5.pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/lbxkky9byyRrBuwsdjb1Y6Lb",
+        "filename": "SpecialParticipationB6.pdf"
+      }
+    ],
     "categories": [
       "explanations",
       "prompt engineering",
@@ -1853,6 +2249,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/tkGPeCL84n0O4fZnXSwyZaso",
+        "filename": "Special_Participation_B___HW8.pdf"
+      }
+    ],
     "categories": [
       "general"
     ],
@@ -1879,6 +2281,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/dwcP3FO4qAdaMxs0M2MYNRhS",
+        "filename": "hw8-log.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -1909,6 +2317,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/SBeYIQilxEFDgKmfFLRe3uGs",
+        "filename": "Helping with SSM coding homework questions (1) - DeepSeek.pdf"
+      }
+    ],
     "categories": [
       "explanations",
       "correct solutions"
@@ -1936,6 +2350,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/WuGk8QDsgISaWyGGyAhtvx3e",
+        "filename": "gemini discussion.pdf"
+      }
+    ],
     "categories": [
       "explanations",
       "prompt engineering",
@@ -1965,6 +2385,24 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/WTjI7YZ6G5QZMOLhM9DNUMPR",
+        "filename": "vanilla_rnns_trace (1).pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/oQm8zBKftlHJnohgqE2vTdJP",
+        "filename": "last_name_trace (1).pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/Hdt8KzbBgiBqkKErzh3cLTYZ",
+        "filename": "autoencoder_trace (1).pdf"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/bnLWttL4h1SN33z8zLhbjH3c",
+        "filename": "clustering_trace (1).pdf"
+      }
+    ],
     "categories": [
       "errors",
       "one-shot solving",
@@ -1995,6 +2433,16 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/MErpQEaqpkxonk2oY05KjiA4",
+        "filename": "q_zkc.ipynb"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/tuOXx1p5dbtJR6tfizBXCHOH",
+        "filename": "Special Participation B.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "prompt engineering",
@@ -2027,6 +2475,7 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [],
     "categories": [
       "explanations",
       "correct solutions"
@@ -2054,6 +2503,7 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [],
     "categories": [
       "errors",
       "one-shot solving",
@@ -2083,6 +2533,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/6bdRSapGXgwdBbUYvdDojz6R",
+        "filename": "coding portion hw4.pdf"
+      }
+    ],
     "categories": [
       "general"
     ],
@@ -2109,6 +2565,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/vH26CRymaGfsWSJnVKZtvZU5",
+        "filename": "ChatGPT 5.1 for HW 10 (Special Participation B).pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -2137,6 +2599,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/1SC7v07GdSpqsagZATIH7HEx",
+        "filename": "Grok HW 12 Code.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "prompt engineering",
@@ -2165,6 +2633,7 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [],
     "categories": [
       "prompt engineering"
     ],
@@ -2195,6 +2664,7 @@
         "https://chat.qwen.ai/s/095b3b7d-4d9c-4fed-a2fe-0914fbe97bd2?fev=0.1.13"
       ]
     },
+    "attachments": [],
     "categories": [
       "explanations",
       "prompt engineering",
@@ -2231,6 +2701,7 @@
         "https://chat.mistral.ai/chat/bc12703b-0109-4648-a3a6-853b72bf4ffa"
       ]
     },
+    "attachments": [],
     "categories": [
       "hallucinations",
       "errors",
@@ -2262,6 +2733,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/MZ9nw2TfdrPWgczwTJTim2f0",
+        "filename": "CS_C182_Participation_B_Athul.pdf"
+      }
+    ],
     "categories": [
       "explanations",
       "prompt engineering",
@@ -2291,6 +2768,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/jWHJEC3ncOBsnqnOCMNWQdNS",
+        "filename": "cursor_implement_gradient_descent_with.md.pdf"
+      }
+    ],
     "categories": [
       "explanations",
       "prompt engineering",
@@ -2320,6 +2803,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/csuWiy5e2Y6liFrJMMfsJ04V",
+        "filename": "gemini-chat.2025-12-07.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "prompt engineering",
@@ -2349,6 +2838,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/ssiwt28oDa4xM9nn0lqu6Yet",
+        "filename": "hw_0_code_gemini_3_pro.pdf"
+      }
+    ],
     "categories": [
       "prompt engineering",
       "correct solutions"
@@ -2376,6 +2871,20 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/Qh5XLh9BN57v11Jmq4ufw6bD",
+        "filename": "writeup.md"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/MEgQBuXnrdboXhCMdSQfsOyi",
+        "filename": "CHAT.md"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/7sD4GWK8rrrRRnLyQkM138z9",
+        "filename": "Solutions.zip"
+      }
+    ],
     "categories": [
       "errors",
       "one-shot solving",
@@ -2406,6 +2915,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/TYOVf2JEMrm7fSMlIsiqtZYr",
+        "filename": "Hw2_Gemini_Colab_annotated.pdf"
+      }
+    ],
     "categories": [
       "explanations",
       "one-shot solving",
@@ -2435,6 +2950,20 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/2ma17kQMwTZNjagWFel5aSxq",
+        "filename": "HandDesignFilters-new.ipynb"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/KWLBCtFvuv3RBnyLXufRjrGj",
+        "filename": "edge_detection-new.ipynb"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/g4PQGUoVTeknfFB43IS0F7dV",
+        "filename": "annotated-special-participation-b.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -2465,6 +2994,7 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [],
     "categories": [
       "explanations"
     ],
@@ -2495,6 +3025,20 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/djkU6hXuDZzRZ0aDRLNA6wWu",
+        "filename": "fc_net.py"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/2ihtBcokYIQlhM6HTP9U9ESe",
+        "filename": "layers.py"
+      },
+      {
+        "url": "https://static.us.edusercontent.com/files/r8By7BY5uP3UyfFKPfuJOh8t",
+        "filename": "networks.ipynb"
+      }
+    ],
     "categories": [
       "errors",
       "one-shot solving",
@@ -2523,6 +3067,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/S9hahdhqvFoNPFmKjmhFHdFG",
+        "filename": "HW12_B_notes.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "prompt engineering",
@@ -2553,6 +3103,7 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [],
     "categories": [
       "errors",
       "explanations",
@@ -2584,6 +3135,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/LycjdVOHGJxSGX9X3hKnWd7b",
+        "filename": "chat_log.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -2615,6 +3172,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/DK1ATWepmmognNyttMQ5frA8",
+        "filename": "HW2 with Opus 4 and GPT Thinking 5.1.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
@@ -2644,6 +3207,12 @@
       "website_links": [],
       "other_links": []
     },
+    "attachments": [
+      {
+        "url": "https://static.us.edusercontent.com/files/3xJQKp2b7TeEg9L6q76uT3Nw",
+        "filename": "hw2_coding_report.pdf"
+      }
+    ],
     "categories": [
       "errors",
       "explanations",
