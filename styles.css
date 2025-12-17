@@ -931,6 +931,10 @@ main {
     background: #24292e;
 }
 
+.link-button.attachment-link {
+    background: #17a2b8;
+}
+
 .category-tags {
     display: flex;
     flex-wrap: wrap;
