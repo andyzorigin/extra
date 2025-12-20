@@ -896,8 +896,13 @@ main {
     transition: all var(--transition-speed);
 }
 
-.meta-badge:hover {
+.meta-badge.clickable {
+    cursor: pointer;
+}
+
+.meta-badge.clickable:hover {
     transform: scale(1.05);
+    box-shadow: var(--shadow-sm);
 }
 
 .meta-badge.llm {

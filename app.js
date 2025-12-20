@@ -427,9 +427,9 @@ function renderSubmissions() {
                         <h3>${escapeHtml(submission.title)}</h3>
                         <div class="submission-meta">
                             <span class="meta-badge"><i class="fas fa-user"></i> ${escapeHtml(submission.author_name)}</span>
-                            <span class="meta-badge llm"><i class="fas fa-robot"></i> ${escapeHtml(submission.llm_name)}</span>
-                            <span class="meta-badge homework"><i class="fas fa-book"></i> ${escapeHtml(submission.homework)}</span>
-                            <span class="meta-badge"><i class="fas fa-tag"></i> Type ${submission.participation_type}</span>
+                            <span class="meta-badge llm clickable" data-filter-type="llm" data-filter-value="${escapeHtml(submission.llm_name)}"><i class="fas fa-robot"></i> ${escapeHtml(submission.llm_name)}</span>
+                            <span class="meta-badge homework clickable" data-filter-type="homework" data-filter-value="${escapeHtml(submission.homework)}"><i class="fas fa-book"></i> ${escapeHtml(submission.homework)}</span>
+                            <span class="meta-badge clickable" data-filter-type="type" data-filter-value="${submission.participation_type}"><i class="fas fa-tag"></i> Type ${submission.participation_type}</span>
                         </div>
                     </div>
                     <div class="submission-stats">
@@ -648,6 +648,27 @@ function setupEventListeners() {
             }
         });
     });
+
+    // Click listener for meta badges
+    document.getElementById('submissions-list').addEventListener('click', (e) => {
+        const badge = e.target.closest('.meta-badge.clickable');
+        if (badge) {
+            e.stopPropagation(); // Prevent card from expanding
+            const filterType = badge.dataset.filterType;
+            const filterValue = badge.dataset.filterValue;
+
+            if (filterValue && filterValue !== 'Not specified') {
+                const filterId = `filter-${filterType}`;
+                const select = document.getElementById(filterId);
+                if (select) {
+                    select.value = filterValue;
+                    filterSubmissions();
+                    document.getElementById('submissions').scrollIntoView({ behavior: 'smooth' });
+                    document.querySelector('.submissions-scroll-container').scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            }
+        }
+    });
 }
 
 // Filter submissions based on search and filters
@@ -690,6 +711,7 @@ function filterSubmissions() {
     }
     
     renderSubmissions();
+    document.querySelector('.submissions-scroll-container').scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Reset all filters
