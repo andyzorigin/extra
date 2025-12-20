@@ -17,8 +17,8 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 0,
-    "view_count": 402,
-    "unique_view_count": 141,
+    "view_count": 562,
+    "unique_view_count": 182,
     "vote_count": 0,
     "reply_count": 8,
     "unresolved_count": 0,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-09-27T14:25:47.508519+10:00",
-    "updated_at": "2025-12-09T06:03:23.331542+11:00",
+    "updated_at": "2025-12-21T09:26:29.324563+11:00",
     "deleted_at": null,
     "pinned_at": null,
     "anonymous_id": 0,
@@ -271,6 +271,14 @@
   },
   "users": [
     {
+      "id": 684517,
+      "role": "user",
+      "name": "Hong Joey",
+      "avatar": null,
+      "course_role": "staff",
+      "tutorials": {}
+    },
+    {
       "id": 647731,
       "role": "user",
       "name": "Wesley Kai Zheng",
@@ -300,14 +308,6 @@
       "name": "Shreyes Sridhara",
       "avatar": null,
       "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 684517,
-      "role": "user",
-      "name": "Hong Joey",
-      "avatar": null,
-      "course_role": "staff",
       "tutorials": {}
     }
   ]

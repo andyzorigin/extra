@@ -17,13 +17,13 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 1,
-    "view_count": 1639,
-    "unique_view_count": 343,
+    "view_count": 1671,
+    "unique_view_count": 345,
     "vote_count": 0,
     "reply_count": 19,
     "unresolved_count": 5,
     "is_locked": false,
-    "is_pinned": true,
+    "is_pinned": false,
     "is_private": false,
     "is_endorsed": false,
     "is_answered": false,
@@ -35,9 +35,9 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-09-02T03:27:51.139026+10:00",
-    "updated_at": "2025-12-08T21:42:07.286633+11:00",
+    "updated_at": "2025-12-21T07:40:00.08583+11:00",
     "deleted_at": null,
-    "pinned_at": "2025-09-02T03:27:51.138738+10:00",
+    "pinned_at": null,
     "anonymous_id": 0,
     "vote": 0,
     "is_seen": true,
@@ -570,33 +570,25 @@
   },
   "users": [
     {
-      "id": 647486,
+      "id": 892816,
       "role": "user",
-      "name": "Andrew Thein",
+      "name": "Shervin Goudarzi",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
     },
     {
-      "id": 903017,
+      "id": 1279818,
       "role": "user",
-      "name": "Haoyang Zhong",
+      "name": "Alonso Martinez",
       "avatar": null,
-      "course_role": "student",
+      "course_role": null,
       "tutorials": {}
     },
     {
-      "id": 904878,
+      "id": 963909,
       "role": "user",
-      "name": "Sufjan Fana",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 1720515,
-      "role": "user",
-      "name": "Zhanhui Zhou",
+      "name": "Kithmini Herath",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
@@ -610,17 +602,9 @@
       "tutorials": {}
     },
     {
-      "id": 622739,
+      "id": 903017,
       "role": "user",
-      "name": "Aaron Zheng",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 611320,
-      "role": "user",
-      "name": "Shreyes Sridhara",
+      "name": "Haoyang Zhong",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
@@ -634,11 +618,19 @@
       "tutorials": {}
     },
     {
-      "id": 1279818,
+      "id": 1756767,
       "role": "user",
-      "name": "Alonso Martinez",
+      "name": "Anirudh Bhatnagar",
       "avatar": null,
-      "course_role": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 622739,
+      "role": "user",
+      "name": "Aaron Zheng",
+      "avatar": null,
+      "course_role": "student",
       "tutorials": {}
     },
     {
@@ -650,9 +642,9 @@
       "tutorials": {}
     },
     {
-      "id": 1762463,
+      "id": 611320,
       "role": "user",
-      "name": "Eric Jin",
+      "name": "Shreyes Sridhara",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
@@ -666,17 +658,17 @@
       "tutorials": {}
     },
     {
-      "id": 892816,
+      "id": 1770931,
       "role": "user",
-      "name": "Shervin Goudarzi",
+      "name": "Fantine Mpacko Priso",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
     },
     {
-      "id": 1756767,
+      "id": 1720515,
       "role": "user",
-      "name": "Anirudh Bhatnagar",
+      "name": "Zhanhui Zhou",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
@@ -690,6 +682,14 @@
       "tutorials": {}
     },
     {
+      "id": 961692,
+      "role": "user",
+      "name": "Manhar Gupta",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
       "id": 220096,
       "role": "user",
       "name": "yao .",
@@ -698,25 +698,25 @@
       "tutorials": {}
     },
     {
-      "id": 1770931,
+      "id": 1762463,
       "role": "user",
-      "name": "Fantine Mpacko Priso",
+      "name": "Eric Jin",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
     },
     {
-      "id": 963909,
+      "id": 647486,
       "role": "user",
-      "name": "Kithmini Herath",
+      "name": "Andrew Thein",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
     },
     {
-      "id": 961692,
+      "id": 904878,
       "role": "user",
-      "name": "Manhar Gupta",
+      "name": "Sufjan Fana",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}

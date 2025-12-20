@@ -17,13 +17,13 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 9,
-    "view_count": 3942,
-    "unique_view_count": 279,
+    "view_count": 4493,
+    "unique_view_count": 282,
     "vote_count": 11,
-    "reply_count": 21,
-    "unresolved_count": 2,
+    "reply_count": 23,
+    "unresolved_count": 0,
     "is_locked": false,
-    "is_pinned": true,
+    "is_pinned": false,
     "is_private": false,
     "is_endorsed": false,
     "is_answered": false,
@@ -35,16 +35,16 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-09-15T09:06:25.131409+10:00",
-    "updated_at": "2025-12-09T07:21:29.894692+11:00",
+    "updated_at": "2025-12-20T17:39:13.934986+11:00",
     "deleted_at": null,
-    "pinned_at": "2025-09-15T09:06:25.130914+10:00",
+    "pinned_at": null,
     "anonymous_id": 0,
     "vote": 0,
     "is_seen": true,
     "is_starred": false,
     "is_watched": null,
     "glanced_at": "2025-11-02T10:28:46.781764+11:00",
-    "new_reply_count": 5,
+    "new_reply_count": 7,
     "duplicate_title": null,
     "answers": [],
     "comments": [
@@ -505,7 +505,7 @@
         "is_endorsed": false,
         "is_anonymous": false,
         "is_private": false,
-        "is_resolved": false,
+        "is_resolved": true,
         "created_by_bot_id": null,
         "created_at": "2025-12-04T09:55:30.312578+11:00",
         "updated_at": null,
@@ -532,7 +532,7 @@
         "is_endorsed": false,
         "is_anonymous": false,
         "is_private": false,
-        "is_resolved": false,
+        "is_resolved": true,
         "created_by_bot_id": null,
         "created_at": "2025-12-06T06:41:54.913886+11:00",
         "updated_at": "2025-12-07T19:30:16.459711+11:00",
@@ -591,7 +591,35 @@
                 "deleted_at": null,
                 "anonymous_id": 0,
                 "vote": 0,
-                "comments": []
+                "comments": [
+                  {
+                    "id": 17346921,
+                    "user_id": 606786,
+                    "course_id": 84647,
+                    "thread_id": 6961170,
+                    "original_id": null,
+                    "parent_id": 17229328,
+                    "editor_id": null,
+                    "number": 23,
+                    "type": "comment",
+                    "kind": "normal",
+                    "content": "<document version=\"2.0\"><paragraph>You are correct. We didn't think of this. And Ed leaves much to be desired, but campus forces us to use it. </paragraph></document>",
+                    "document": "You are correct. We didn't think of this. And Ed leaves much to be desired, but campus forces us to use it. ",
+                    "flag_count": 0,
+                    "vote_count": 0,
+                    "is_endorsed": false,
+                    "is_anonymous": false,
+                    "is_private": false,
+                    "is_resolved": false,
+                    "created_by_bot_id": null,
+                    "created_at": "2025-12-16T19:19:40.386525+11:00",
+                    "updated_at": null,
+                    "deleted_at": null,
+                    "anonymous_id": 0,
+                    "vote": 0,
+                    "comments": []
+                  }
+                ]
               }
             ]
           },
@@ -623,30 +651,49 @@
             "comments": []
           }
         ]
+      },
+      {
+        "id": 17280411,
+        "user_id": 901565,
+        "course_id": 84647,
+        "thread_id": 6961170,
+        "original_id": null,
+        "parent_id": null,
+        "editor_id": null,
+        "number": 22,
+        "type": "comment",
+        "kind": "normal",
+        "content": "<document version=\"2.0\"><paragraph>My group and I would like to claim Special Participation C for HW12.</paragraph></document>",
+        "document": "My group and I would like to claim Special Participation C for HW12.",
+        "flag_count": 0,
+        "vote_count": 0,
+        "is_endorsed": false,
+        "is_anonymous": false,
+        "is_private": false,
+        "is_resolved": true,
+        "created_by_bot_id": null,
+        "created_at": "2025-12-10T09:28:07.337697+11:00",
+        "updated_at": null,
+        "deleted_at": null,
+        "anonymous_id": 0,
+        "vote": 0,
+        "comments": []
       }
     ]
   },
   "users": [
     {
-      "id": 1751558,
+      "id": 1010497,
       "role": "user",
-      "name": "Hanna Roed",
+      "name": "Celine Tan",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
     },
     {
-      "id": 901565,
+      "id": 1751442,
       "role": "user",
-      "name": "Micah Mok",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 1553113,
-      "role": "user",
-      "name": "Nils Selte",
+      "name": "Jerry Xiao",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
@@ -656,6 +703,14 @@
       "role": "user",
       "name": "yao .",
       "avatar": "yB8ijKeuaSLtJToYxplC0HlFndR5_uiJL3iFuZVqJz4",
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 647432,
+      "role": "user",
+      "name": "Bruno Vieira",
+      "avatar": null,
       "course_role": "student",
       "tutorials": {}
     },
@@ -676,14 +731,6 @@
       "tutorials": {}
     },
     {
-      "id": 970785,
-      "role": "user",
-      "name": "Yuxiang Liu",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
       "id": 687839,
       "role": "user",
       "name": "Jordan Argel",
@@ -692,9 +739,17 @@
       "tutorials": {}
     },
     {
-      "id": 1010497,
+      "id": 970785,
       "role": "user",
-      "name": "Celine Tan",
+      "name": "Yuxiang Liu",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 1553113,
+      "role": "user",
+      "name": "Nils Selte",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
@@ -708,25 +763,25 @@
       "tutorials": {}
     },
     {
-      "id": 1751442,
-      "role": "user",
-      "name": "Jerry Xiao",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 647432,
-      "role": "user",
-      "name": "Bruno Vieira",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
       "id": 961809,
       "role": "user",
       "name": "Joe Berry",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 1751558,
+      "role": "user",
+      "name": "Hanna Roed",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 901565,
+      "role": "user",
+      "name": "Micah Mok",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}

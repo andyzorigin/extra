@@ -7,6 +7,7 @@ import json
 import os
 import sys
 import requests
+import time
 from datetime import datetime
 
 def download_ed_posts(course_id, token, output_dir="ed_posts"):
@@ -113,8 +114,13 @@ def download_ed_posts(course_id, token, output_dir="ed_posts"):
             if i % 10 == 0:
                 print(f"  ✓ {i}/{len(all_threads)} detailed posts...")
             
+            # Add delay to avoid rate limiting
+            time.sleep(0.5)
+            
         except Exception as e:
             print(f"  ⚠️  Error on thread {thread_id}: {e}")
+            # Wait longer on error (likely rate limit)
+            time.sleep(2)
             continue
     
     print(f"\n✓ Downloaded {success_count}/{len(all_threads)} detailed posts")

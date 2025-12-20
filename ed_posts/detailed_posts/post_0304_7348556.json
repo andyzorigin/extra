@@ -17,13 +17,13 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 2,
-    "view_count": 1446,
-    "unique_view_count": 213,
+    "view_count": 1538,
+    "unique_view_count": 217,
     "vote_count": 0,
     "reply_count": 47,
     "unresolved_count": 1,
     "is_locked": false,
-    "is_pinned": true,
+    "is_pinned": false,
     "is_private": false,
     "is_endorsed": false,
     "is_answered": false,
@@ -35,9 +35,9 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-11-22T07:25:02.363701+11:00",
-    "updated_at": "2025-12-09T05:06:52.750492+11:00",
+    "updated_at": "2025-12-18T18:15:24.136927+11:00",
     "deleted_at": null,
-    "pinned_at": "2025-11-22T07:25:02.363351+11:00",
+    "pinned_at": null,
     "anonymous_id": 0,
     "vote": 0,
     "is_seen": true,
@@ -1331,177 +1331,9 @@
   },
   "users": [
     {
-      "id": 227880,
-      "role": "user",
-      "name": "Minjune Kim",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 582128,
-      "role": "user",
-      "name": "Jacqueline Thibault",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 639518,
-      "role": "user",
-      "name": "Yu-Jen Lin",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 608657,
-      "role": "user",
-      "name": "Divya Ramesh",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 647486,
-      "role": "user",
-      "name": "Andrew Thein",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 954911,
-      "role": "user",
-      "name": "Rahul Bir",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 582199,
-      "role": "user",
-      "name": "Nicolas Rault-Wang",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 647651,
-      "role": "user",
-      "name": "Sammie Smith",
-      "avatar": "2GhF_FLUPw3_ah6AUrOe2GIYTrotSqoBlzSWoMo0CAU",
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 961692,
-      "role": "user",
-      "name": "Manhar Gupta",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 684517,
-      "role": "user",
-      "name": "Hong Joey",
-      "avatar": null,
-      "course_role": "staff",
-      "tutorials": {}
-    },
-    {
-      "id": 1288128,
-      "role": "user",
-      "name": "Iana Lin",
-      "avatar": "jk7klke73IRkUO6SrdFmreZxxOxdJeaxo6I2kgbWvcc",
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 647490,
-      "role": "user",
-      "name": "Vrushank Prakash",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 884337,
-      "role": "user",
-      "name": "David Yang",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
       "id": 961852,
       "role": "user",
       "name": "Kourosh Salahi",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 647373,
-      "role": "user",
-      "name": "Kian Hekmatnejad",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 1316471,
-      "role": "user",
-      "name": "Neel Kolhe",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 612133,
-      "role": "user",
-      "name": "Justin Li",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 639140,
-      "role": "user",
-      "name": "Grant Yang",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 607379,
-      "role": "user",
-      "name": "Mihir Rao",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 622831,
-      "role": "user",
-      "name": "Kabir Shah",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 607348,
-      "role": "user",
-      "name": "Arnav Dalal",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 1762341,
-      "role": "user",
-      "name": "WeiYi Zhang",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
@@ -1515,57 +1347,33 @@
       "tutorials": {}
     },
     {
-      "id": 862241,
+      "id": 622831,
       "role": "user",
-      "name": "Akshay Rao",
+      "name": "Kabir Shah",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
     },
     {
-      "id": 618212,
+      "id": 1751447,
       "role": "user",
-      "name": "Peyton Schales",
+      "name": "Moxin Tang",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
     },
     {
-      "id": 622699,
+      "id": 647373,
       "role": "user",
-      "name": "Shoumik Roychowdhury",
+      "name": "Kian Hekmatnejad",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
     },
     {
-      "id": 606786,
+      "id": 227880,
       "role": "user",
-      "name": "Anant Sahai",
-      "avatar": null,
-      "course_role": "admin",
-      "tutorials": {}
-    },
-    {
-      "id": 609384,
-      "role": "user",
-      "name": "Jaewon Chang",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 983743,
-      "role": "user",
-      "name": "Deena Sun",
-      "avatar": "_RohBrabmFwFozRkvqD3q27BN2asjF6xVYIe8wm-OKI",
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 1751442,
-      "role": "user",
-      "name": "Jerry Xiao",
+      "name": "Minjune Kim",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
@@ -1579,6 +1387,14 @@
       "tutorials": {}
     },
     {
+      "id": 983743,
+      "role": "user",
+      "name": "Deena Sun",
+      "avatar": "_RohBrabmFwFozRkvqD3q27BN2asjF6xVYIe8wm-OKI",
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
       "id": 959003,
       "role": "user",
       "name": "Oliver Chen",
@@ -1587,9 +1403,57 @@
       "tutorials": {}
     },
     {
-      "id": 647739,
+      "id": 639140,
       "role": "user",
-      "name": "Andrew Choy",
+      "name": "Grant Yang",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 607289,
+      "role": "user",
+      "name": "Diana Kohr",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 961692,
+      "role": "user",
+      "name": "Manhar Gupta",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 1762341,
+      "role": "user",
+      "name": "WeiYi Zhang",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 608657,
+      "role": "user",
+      "name": "Divya Ramesh",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 647651,
+      "role": "user",
+      "name": "Sammie Smith",
+      "avatar": "2GhF_FLUPw3_ah6AUrOe2GIYTrotSqoBlzSWoMo0CAU",
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 622699,
+      "role": "user",
+      "name": "Shoumik Roychowdhury",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
@@ -1600,6 +1464,46 @@
       "name": "Aryan Panda",
       "avatar": null,
       "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 1751442,
+      "role": "user",
+      "name": "Jerry Xiao",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 1316471,
+      "role": "user",
+      "name": "Neel Kolhe",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 618212,
+      "role": "user",
+      "name": "Peyton Schales",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 647486,
+      "role": "user",
+      "name": "Andrew Thein",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 606786,
+      "role": "user",
+      "name": "Anant Sahai",
+      "avatar": null,
+      "course_role": "admin",
       "tutorials": {}
     },
     {
@@ -1619,25 +1523,81 @@
       "tutorials": {}
     },
     {
-      "id": 1751447,
+      "id": 609384,
       "role": "user",
-      "name": "Moxin Tang",
+      "name": "Jaewon Chang",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
     },
     {
-      "id": 622714,
+      "id": 884337,
       "role": "user",
-      "name": "Merrick Zheng",
+      "name": "David Yang",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
     },
     {
-      "id": 607289,
+      "id": 684517,
       "role": "user",
-      "name": "Diana Kohr",
+      "name": "Hong Joey",
+      "avatar": null,
+      "course_role": "staff",
+      "tutorials": {}
+    },
+    {
+      "id": 639518,
+      "role": "user",
+      "name": "Yu-Jen Lin",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 647490,
+      "role": "user",
+      "name": "Vrushank Prakash",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 647575,
+      "role": "user",
+      "name": "Ender Ji",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 612133,
+      "role": "user",
+      "name": "Justin Li",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 1288128,
+      "role": "user",
+      "name": "Iana Lin",
+      "avatar": "jk7klke73IRkUO6SrdFmreZxxOxdJeaxo6I2kgbWvcc",
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 607379,
+      "role": "user",
+      "name": "Mihir Rao",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 582199,
+      "role": "user",
+      "name": "Nicolas Rault-Wang",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
@@ -1651,9 +1611,17 @@
       "tutorials": {}
     },
     {
-      "id": 622883,
+      "id": 862241,
       "role": "user",
-      "name": "Aaryan Chandna",
+      "name": "Akshay Rao",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 647739,
+      "role": "user",
+      "name": "Andrew Choy",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
@@ -1667,9 +1635,41 @@
       "tutorials": {}
     },
     {
-      "id": 647575,
+      "id": 607348,
       "role": "user",
-      "name": "Ender Ji",
+      "name": "Arnav Dalal",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 622714,
+      "role": "user",
+      "name": "Merrick Zheng",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 954911,
+      "role": "user",
+      "name": "Rahul Bir",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 582128,
+      "role": "user",
+      "name": "Jacqueline Thibault",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 622883,
+      "role": "user",
+      "name": "Aaryan Chandna",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}

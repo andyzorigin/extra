@@ -17,11 +17,11 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 1,
-    "view_count": 393,
-    "unique_view_count": 134,
+    "view_count": 439,
+    "unique_view_count": 141,
     "vote_count": 0,
     "reply_count": 6,
-    "unresolved_count": 1,
+    "unresolved_count": 0,
     "is_locked": false,
     "is_pinned": false,
     "is_private": false,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-09-20T15:11:26.238996+10:00",
-    "updated_at": "2025-12-09T07:17:10.492385+11:00",
+    "updated_at": "2025-12-20T03:18:47.802896+11:00",
     "deleted_at": null,
     "pinned_at": null,
     "anonymous_id": 0,
@@ -172,14 +172,14 @@
         "content": "<document version=\"2.0\"><paragraph>Can I understand this question as when the loss function can be written as an expectation, according to the meaning of this question, its gradient is also in the expected form, so SGD is similar to Monte Carlo simulation, and it'll perform well?</paragraph></document>",
         "document": "Can I understand this question as when the loss function can be written as an expectation, according to the meaning of this question, its gradient is also in the expected form, so SGD is similar to Monte Carlo simulation, and it'll perform well?",
         "flag_count": 0,
-        "vote_count": 1,
+        "vote_count": 2,
         "is_endorsed": false,
         "is_anonymous": false,
         "is_private": false,
-        "is_resolved": false,
+        "is_resolved": true,
         "created_by_bot_id": null,
         "created_at": "2025-09-30T12:12:30.962859+10:00",
-        "updated_at": "2025-09-30T13:18:54.055233+10:00",
+        "updated_at": "2025-12-14T12:49:55.143924+11:00",
         "deleted_at": null,
         "anonymous_id": 0,
         "vote": 0,
@@ -216,14 +216,6 @@
     ]
   },
   "users": [
-    {
-      "id": 967449,
-      "role": "user",
-      "name": "Sultan Daniels",
-      "avatar": null,
-      "course_role": "staff",
-      "tutorials": {}
-    },
     {
       "id": 1308098,
       "role": "user",
@@ -262,6 +254,14 @@
       "name": "Jincheng Ou",
       "avatar": null,
       "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 967449,
+      "role": "user",
+      "name": "Sultan Daniels",
+      "avatar": null,
+      "course_role": "staff",
       "tutorials": {}
     }
   ]

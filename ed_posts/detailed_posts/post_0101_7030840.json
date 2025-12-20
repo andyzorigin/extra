@@ -17,8 +17,8 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 0,
-    "view_count": 383,
-    "unique_view_count": 153,
+    "view_count": 426,
+    "unique_view_count": 162,
     "vote_count": 1,
     "reply_count": 5,
     "unresolved_count": 2,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-09-28T11:42:41.568091+10:00",
-    "updated_at": "2025-12-09T06:52:20.759084+11:00",
+    "updated_at": "2025-12-20T17:43:39.84324+11:00",
     "deleted_at": null,
     "pinned_at": null,
     "anonymous_id": 0,
@@ -189,19 +189,19 @@
   },
   "users": [
     {
-      "id": 606786,
-      "role": "user",
-      "name": "Anant Sahai",
-      "avatar": null,
-      "course_role": "admin",
-      "tutorials": {}
-    },
-    {
       "id": 961740,
       "role": "user",
       "name": "Nyx Iskandar",
       "avatar": "7bglt12nMRpS1eGVSGOKu_aa87zXtkMjTBUvDgatgaY",
       "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 606786,
+      "role": "user",
+      "name": "Anant Sahai",
+      "avatar": null,
+      "course_role": "admin",
       "tutorials": {}
     }
   ]

@@ -17,8 +17,8 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 0,
-    "view_count": 230,
-    "unique_view_count": 99,
+    "view_count": 247,
+    "unique_view_count": 101,
     "vote_count": 0,
     "reply_count": 1,
     "unresolved_count": 1,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-11-28T17:25:53.685301+11:00",
-    "updated_at": "2025-12-08T13:48:13.569506+11:00",
+    "updated_at": "2025-12-18T18:16:02.457989+11:00",
     "deleted_at": null,
     "pinned_at": null,
     "anonymous_id": 0,
@@ -79,19 +79,19 @@
   },
   "users": [
     {
-      "id": 963333,
-      "role": "user",
-      "name": "Guohao Lv",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
       "id": 606786,
       "role": "user",
       "name": "Anant Sahai",
       "avatar": null,
       "course_role": "admin",
+      "tutorials": {}
+    },
+    {
+      "id": 963333,
+      "role": "user",
+      "name": "Guohao Lv",
+      "avatar": null,
+      "course_role": "student",
       "tutorials": {}
     }
   ]

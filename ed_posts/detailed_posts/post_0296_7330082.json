@@ -16,12 +16,12 @@
     "subcategory": "",
     "subsubcategory": "",
     "flag_count": 0,
-    "star_count": 1,
-    "view_count": 1777,
-    "unique_view_count": 210,
+    "star_count": 2,
+    "view_count": 2047,
+    "unique_view_count": 217,
     "vote_count": 0,
     "reply_count": 18,
-    "unresolved_count": 1,
+    "unresolved_count": 0,
     "is_locked": false,
     "is_pinned": true,
     "is_private": false,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-11-19T05:23:44.405993+11:00",
-    "updated_at": "2025-12-09T07:19:30.799332+11:00",
+    "updated_at": "2025-12-21T09:24:33.473589+11:00",
     "deleted_at": null,
     "pinned_at": "2025-11-19T05:23:44.40567+11:00",
     "anonymous_id": 0,
@@ -43,8 +43,8 @@
     "is_seen": true,
     "is_starred": false,
     "is_watched": null,
-    "glanced_at": "2025-11-24T05:28:25.900153+11:00",
-    "new_reply_count": 3,
+    "glanced_at": "2025-12-10T04:19:20.109289+11:00",
+    "new_reply_count": 0,
     "duplicate_title": null,
     "answers": [],
     "comments": [
@@ -505,7 +505,7 @@
         "is_endorsed": false,
         "is_anonymous": false,
         "is_private": false,
-        "is_resolved": false,
+        "is_resolved": true,
         "created_by_bot_id": null,
         "created_at": "2025-12-05T11:01:27.702571+11:00",
         "updated_at": "2025-12-05T14:52:34.664423+11:00",
@@ -545,19 +545,11 @@
   },
   "users": [
     {
-      "id": 906474,
+      "id": 610129,
       "role": "user",
-      "name": "Ben Yu",
+      "name": "Garv Goswami",
       "avatar": null,
       "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 684517,
-      "role": "user",
-      "name": "Hong Joey",
-      "avatar": null,
-      "course_role": "staff",
       "tutorials": {}
     },
     {
@@ -577,27 +569,19 @@
       "tutorials": {}
     },
     {
-      "id": 606786,
+      "id": 663744,
       "role": "user",
-      "name": "Anant Sahai",
-      "avatar": null,
-      "course_role": "admin",
-      "tutorials": {}
-    },
-    {
-      "id": 915218,
-      "role": "user",
-      "name": "Ijin Yu",
+      "name": "Vongani Maluleke",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
     },
     {
-      "id": 963909,
+      "id": 684517,
       "role": "user",
-      "name": "Kithmini Herath",
+      "name": "Hong Joey",
       "avatar": null,
-      "course_role": "student",
+      "course_role": "staff",
       "tutorials": {}
     },
     {
@@ -609,6 +593,22 @@
       "tutorials": {}
     },
     {
+      "id": 884337,
+      "role": "user",
+      "name": "David Yang",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 606786,
+      "role": "user",
+      "name": "Anant Sahai",
+      "avatar": null,
+      "course_role": "admin",
+      "tutorials": {}
+    },
+    {
       "id": 622864,
       "role": "user",
       "name": "Sriram Srivatsan",
@@ -617,9 +617,25 @@
       "tutorials": {}
     },
     {
-      "id": 884337,
+      "id": 1770931,
       "role": "user",
-      "name": "David Yang",
+      "name": "Fantine Mpacko Priso",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 915218,
+      "role": "user",
+      "name": "Ijin Yu",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 906474,
+      "role": "user",
+      "name": "Ben Yu",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
@@ -633,25 +649,9 @@
       "tutorials": {}
     },
     {
-      "id": 610129,
+      "id": 963909,
       "role": "user",
-      "name": "Garv Goswami",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 1770931,
-      "role": "user",
-      "name": "Fantine Mpacko Priso",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 663744,
-      "role": "user",
-      "name": "Vongani Maluleke",
+      "name": "Kithmini Herath",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}

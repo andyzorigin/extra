@@ -16,11 +16,11 @@
     "subcategory": "",
     "subsubcategory": "",
     "flag_count": 0,
-    "star_count": 0,
-    "view_count": 220,
-    "unique_view_count": 95,
+    "star_count": 1,
+    "view_count": 257,
+    "unique_view_count": 106,
     "vote_count": 0,
-    "reply_count": 6,
+    "reply_count": 7,
     "unresolved_count": 0,
     "is_locked": false,
     "is_pinned": false,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-10-04T16:55:41.313748+10:00",
-    "updated_at": "2025-12-08T12:45:23.735394+11:00",
+    "updated_at": "2025-12-18T18:11:29.626081+11:00",
     "deleted_at": null,
     "pinned_at": null,
     "anonymous_id": 0,
@@ -152,7 +152,35 @@
                 "deleted_at": null,
                 "anonymous_id": 0,
                 "vote": 0,
-                "comments": []
+                "comments": [
+                  {
+                    "id": 17300125,
+                    "user_id": 607379,
+                    "course_id": 84647,
+                    "thread_id": 7069967,
+                    "original_id": null,
+                    "parent_id": 16586127,
+                    "editor_id": null,
+                    "number": 7,
+                    "type": "comment",
+                    "kind": "normal",
+                    "content": "<document version=\"2.0\"><paragraph>The way I thought about it was it's applying the kernel in a larger-sized version of the input:</paragraph><figure><image src=\"https://static.us.edusercontent.com/files/fCiXy4aoSCKZcT6cNf0Ecrjg\" width=\"590\" height=\"245.83333333333331\"/></figure><paragraph>the 2x2 kernel is not flipped in any position, but for the -1 in the input, the kernel is placed in the top left corner, because that's where the -1 is in the input. The new matrix is 3x3 because the stride is 1. Similarly for the other values in the input, the kernel is placed in their respective positions, but the kernel itself is still the same 2x2 that is not flipped.</paragraph></document>",
+                    "document": "The way I thought about it was it's applying the kernel in a larger-sized version of the input:\n\nthe 2x2 kernel is not flipped in any position, but for the -1 in the input, the kernel is placed in the top left corner, because that's where the -1 is in the input. The new matrix is 3x3 because the stride is 1. Similarly for the other values in the input, the kernel is placed in their respective positions, but the kernel itself is still the same 2x2 that is not flipped.",
+                    "flag_count": 0,
+                    "vote_count": 0,
+                    "is_endorsed": false,
+                    "is_anonymous": false,
+                    "is_private": false,
+                    "is_resolved": false,
+                    "created_by_bot_id": null,
+                    "created_at": "2025-12-11T18:38:50.449145+11:00",
+                    "updated_at": null,
+                    "deleted_at": null,
+                    "anonymous_id": 0,
+                    "vote": 0,
+                    "comments": []
+                  }
+                ]
               }
             ]
           }
@@ -217,19 +245,19 @@
   },
   "users": [
     {
-      "id": 1759011,
-      "role": "user",
-      "name": "Zhangzhi 'csrookie' Xiong",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
       "id": 591161,
       "role": "user",
       "name": "Lance Mathias",
       "avatar": "hugfQz9akmjumXmcJDQlo70ZsytZCRpuJL_KCTrbmYU",
       "course_role": "staff",
+      "tutorials": {}
+    },
+    {
+      "id": 607379,
+      "role": "user",
+      "name": "Mihir Rao",
+      "avatar": null,
+      "course_role": "student",
       "tutorials": {}
     },
     {
@@ -262,6 +290,14 @@
       "name": "Kevin Frans",
       "avatar": null,
       "course_role": "staff",
+      "tutorials": {}
+    },
+    {
+      "id": 1759011,
+      "role": "user",
+      "name": "Zhangzhi 'csrookie' Xiong",
+      "avatar": null,
+      "course_role": "student",
       "tutorials": {}
     }
   ]

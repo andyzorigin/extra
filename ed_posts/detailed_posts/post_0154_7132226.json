@@ -17,8 +17,8 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 0,
-    "view_count": 1728,
-    "unique_view_count": 214,
+    "view_count": 1773,
+    "unique_view_count": 218,
     "vote_count": 1,
     "reply_count": 11,
     "unresolved_count": 0,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-10-15T10:01:48.797649+11:00",
-    "updated_at": "2025-12-08T19:34:14.585121+11:00",
+    "updated_at": "2025-12-19T13:15:42.031581+11:00",
     "deleted_at": null,
     "pinned_at": "2025-10-15T10:01:48.797118+11:00",
     "anonymous_id": 0,
@@ -350,6 +350,38 @@
   },
   "users": [
     {
+      "id": 606786,
+      "role": "user",
+      "name": "Anant Sahai",
+      "avatar": null,
+      "course_role": "admin",
+      "tutorials": {}
+    },
+    {
+      "id": 749355,
+      "role": "user",
+      "name": "Kevin Tseng",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 647731,
+      "role": "user",
+      "name": "Wesley Kai Zheng",
+      "avatar": "ZBNP1K_5CCZHa3ed1xU_MsPhjPukaJIxOJ26ZPwrO5k",
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 957592,
+      "role": "user",
+      "name": "Abdelaziz Mohamed",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
       "id": 508873,
       "role": "user",
       "name": "Manan Roongta",
@@ -374,33 +406,9 @@
       "tutorials": {}
     },
     {
-      "id": 606786,
-      "role": "user",
-      "name": "Anant Sahai",
-      "avatar": null,
-      "course_role": "admin",
-      "tutorials": {}
-    },
-    {
       "id": 921495,
       "role": "user",
       "name": "Vijay Kethanaboyina",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 749355,
-      "role": "user",
-      "name": "Kevin Tseng",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 957592,
-      "role": "user",
-      "name": "Abdelaziz Mohamed",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
@@ -418,14 +426,6 @@
       "role": "user",
       "name": "Michael Ofengenden",
       "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 647731,
-      "role": "user",
-      "name": "Wesley Kai Zheng",
-      "avatar": "ZBNP1K_5CCZHa3ed1xU_MsPhjPukaJIxOJ26ZPwrO5k",
       "course_role": "student",
       "tutorials": {}
     }

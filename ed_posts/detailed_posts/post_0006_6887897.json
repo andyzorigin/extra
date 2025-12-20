@@ -17,8 +17,8 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 0,
-    "view_count": 2160,
-    "unique_view_count": 370,
+    "view_count": 2368,
+    "unique_view_count": 374,
     "vote_count": 1,
     "reply_count": 21,
     "unresolved_count": 1,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-08-29T09:16:51.902539+10:00",
-    "updated_at": "2025-12-08T18:09:46.416061+11:00",
+    "updated_at": "2025-12-21T09:05:09.731591+11:00",
     "deleted_at": null,
     "pinned_at": null,
     "anonymous_id": 0,
@@ -632,26 +632,10 @@
   },
   "users": [
     {
-      "id": 928535,
+      "id": 585691,
       "role": "user",
-      "name": "Jacky Wong",
+      "name": "Steven-Jethro Chan",
       "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 1770931,
-      "role": "user",
-      "name": "Fantine Mpacko Priso",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 647731,
-      "role": "user",
-      "name": "Wesley Kai Zheng",
-      "avatar": "ZBNP1K_5CCZHa3ed1xU_MsPhjPukaJIxOJ26ZPwrO5k",
       "course_role": "student",
       "tutorials": {}
     },
@@ -672,22 +656,6 @@
       "tutorials": {}
     },
     {
-      "id": 1751514,
-      "role": "user",
-      "name": "Linjia Liu",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 1759011,
-      "role": "user",
-      "name": "Zhangzhi 'csrookie' Xiong",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
       "id": 1696026,
       "role": "user",
       "name": "Song-Ze Yu",
@@ -696,9 +664,9 @@
       "tutorials": {}
     },
     {
-      "id": 647698,
+      "id": 1770931,
       "role": "user",
-      "name": "Athul Krishnan",
+      "name": "Fantine Mpacko Priso",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
@@ -712,18 +680,50 @@
       "tutorials": {}
     },
     {
-      "id": 585691,
+      "id": 983743,
       "role": "user",
-      "name": "Steven-Jethro Chan",
+      "name": "Deena Sun",
+      "avatar": "_RohBrabmFwFozRkvqD3q27BN2asjF6xVYIe8wm-OKI",
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 1759011,
+      "role": "user",
+      "name": "Zhangzhi 'csrookie' Xiong",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
     },
     {
-      "id": 983743,
+      "id": 1751514,
       "role": "user",
-      "name": "Deena Sun",
-      "avatar": "_RohBrabmFwFozRkvqD3q27BN2asjF6xVYIe8wm-OKI",
+      "name": "Linjia Liu",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 647698,
+      "role": "user",
+      "name": "Athul Krishnan",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 928535,
+      "role": "user",
+      "name": "Jacky Wong",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 647731,
+      "role": "user",
+      "name": "Wesley Kai Zheng",
+      "avatar": "ZBNP1K_5CCZHa3ed1xU_MsPhjPukaJIxOJ26ZPwrO5k",
       "course_role": "student",
       "tutorials": {}
     }

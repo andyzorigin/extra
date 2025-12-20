@@ -17,8 +17,8 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 0,
-    "view_count": 540,
-    "unique_view_count": 169,
+    "view_count": 571,
+    "unique_view_count": 176,
     "vote_count": 0,
     "reply_count": 7,
     "unresolved_count": 2,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-09-06T10:55:29.916796+10:00",
-    "updated_at": "2025-12-08T10:04:27.366774+11:00",
+    "updated_at": "2025-12-18T18:10:22.102095+11:00",
     "deleted_at": null,
     "pinned_at": null,
     "anonymous_id": 0,
@@ -244,30 +244,6 @@
   },
   "users": [
     {
-      "id": 967449,
-      "role": "user",
-      "name": "Sultan Daniels",
-      "avatar": null,
-      "course_role": "staff",
-      "tutorials": {}
-    },
-    {
-      "id": 1308098,
-      "role": "user",
-      "name": "Junya Tsuneishi",
-      "avatar": "hQL842aQoMcFBXeuZZMfYXleblYte8x0Fy08VFPvoyE",
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 606786,
-      "role": "user",
-      "name": "Anant Sahai",
-      "avatar": null,
-      "course_role": "admin",
-      "tutorials": {}
-    },
-    {
       "id": 833750,
       "role": "user",
       "name": "Nazar Ospanov",
@@ -297,6 +273,30 @@
       "name": "Zhangzhi 'csrookie' Xiong",
       "avatar": null,
       "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 967449,
+      "role": "user",
+      "name": "Sultan Daniels",
+      "avatar": null,
+      "course_role": "staff",
+      "tutorials": {}
+    },
+    {
+      "id": 1308098,
+      "role": "user",
+      "name": "Junya Tsuneishi",
+      "avatar": "hQL842aQoMcFBXeuZZMfYXleblYte8x0Fy08VFPvoyE",
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 606786,
+      "role": "user",
+      "name": "Anant Sahai",
+      "avatar": null,
+      "course_role": "admin",
       "tutorials": {}
     }
   ]

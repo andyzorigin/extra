@@ -150,10 +150,15 @@ def parse_post(post_file: Path) -> Dict[str, Any]:
     
     # Extract participation type
     title = thread['title']
+    
+    # Filter out Extra Credit posts
+    if 'extra credit' in title.lower():
+        return None
+    
     participation_type = None
-    if 'Special Participation A' in title:
+    if 'Special Participation A' in title or 'Participation A' in title:
         participation_type = 'A'
-    elif 'Special Participation B' in title:
+    elif 'Special Participation B' in title or 'Participation B' in title:
         participation_type = 'B'
     
     if not participation_type:
@@ -195,8 +200,8 @@ def parse_post(post_file: Path) -> Dict[str, Any]:
 
 def main():
     """Main function to parse all posts."""
-    posts_dir = Path('/Users/anz/school/deep learning - cs282a/extra/ed_posts/detailed_posts')
-    output_dir = Path('/Users/anz/school/deep learning - cs282a/extra/website_data')
+    posts_dir = Path('/Users/lencini/Documents/2025:2026/CS 182/extra/ed_posts/detailed_posts')
+    output_dir = Path('/Users/lencini/Documents/2025:2026/CS 182/extra/website_data')
     output_dir.mkdir(exist_ok=True)
     
     participation_a = []

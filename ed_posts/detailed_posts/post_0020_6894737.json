@@ -17,7 +17,7 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 1,
-    "view_count": 1058,
+    "view_count": 1078,
     "unique_view_count": 355,
     "vote_count": 13,
     "reply_count": 5,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-08-31T13:09:03.195661+10:00",
-    "updated_at": "2025-12-08T19:52:25.664472+11:00",
+    "updated_at": "2025-12-21T07:39:57.651512+11:00",
     "deleted_at": null,
     "pinned_at": null,
     "anonymous_id": 0,
@@ -189,6 +189,22 @@
   },
   "users": [
     {
+      "id": 1278288,
+      "role": "user",
+      "name": "Talon Meyer",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 941542,
+      "role": "user",
+      "name": "Hanyang Gu",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
       "id": 508873,
       "role": "user",
       "name": "Manan Roongta",
@@ -208,22 +224,6 @@
       "id": 1751514,
       "role": "user",
       "name": "Linjia Liu",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 1278288,
-      "role": "user",
-      "name": "Talon Meyer",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 941542,
-      "role": "user",
-      "name": "Hanyang Gu",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}

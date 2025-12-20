@@ -17,13 +17,13 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 2,
-    "view_count": 471,
-    "unique_view_count": 157,
+    "view_count": 525,
+    "unique_view_count": 167,
     "vote_count": 1,
     "reply_count": 2,
     "unresolved_count": 0,
     "is_locked": false,
-    "is_pinned": true,
+    "is_pinned": false,
     "is_private": false,
     "is_endorsed": false,
     "is_answered": false,
@@ -35,9 +35,9 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-10-15T06:31:21.604832+11:00",
-    "updated_at": "2025-12-09T05:50:29.697772+11:00",
+    "updated_at": "2025-12-20T17:24:06.438228+11:00",
     "deleted_at": null,
-    "pinned_at": "2025-10-15T06:31:21.604442+11:00",
+    "pinned_at": null,
     "anonymous_id": 0,
     "vote": 0,
     "is_seen": true,
@@ -107,14 +107,6 @@
   },
   "users": [
     {
-      "id": 591161,
-      "role": "user",
-      "name": "Lance Mathias",
-      "avatar": "hugfQz9akmjumXmcJDQlo70ZsytZCRpuJL_KCTrbmYU",
-      "course_role": "staff",
-      "tutorials": {}
-    },
-    {
       "id": 967944,
       "role": "user",
       "name": "Kevin Frans",
@@ -128,6 +120,14 @@
       "name": "Jason Guo",
       "avatar": null,
       "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 591161,
+      "role": "user",
+      "name": "Lance Mathias",
+      "avatar": "hugfQz9akmjumXmcJDQlo70ZsytZCRpuJL_KCTrbmYU",
+      "course_role": "staff",
       "tutorials": {}
     }
   ]

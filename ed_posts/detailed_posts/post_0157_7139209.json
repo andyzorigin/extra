@@ -17,11 +17,11 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 0,
-    "view_count": 352,
-    "unique_view_count": 147,
+    "view_count": 535,
+    "unique_view_count": 182,
     "vote_count": 0,
-    "reply_count": 0,
-    "unresolved_count": 0,
+    "reply_count": 1,
+    "unresolved_count": 1,
     "is_locked": false,
     "is_pinned": false,
     "is_private": false,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-10-16T10:43:45.603854+11:00",
-    "updated_at": "2025-12-09T05:21:10.618641+11:00",
+    "updated_at": "2025-12-21T09:06:02.575984+11:00",
     "deleted_at": null,
     "pinned_at": null,
     "anonymous_id": 0,
@@ -44,10 +44,38 @@
     "is_starred": false,
     "is_watched": null,
     "glanced_at": "2025-10-16T11:17:00.216098+11:00",
-    "new_reply_count": 0,
+    "new_reply_count": 1,
     "duplicate_title": null,
     "answers": [],
-    "comments": []
+    "comments": [
+      {
+        "id": 17299750,
+        "user_id": 639518,
+        "course_id": 84647,
+        "thread_id": 7139209,
+        "original_id": null,
+        "parent_id": null,
+        "editor_id": null,
+        "number": 1,
+        "type": "comment",
+        "kind": "normal",
+        "content": "<document version=\"2.0\"><paragraph>Sharing my notes for Lectures 12 &amp; 13</paragraph><paragraph>Note: I combined my own class notes with the lecture slides and used an LLM to help generate the final summary.</paragraph><paragraph>Hope this is helpful!</paragraph><file url=\"https://static.us.edusercontent.com/files/0JwOCz2plgYv8ShVGL66fCkV\" filename=\"lec12-13_GNN_chatgpt.pdf\"/></document>",
+        "document": "Sharing my notes for Lectures 12 & 13\n\nNote: I combined my own class notes with the lecture slides and used an LLM to help generate the final summary.\n\nHope this is helpful!",
+        "flag_count": 0,
+        "vote_count": 1,
+        "is_endorsed": false,
+        "is_anonymous": false,
+        "is_private": false,
+        "is_resolved": false,
+        "created_by_bot_id": null,
+        "created_at": "2025-12-11T17:31:43.971455+11:00",
+        "updated_at": "2025-12-17T08:41:05.608314+11:00",
+        "deleted_at": null,
+        "anonymous_id": 0,
+        "vote": 0,
+        "comments": []
+      }
+    ]
   },
   "users": [
     {
@@ -56,6 +84,14 @@
       "name": "Anant Sahai",
       "avatar": null,
       "course_role": "admin",
+      "tutorials": {}
+    },
+    {
+      "id": 639518,
+      "role": "user",
+      "name": "Yu-Jen Lin",
+      "avatar": null,
+      "course_role": "student",
       "tutorials": {}
     }
   ]

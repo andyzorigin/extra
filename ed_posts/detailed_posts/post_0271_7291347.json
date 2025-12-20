@@ -17,8 +17,8 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 1,
-    "view_count": 796,
-    "unique_view_count": 157,
+    "view_count": 1103,
+    "unique_view_count": 202,
     "vote_count": 0,
     "reply_count": 7,
     "unresolved_count": 4,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-11-11T17:38:30.747375+11:00",
-    "updated_at": "2025-12-09T01:17:05.393874+11:00",
+    "updated_at": "2025-12-21T09:23:45.95889+11:00",
     "deleted_at": null,
     "pinned_at": null,
     "anonymous_id": 0,
@@ -43,7 +43,7 @@
     "is_seen": true,
     "is_starred": false,
     "is_watched": null,
-    "glanced_at": "2025-12-08T17:24:04.554355+11:00",
+    "glanced_at": "2025-12-11T05:04:05.285932+11:00",
     "new_reply_count": 0,
     "duplicate_title": null,
     "answers": [],
@@ -243,6 +243,14 @@
   },
   "users": [
     {
+      "id": 967449,
+      "role": "user",
+      "name": "Sultan Daniels",
+      "avatar": null,
+      "course_role": "staff",
+      "tutorials": {}
+    },
+    {
       "id": 1308098,
       "role": "user",
       "name": "Junya Tsuneishi",
@@ -288,14 +296,6 @@
       "name": "Fantine Mpacko Priso",
       "avatar": null,
       "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 967449,
-      "role": "user",
-      "name": "Sultan Daniels",
-      "avatar": null,
-      "course_role": "staff",
       "tutorials": {}
     }
   ]

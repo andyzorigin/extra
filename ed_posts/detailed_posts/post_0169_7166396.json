@@ -17,8 +17,8 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 0,
-    "view_count": 316,
-    "unique_view_count": 111,
+    "view_count": 344,
+    "unique_view_count": 118,
     "vote_count": 0,
     "reply_count": 3,
     "unresolved_count": 0,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-10-21T05:49:13.820227+11:00",
-    "updated_at": "2025-12-08T09:30:33.262699+11:00",
+    "updated_at": "2025-12-18T18:12:38.586929+11:00",
     "deleted_at": null,
     "pinned_at": null,
     "anonymous_id": 0,
@@ -115,14 +115,14 @@
             "content": "<document version=\"2.0\"><paragraph>Yes, you are right, I believe that is an error in the problem description. The MAE works by defining a reconstruction loss on the <italic>masked</italic> features (as the unmasked features are trivially predictable)</paragraph></document>",
             "document": "Yes, you are right, I believe that is an error in the problem description. The MAE works by defining a reconstruction loss on the masked features (as the unmasked features are trivially predictable)",
             "flag_count": 0,
-            "vote_count": 0,
+            "vote_count": 1,
             "is_endorsed": false,
             "is_anonymous": false,
             "is_private": false,
             "is_resolved": false,
             "created_by_bot_id": null,
             "created_at": "2025-10-23T10:11:47.976302+11:00",
-            "updated_at": "2025-10-23T10:11:56.852741+11:00",
+            "updated_at": "2025-12-09T15:26:39.627258+11:00",
             "deleted_at": null,
             "anonymous_id": 0,
             "vote": 0,
@@ -133,6 +133,14 @@
     ]
   },
   "users": [
+    {
+      "id": 591161,
+      "role": "user",
+      "name": "Lance Mathias",
+      "avatar": "hugfQz9akmjumXmcJDQlo70ZsytZCRpuJL_KCTrbmYU",
+      "course_role": "staff",
+      "tutorials": {}
+    },
     {
       "id": 1294638,
       "role": "user",
@@ -146,14 +154,6 @@
       "role": "user",
       "name": "Kevin Frans",
       "avatar": null,
-      "course_role": "staff",
-      "tutorials": {}
-    },
-    {
-      "id": 591161,
-      "role": "user",
-      "name": "Lance Mathias",
-      "avatar": "hugfQz9akmjumXmcJDQlo70ZsytZCRpuJL_KCTrbmYU",
       "course_role": "staff",
       "tutorials": {}
     }

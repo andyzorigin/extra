@@ -16,9 +16,9 @@
     "subcategory": "",
     "subsubcategory": "",
     "flag_count": 0,
-    "star_count": 1,
-    "view_count": 860,
-    "unique_view_count": 169,
+    "star_count": 0,
+    "view_count": 1100,
+    "unique_view_count": 193,
     "vote_count": 3,
     "reply_count": 11,
     "unresolved_count": 0,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-12-05T16:21:12.097369+11:00",
-    "updated_at": "2025-12-09T07:19:33.131055+11:00",
+    "updated_at": "2025-12-21T10:10:54.871388+11:00",
     "deleted_at": null,
     "pinned_at": "2025-12-05T16:21:12.096862+11:00",
     "anonymous_id": 0,
@@ -357,14 +357,6 @@
   },
   "users": [
     {
-      "id": 961692,
-      "role": "user",
-      "name": "Manhar Gupta",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
       "id": 1250341,
       "role": "user",
       "name": "Alex Proshkin",
@@ -384,6 +376,14 @@
       "id": 508873,
       "role": "user",
       "name": "Manan Roongta",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 961692,
+      "role": "user",
+      "name": "Manhar Gupta",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}

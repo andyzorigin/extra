@@ -17,8 +17,8 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 0,
-    "view_count": 1513,
-    "unique_view_count": 330,
+    "view_count": 1651,
+    "unique_view_count": 339,
     "vote_count": 1,
     "reply_count": 3,
     "unresolved_count": 1,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-09-03T09:18:48.709917+10:00",
-    "updated_at": "2025-12-08T18:09:25.83193+11:00",
+    "updated_at": "2025-12-21T09:05:18.543507+11:00",
     "deleted_at": null,
     "pinned_at": null,
     "anonymous_id": 0,
@@ -134,22 +134,6 @@
   },
   "users": [
     {
-      "id": 606786,
-      "role": "user",
-      "name": "Anant Sahai",
-      "avatar": null,
-      "course_role": "admin",
-      "tutorials": {}
-    },
-    {
-      "id": 687839,
-      "role": "user",
-      "name": "Jordan Argel",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
       "id": 1689319,
       "role": "user",
       "name": "Shenrui Wu",
@@ -169,6 +153,22 @@
       "id": 915218,
       "role": "user",
       "name": "Ijin Yu",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 606786,
+      "role": "user",
+      "name": "Anant Sahai",
+      "avatar": null,
+      "course_role": "admin",
+      "tutorials": {}
+    },
+    {
+      "id": 687839,
+      "role": "user",
+      "name": "Jordan Argel",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}

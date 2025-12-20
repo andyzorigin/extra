@@ -17,13 +17,13 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 0,
-    "view_count": 754,
-    "unique_view_count": 218,
+    "view_count": 800,
+    "unique_view_count": 220,
     "vote_count": 3,
     "reply_count": 4,
     "unresolved_count": 0,
     "is_locked": false,
-    "is_pinned": true,
+    "is_pinned": false,
     "is_private": false,
     "is_endorsed": false,
     "is_answered": false,
@@ -35,9 +35,9 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-11-07T06:04:53.599999+11:00",
-    "updated_at": "2025-12-08T17:46:55.431068+11:00",
+    "updated_at": "2025-12-20T13:57:15.062691+11:00",
     "deleted_at": null,
-    "pinned_at": "2025-11-07T06:04:53.599445+11:00",
+    "pinned_at": null,
     "anonymous_id": 0,
     "vote": 0,
     "is_seen": true,
@@ -162,14 +162,6 @@
   },
   "users": [
     {
-      "id": 1759011,
-      "role": "user",
-      "name": "Zhangzhi 'csrookie' Xiong",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
       "id": 650420,
       "role": "user",
       "name": "Gireeja Ranade",
@@ -181,6 +173,14 @@
       "id": 1751442,
       "role": "user",
       "name": "Jerry Xiao",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 1759011,
+      "role": "user",
+      "name": "Zhangzhi 'csrookie' Xiong",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}

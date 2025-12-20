@@ -17,11 +17,11 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 1,
-    "view_count": 855,
-    "unique_view_count": 265,
+    "view_count": 1013,
+    "unique_view_count": 279,
     "vote_count": 3,
-    "reply_count": 2,
-    "unresolved_count": 0,
+    "reply_count": 3,
+    "unresolved_count": 1,
     "is_locked": false,
     "is_pinned": false,
     "is_private": false,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-09-09T11:18:38.338212+10:00",
-    "updated_at": "2025-12-08T19:30:30.258195+11:00",
+    "updated_at": "2025-12-21T09:17:25.442923+11:00",
     "deleted_at": null,
     "pinned_at": null,
     "anonymous_id": 0,
@@ -44,7 +44,7 @@
     "is_starred": false,
     "is_watched": null,
     "glanced_at": "2025-10-08T11:35:46.484608+11:00",
-    "new_reply_count": 0,
+    "new_reply_count": 1,
     "duplicate_title": null,
     "answers": [],
     "comments": [
@@ -102,6 +102,33 @@
             "comments": []
           }
         ]
+      },
+      {
+        "id": 17351819,
+        "user_id": 1010497,
+        "course_id": 84647,
+        "thread_id": 6932715,
+        "original_id": null,
+        "parent_id": null,
+        "editor_id": null,
+        "number": 3,
+        "type": "comment",
+        "kind": "normal",
+        "content": "<document version=\"2.0\"><paragraph>a couple small typos I noticed while going through these solutions<break/></paragraph><figure><image src=\"https://static.us.edusercontent.com/files/C8bQTuyRuUVc9lpMzqfcuh3K\" width=\"655\" height=\"66.88824662813101\"/></figure><paragraph><break/>4(a) -- I think the second term should be $2w^{T}X^{T}y$</paragraph><figure><image src=\"https://static.us.edusercontent.com/files/kVczad9yDdVHu9qq8hrxeG4T\" width=\"655\" height=\"125.61643835616438\"/></figure><paragraph>4(d), $V^{-T}(\\Sigma^{T}\\Sigma+\\lambda I)$ instead of $V(\\Sigma^{T}\\Sigma+\\lambda I)^{-1}$</paragraph></document>",
+        "document": "a couple small typos I noticed while going through these solutions\n\n\n\n4(a) -- I think the second term should be $2w^{T}X^{T}y$\n\n4(d), $V^{-T}(\\Sigma^{T}\\Sigma+\\lambda I)$ instead of $V(\\Sigma^{T}\\Sigma+\\lambda I)^{-1}$",
+        "flag_count": 0,
+        "vote_count": 0,
+        "is_endorsed": false,
+        "is_anonymous": false,
+        "is_private": false,
+        "is_resolved": false,
+        "created_by_bot_id": null,
+        "created_at": "2025-12-17T14:46:49.152944+11:00",
+        "updated_at": null,
+        "deleted_at": null,
+        "anonymous_id": 0,
+        "vote": 0,
+        "comments": []
       }
     ]
   },
@@ -128,6 +155,14 @@
       "name": "Anant Sahai",
       "avatar": null,
       "course_role": "admin",
+      "tutorials": {}
+    },
+    {
+      "id": 1010497,
+      "role": "user",
+      "name": "Celine Tan",
+      "avatar": null,
+      "course_role": "student",
       "tutorials": {}
     }
   ]

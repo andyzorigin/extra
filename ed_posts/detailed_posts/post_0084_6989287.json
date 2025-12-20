@@ -17,8 +17,8 @@
     "subsubcategory": "",
     "flag_count": 0,
     "star_count": 0,
-    "view_count": 383,
-    "unique_view_count": 110,
+    "view_count": 405,
+    "unique_view_count": 113,
     "vote_count": 0,
     "reply_count": 13,
     "unresolved_count": 0,
@@ -35,7 +35,7 @@
     "anonymous_comments": false,
     "approved_status": "approved",
     "created_at": "2025-09-20T15:09:59.1106+10:00",
-    "updated_at": "2025-12-08T12:14:02.998791+11:00",
+    "updated_at": "2025-12-18T18:10:54.70814+11:00",
     "deleted_at": null,
     "pinned_at": null,
     "anonymous_id": 0,
@@ -411,6 +411,30 @@
   },
   "users": [
     {
+      "id": 679296,
+      "role": "user",
+      "name": "Leon Kornfeld",
+      "avatar": "a5Zru1XA1gfv8r7SfCrGsSNdHVEaX7_IeayJmy-HLKc",
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
+      "id": 967449,
+      "role": "user",
+      "name": "Sultan Daniels",
+      "avatar": null,
+      "course_role": "staff",
+      "tutorials": {}
+    },
+    {
+      "id": 906474,
+      "role": "user",
+      "name": "Ben Yu",
+      "avatar": null,
+      "course_role": "student",
+      "tutorials": {}
+    },
+    {
       "id": 967944,
       "role": "user",
       "name": "Kevin Frans",
@@ -438,30 +462,6 @@
       "id": 647625,
       "role": "user",
       "name": "Jason Guo",
-      "avatar": null,
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 679296,
-      "role": "user",
-      "name": "Leon Kornfeld",
-      "avatar": "a5Zru1XA1gfv8r7SfCrGsSNdHVEaX7_IeayJmy-HLKc",
-      "course_role": "student",
-      "tutorials": {}
-    },
-    {
-      "id": 967449,
-      "role": "user",
-      "name": "Sultan Daniels",
-      "avatar": null,
-      "course_role": "staff",
-      "tutorials": {}
-    },
-    {
-      "id": 906474,
-      "role": "user",
-      "name": "Ben Yu",
       "avatar": null,
       "course_role": "student",
       "tutorials": {}
