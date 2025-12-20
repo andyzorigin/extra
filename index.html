@@ -26,10 +26,10 @@
             </div> 
             <nav>
                 <a href="#overview" class="nav-link"><i class="fas fa-home"></i> Overview</a>
+                <a href="#submissions" class="nav-link"><i class="fas fa-list"></i> All Submissions</a>
                 <a href="#visualizations" class="nav-link"><i class="fas fa-chart-bar"></i> Visualizations</a>
                 <a href="#insights" class="nav-link"><i class="fas fa-lightbulb"></i> Insights</a>
                 <a href="#llm-comparison" class="nav-link"><i class="fas fa-code-compare"></i> Compare LLMs</a>
-                <a href="#submissions" class="nav-link"><i class="fas fa-list"></i> All Submissions</a>
                 <a href="#leaderboard" class="nav-link"><i class="fas fa-trophy"></i> Leaderboard</a>
             </nav>
         </div>
@@ -81,6 +81,81 @@
                         <div class="stat-sublabel">Different Models</div>
                     </div>
                 </a>
+            </div>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section id="submissions" class="section fade-in">
+            <h2><i class="fas fa-list"></i> All Submissions</h2>
+            
+            <div class="search-filter-container">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Search by student name, LLM, homework, or keywords...">
+                    <button id="clear-search" class="icon-button" aria-label="Clear search">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="filter-type"><i class="fas fa-filter"></i> Type</label>
+                        <select id="filter-type">
+                            <option value="all">All Types</option>
+                            <option value="A">Participation A</option>
+                            <option value="B">Participation B</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="filter-llm"><i class="fas fa-robot"></i> LLM</label>
+                        <select id="filter-llm">
+                            <option value="all">All LLMs</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="filter-homework"><i class="fas fa-book"></i> Homework</label>
+                        <select id="filter-homework">
+                            <option value="all">All Homeworks</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="sort-by"><i class="fas fa-sort"></i> Sort By</label>
+                        <select id="sort-by">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="most-viewed">Most Viewed</option>
+                            <option value="most-replies">Most Replies</option>
+                        </select>
+                    </div>
+                    
+                    <button id="reset-filters" class="button-primary">
+                        <i class="fas fa-redo"></i> Reset Filters
+                    </button>
+                </div>
+            </div>
+
+            <div class="results-header">
+                <div id="results-count" class="results-info"></div>
+                <div class="view-toggle">
+                    <button class="view-toggle-btn active" data-view="cards">
+                        <i class="fas fa-th-large"></i> Cards
+                    </button>
+                    <button class="view-toggle-btn" data-view="compact">
+                        <i class="fas fa-list"></i> Compact
+                    </button>
+                </div>
+            </div>
+            
+            <div class="submissions-scroll-container">
+                <div id="submissions-list"></div>
+                
+                <div id="loading-indicator" class="loading-indicator" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Loading submissions...</p>
+                </div>
             </div>
         </section>
 
@@ -170,79 +245,6 @@
             </div>
             
             <div id="leaderboard-content"></div>
-        </section>
-
-        <!-- Search and Filter Section -->
-        <section id="submissions" class="section fade-in">
-            <h2><i class="fas fa-list"></i> All Submissions</h2>
-            
-            <div class="search-filter-container">
-                <div class="search-bar">
-                    <i class="fas fa-search"></i>
-                    <input type="text" id="search-input" placeholder="Search by student name, LLM, homework, or keywords...">
-                    <button id="clear-search" class="icon-button" aria-label="Clear search">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                
-                <div class="filters">
-                    <div class="filter-group">
-                        <label for="filter-type"><i class="fas fa-filter"></i> Type</label>
-                        <select id="filter-type">
-                            <option value="all">All Types</option>
-                            <option value="A">Participation A</option>
-                            <option value="B">Participation B</option>
-                        </select>
-                    </div>
-                    
-                    <div class="filter-group">
-                        <label for="filter-llm"><i class="fas fa-robot"></i> LLM</label>
-                        <select id="filter-llm">
-                            <option value="all">All LLMs</option>
-                        </select>
-                    </div>
-                    
-                    <div class="filter-group">
-                        <label for="filter-homework"><i class="fas fa-book"></i> Homework</label>
-                        <select id="filter-homework">
-                            <option value="all">All Homeworks</option>
-                        </select>
-                    </div>
-                    
-                    <div class="filter-group">
-                        <label for="sort-by"><i class="fas fa-sort"></i> Sort By</label>
-                        <select id="sort-by">
-                            <option value="newest">Newest First</option>
-                            <option value="oldest">Oldest First</option>
-                            <option value="most-viewed">Most Viewed</option>
-                            <option value="most-replies">Most Replies</option>
-                        </select>
-                    </div>
-                    
-                    <button id="reset-filters" class="button-primary">
-                        <i class="fas fa-redo"></i> Reset Filters
-                    </button>
-                </div>
-            </div>
-
-            <div class="results-header">
-                <div id="results-count" class="results-info"></div>
-                <div class="view-toggle">
-                    <button class="view-toggle-btn active" data-view="cards">
-                        <i class="fas fa-th-large"></i> Cards
-                    </button>
-                    <button class="view-toggle-btn" data-view="compact">
-                        <i class="fas fa-list"></i> Compact
-                    </button>
-                </div>
-            </div>
-            
-            <div id="submissions-list"></div>
-            
-            <div id="loading-indicator" class="loading-indicator" style="display: none;">
-                <div class="spinner"></div>
-                <p>Loading submissions...</p>
-            </div>
         </section>
     </main>
 

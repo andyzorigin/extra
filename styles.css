@@ -955,6 +955,38 @@ main {
     transform: scale(1.05);
 }
 
+.submissions-scroll-container {
+    max-height: 800px; /* Adjust this value as needed */
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1rem;
+    background: var(--light-gray);
+    /* Firefox scrollbar styling */
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) var(--light-gray);
+}
+
+/* Custom Scrollbar Styling */
+.submissions-scroll-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.submissions-scroll-container::-webkit-scrollbar-track {
+    background: var(--light-gray);
+    border-radius: 10px;
+}
+
+.submissions-scroll-container::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    border: 3px solid var(--light-gray);
+}
+
+.submissions-scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: var(--primary-color);
+}
+
 .category-tag.highlight {
     background: var(--warning-color);
     color: var(--text-color);
