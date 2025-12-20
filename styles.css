@@ -791,6 +791,56 @@ main {
     border-color: var(--primary-color);
 }
 
+/* Compact View Styles */
+#submissions-list.compact-view .submission-card {
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+#submissions-list.compact-view .submission-card:not(.expanded) .submission-meta,
+#submissions-list.compact-view .submission-card:not(.expanded) .submission-stats,
+#submissions-list.compact-view .submission-card:not(.expanded) .submission-content,
+#submissions-list.compact-view .submission-card:not(.expanded) .expand-button,
+#submissions-list.compact-view .submission-card:not(.expanded) .category-tags,
+#submissions-list.compact-view .submission-card:not(.expanded) .submission-links,
+#submissions-list.compact-view .submission-card:not(.expanded) .comments-section {
+    display: none;
+}
+
+#submissions-list.compact-view .submission-card:not(.expanded) .submission-title h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+#submissions-list.compact-view .submission-card:not(.expanded) .submission-header {
+    margin-bottom: 0;
+}
+
+/* Styles for a card when it's expanded within the compact view */
+#submissions-list.compact-view .submission-card.expanded {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    cursor: default;
+}
+
+#submissions-list.compact-view .submission-card.expanded .submission-title h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+}
+
+#submissions-list.compact-view .submission-card.expanded .submission-header {
+    margin-bottom: 1.5rem;
+}
+
+#submissions-list.compact-view .submission-card.expanded .submission-title {
+    cursor: pointer;
+}
+
+#submissions-list.compact-view .submission-card:not(.expanded) .submission-header {
+    margin-bottom: 0;
+}
+
 /* Submission Cards */
 .submission-card {
     background: var(--card-background);

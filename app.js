@@ -591,9 +591,38 @@ function setupEventListeners() {
     document.querySelectorAll('.view-toggle-btn').forEach(button => {
         button.addEventListener('click', (e) => {
             document.querySelectorAll('.view-toggle-btn').forEach(b => b.classList.remove('active'));
-            e.target.closest('.view-toggle-btn').classList.add('active');
-            // Could implement compact view here
+            const btn = e.target.closest('.view-toggle-btn');
+            btn.classList.add('active');
+            const view = btn.dataset.view;
+            const submissionsList = document.getElementById('submissions-list');
+            submissionsList.className = view === 'compact' ? 'compact-view' : '';
+
+            // If switching back to cards view, remove all expanded classes
+            if (view === 'cards') {
+                submissionsList.querySelectorAll('.submission-card.expanded').forEach(card => {
+                    card.classList.remove('expanded');
+                });
+            }
         });
+    });
+
+    // Click listener for expanding compact cards
+    document.getElementById('submissions-list').addEventListener('click', (e) => {
+        const card = e.target.closest('.submission-card');
+        const title = e.target.closest('.submission-title');
+        const isCompactView = document.getElementById('submissions-list').classList.contains('compact-view');
+
+        if (isCompactView && card) {
+            // If the card is already expanded, only collapse it if the title is clicked
+            if (card.classList.contains('expanded')) {
+                if (title) {
+                    card.classList.remove('expanded');
+                }
+            } else {
+                // If the card is not expanded, expand it on any click
+                card.classList.add('expanded');
+            }
+        }
     });
     
     // Leaderboard tabs
