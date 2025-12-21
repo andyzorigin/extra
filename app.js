@@ -197,7 +197,8 @@ function renderVisualizations() {
         }
     });
     
-    // Performance Metrics Chart
+    // Performance Metrics Chart - COMMENTED OUT
+    /*
     const llmMetrics = Object.entries(insightsA.llm_behaviors || {})
         .concat(Object.entries(insightsB.llm_behaviors || {}))
         .reduce((acc, [name, data]) => {
@@ -257,6 +258,7 @@ function renderVisualizations() {
             }
         }
     });
+    */
 }
 
 // Render insights section
