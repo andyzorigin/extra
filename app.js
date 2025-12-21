@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initializeUI();
     renderOverview();
     renderVisualizations();
-    renderInsights();
+    // renderInsights(); // Commented out - insights section is commented out in HTML
     // renderLLMComparison('a'); // Commented out - now using radar charts instead
     renderLeaderboard('posts');
     renderSubmissions();
