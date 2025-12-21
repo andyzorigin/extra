@@ -746,6 +746,12 @@ main {
     box-shadow: var(--shadow-md);
 }
 
+#reset-filters {
+    padding: 0.9rem !important;
+    border: 2px solid transparent !important;
+    align-self: flex-end !important;
+}
+
 .results-header {
     display: flex;
     justify-content: space-between;
