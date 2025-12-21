@@ -26,6 +26,7 @@
                 <a href="#visualizations" class="nav-link"><i class="fas fa-chart-bar"></i> Visualizations</a>
                 <a href="#insights" class="nav-link"><i class="fas fa-lightbulb"></i> Insights</a>
                 <a href="#llm-comparison" class="nav-link"><i class="fas fa-code-compare"></i> Compare LLMs</a>
+                <a href="#leaderboard" class="nav-link"><i class="fas fa-trophy"></i> Leaderboard</a>
             </div>
             <div class="header-right">
                 <button id="dark-mode-toggle" class="icon-button" aria-label="Toggle dark mode">
@@ -236,6 +237,19 @@
             <div id="llm-comparison-content" class="grid-view"></div>
         </section>
 
+        <!-- Leaderboard Section -->
+        <section id="leaderboard" class="section fade-in">
+            <h2><i class="fas fa-trophy"></i> Student Leaderboard</h2>
+            <p class="lead">Top contributors to the Special Participation posts</p>
+            
+            <div class="leaderboard-tabs">
+                <button class="leaderboard-tab active" data-metric="posts">Most Posts</button>
+                <button class="leaderboard-tab" data-metric="views">Most Views</button>
+                <button class="leaderboard-tab" data-metric="engagement">Most Engagement</button>
+            </div>
+            
+            <div id="leaderboard-content"></div>
+        </section>
     </main>
 
     <footer>

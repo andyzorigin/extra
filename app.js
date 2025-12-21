@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderVisualizations();
     renderInsights();
     renderLLMComparison('a');
+    renderLeaderboard('posts');
     renderSubmissions();
     setupEventListeners();
     setupScrollTop();
@@ -339,6 +340,68 @@ function renderLLMComparison(type) {
     container.innerHTML = html;
 }
 
+// Render leaderboard
+function renderLeaderboard(metric) {
+    const container = document.getElementById('leaderboard-content');
+    
+    let rankings = [];
+    
+    if (metric === 'posts') {
+        const studentPosts = {};
+        allSubmissions.forEach(sub => {
+            studentPosts[sub.author_name] = (studentPosts[sub.author_name] || 0) + 1;
+        });
+        rankings = Object.entries(studentPosts)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 20);
+    } else if (metric === 'views') {
+        const studentViews = {};
+        allSubmissions.forEach(sub => {
+            studentViews[sub.author_name] = (studentViews[sub.author_name] || 0) + sub.view_count;
+        });
+        rankings = Object.entries(studentViews)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 20);
+    } else if (metric === 'engagement') {
+        const studentEngagement = {};
+        allSubmissions.forEach(sub => {
+            const engagement = sub.view_count + (sub.reply_count * 5);
+            studentEngagement[sub.author_name] = (studentEngagement[sub.author_name] || 0) + engagement;
+        });
+        rankings = Object.entries(studentEngagement)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 20);
+    }
+    
+    let html = '';
+    rankings.forEach(([name, value], index) => {
+        const rank = index + 1;
+        let rankClass = '';
+        if (rank === 1) rankClass = 'gold';
+        else if (rank === 2) rankClass = 'silver';
+        else if (rank === 3) rankClass = 'bronze';
+        
+        const icon = rank <= 3 ? '<i class="fas fa-trophy"></i>' : rank;
+        
+        html += `
+            <div class="leaderboard-entry">
+                <div class="leaderboard-rank ${rankClass}">${icon}</div>
+                <div class="leaderboard-info">
+                    <div class="leaderboard-name">${escapeHtml(name)}</div>
+                    <div class="leaderboard-stats">
+                        ${metric === 'posts' ? `${value} posts` : 
+                          metric === 'views' ? `${value} total views` : 
+                          `${value} engagement score`}
+                    </div>
+                </div>
+                <div class="leaderboard-value">${value}</div>
+            </div>
+        `;
+    });
+    
+    container.innerHTML = html;
+}
+
 // Render submissions list
 function renderSubmissions() {
     const container = document.getElementById('submissions-list');
@@ -560,6 +623,15 @@ function setupEventListeners() {
                 card.classList.add('expanded');
             }
         }
+    });
+    
+    // Leaderboard tabs
+    document.querySelectorAll('.leaderboard-tab').forEach(button => {
+        button.addEventListener('click', (e) => {
+            document.querySelectorAll('.leaderboard-tab').forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
+            renderLeaderboard(e.target.dataset.metric);
+        });
     });
     
     // Export button
