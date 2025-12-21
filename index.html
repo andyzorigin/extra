@@ -214,6 +214,79 @@
         <section id="llm-comparison" class="section fade-in">
             <h2><i class="fas fa-code-compare"></i> LLM Comparison</h2>
             
+            <!-- Comparison Radar Chart -->
+            <div class="comparison-radar-container">
+                <h3>Compare Models</h3>
+                <p class="comparison-description">Select models to compare side-by-side</p>
+                
+                <div class="model-checkboxes">
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="model-checkbox" data-model="ChatGPT" checked>
+                        <span class="checkbox-custom chatgpt"></span>
+                        <span>ChatGPT</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="model-checkbox" data-model="Gemini" checked>
+                        <span class="checkbox-custom gemini"></span>
+                        <span>Gemini</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="model-checkbox" data-model="Claude" checked>
+                        <span class="checkbox-custom claude"></span>
+                        <span>Claude</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="model-checkbox" data-model="DeepSeek" checked>
+                        <span class="checkbox-custom deepseek"></span>
+                        <span>DeepSeek</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="model-checkbox" data-model="Grok" checked>
+                        <span class="checkbox-custom grok"></span>
+                        <span>Grok</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" class="model-checkbox" data-model="Mistral" checked>
+                        <span class="checkbox-custom mistral"></span>
+                        <span>Mistral</span>
+                    </label>
+                </div>
+                
+                <div class="comparison-chart-wrapper">
+                    <canvas id="radar-comparison"></canvas>
+                </div>
+            </div>
+            
+            <!-- Radar plots in 2x3 grid -->
+            <div class="radar-grid">
+                <div class="radar-card">
+                    <h3>ChatGPT</h3>
+                    <canvas id="radar-chatgpt"></canvas>
+                </div>
+                <div class="radar-card">
+                    <h3>Gemini</h3>
+                    <canvas id="radar-gemini"></canvas>
+                </div>
+                <div class="radar-card">
+                    <h3>Claude</h3>
+                    <canvas id="radar-claude"></canvas>
+                </div>
+                <div class="radar-card">
+                    <h3>DeepSeek</h3>
+                    <canvas id="radar-deepseek"></canvas>
+                </div>
+                <div class="radar-card">
+                    <h3>Grok</h3>
+                    <canvas id="radar-grok"></canvas>
+                </div>
+                <div class="radar-card">
+                    <h3>Mistral</h3>
+                    <canvas id="radar-mistral"></canvas>
+                </div>
+            </div>
+            
+            <!-- Old content commented out -->
+            <!--
             <div class="comparison-controls">
                 <div class="tabs">
                     <button class="tab-button active" data-type="a">
@@ -235,6 +308,7 @@
             </div>
             
             <div id="llm-comparison-content" class="grid-view"></div>
+            -->
         </section>
 
         <!-- Leaderboard Section - HIDDEN -->
@@ -319,5 +393,233 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="app.js"></script>
+    
+    <!-- Radar Charts Script -->
+    <script>
+        // Load and create radar charts
+        fetch('data/average_scores.json')
+            .then(response => response.json())
+            .then(data => {
+                const labels = [
+                    'Coding abilities',
+                    'Mathematical abilities',
+                    'Visual reasoning',
+                    'Hallucination resistance',
+                    'One-shot accuracy',
+                    'Steerability & Self-correction'
+                ];
+
+                // Color scheme for each LLM
+                const colors = {
+                    'ChatGPT': 'rgba(16, 163, 127, 0.7)',
+                    'Gemini': 'rgba(66, 133, 244, 0.7)',
+                    'Claude': 'rgba(204, 131, 82, 0.7)',
+                    'DeepSeek': 'rgba(139, 69, 255, 0.7)',
+                    'Grok': 'rgba(255, 99, 132, 0.7)',
+                    'Mistral': 'rgba(255, 159, 64, 0.7)'
+                };
+
+                const borderColors = {
+                    'ChatGPT': 'rgba(16, 163, 127, 1)',
+                    'Gemini': 'rgba(66, 133, 244, 1)',
+                    'Claude': 'rgba(204, 131, 82, 1)',
+                    'DeepSeek': 'rgba(139, 69, 255, 1)',
+                    'Grok': 'rgba(255, 99, 132, 1)',
+                    'Mistral': 'rgba(255, 159, 64, 1)'
+                };
+
+                // Create a chart for each LLM
+                Object.keys(data).forEach(llm => {
+                    const canvasId = `radar-${llm.toLowerCase()}`;
+                    const ctx = document.getElementById(canvasId);
+                    
+                    if (ctx) {
+                        const chartData = labels.map(label => data[llm][label]);
+                        
+                        new Chart(ctx, {
+                            type: 'radar',
+                            data: {
+                                labels: labels,
+                                datasets: [{
+                                    label: llm,
+                                    data: chartData,
+                                    backgroundColor: colors[llm],
+                                    borderColor: borderColors[llm],
+                                    borderWidth: 2,
+                                    pointBackgroundColor: borderColors[llm],
+                                    pointBorderColor: '#fff',
+                                    pointHoverBackgroundColor: '#fff',
+                                    pointHoverBorderColor: borderColors[llm]
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: true,
+                                plugins: {
+                                    legend: {
+                                        display: false
+                                    }
+                                },
+                                scales: {
+                                    r: {
+                                        beginAtZero: true,
+                                        max: 100,
+                                        min: 0,
+                                        ticks: {
+                                            stepSize: 20,
+                                            font: {
+                                                size: 10
+                                            }
+                                        },
+                                        pointLabels: {
+                                            font: {
+                                                size: 11
+                                            },
+                                            callback: function(label) {
+                                                // Wrap long labels
+                                                const maxLength = 15;
+                                                if (label.length > maxLength) {
+                                                    const words = label.split(' ');
+                                                    const lines = [];
+                                                    let currentLine = '';
+                                                    
+                                                    words.forEach(word => {
+                                                        if ((currentLine + word).length > maxLength) {
+                                                            lines.push(currentLine.trim());
+                                                            currentLine = word + ' ';
+                                                        } else {
+                                                            currentLine += word + ' ';
+                                                        }
+                                                    });
+                                                    lines.push(currentLine.trim());
+                                                    return lines;
+                                                }
+                                                return label;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        });
+                    }
+                });
+                
+                // Create comparison chart
+                createComparisonChart(data);
+            })
+            .catch(error => console.error('Error loading radar chart data:', error));
+        
+        // Function to create the comparison chart
+        function createComparisonChart(allData) {
+            const labels = [
+                'Coding abilities',
+                'Mathematical abilities',
+                'Visual reasoning',
+                'Hallucination resistance',
+                'One-shot accuracy',
+                'Steerability & Self-correction'
+            ];
+
+            const colors = {
+                'ChatGPT': { bg: 'rgba(16, 163, 127, 0.3)', border: 'rgba(16, 163, 127, 1)' },
+                'Gemini': { bg: 'rgba(66, 133, 244, 0.3)', border: 'rgba(66, 133, 244, 1)' },
+                'Claude': { bg: 'rgba(204, 131, 82, 0.3)', border: 'rgba(204, 131, 82, 1)' },
+                'DeepSeek': { bg: 'rgba(139, 69, 255, 0.3)', border: 'rgba(139, 69, 255, 1)' },
+                'Grok': { bg: 'rgba(255, 99, 132, 0.3)', border: 'rgba(255, 99, 132, 1)' },
+                'Mistral': { bg: 'rgba(255, 159, 64, 0.3)', border: 'rgba(255, 159, 64, 1)' }
+            };
+
+            const ctx = document.getElementById('radar-comparison');
+            
+            // Create initial datasets for all models
+            const datasets = Object.keys(allData).map(llm => {
+                const chartData = labels.map(label => allData[llm][label]);
+                return {
+                    label: llm,
+                    data: chartData,
+                    backgroundColor: colors[llm].bg,
+                    borderColor: colors[llm].border,
+                    borderWidth: 2,
+                    pointBackgroundColor: colors[llm].border,
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: colors[llm].border,
+                    hidden: false
+                };
+            });
+
+            const comparisonChart = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: labels,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            max: 100,
+                            min: 0,
+                            ticks: {
+                                stepSize: 20,
+                                font: {
+                                    size: 11
+                                }
+                            },
+                            pointLabels: {
+                                font: {
+                                    size: 12
+                                },
+                                callback: function(label) {
+                                    // Wrap long labels
+                                    const maxLength = 15;
+                                    if (label.length > maxLength) {
+                                        const words = label.split(' ');
+                                        const lines = [];
+                                        let currentLine = '';
+                                        
+                                        words.forEach(word => {
+                                            if ((currentLine + word).length > maxLength) {
+                                                lines.push(currentLine.trim());
+                                                currentLine = word + ' ';
+                                            } else {
+                                                currentLine += word + ' ';
+                                            }
+                                        });
+                                        lines.push(currentLine.trim());
+                                        return lines;
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Add event listeners to checkboxes
+            document.querySelectorAll('.model-checkbox').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    const model = this.dataset.model;
+                    const datasetIndex = datasets.findIndex(ds => ds.label === model);
+                    
+                    if (datasetIndex !== -1) {
+                        const meta = comparisonChart.getDatasetMeta(datasetIndex);
+                        meta.hidden = !this.checked;
+                        comparisonChart.update();
+                    }
+                });
+            });
+        }
+    </script>
 </body>
 </html>
+
+
