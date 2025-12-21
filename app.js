@@ -100,7 +100,7 @@ function renderOverview() {
     document.getElementById('total-a-posts').setAttribute('data-count', participationA.length);
     document.getElementById('total-b-posts').setAttribute('data-count', participationB.length);
     document.getElementById('total-students').setAttribute('data-count', uniqueStudents.size);
-    document.getElementById('total-llms').setAttribute('data-count', uniqueLLMs.size);
+    document.getElementById('total-llms').setAttribute('data-count', 6); // Fixed to 6 LLMs
 }
 
 // Animate counting numbers
