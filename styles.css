@@ -543,96 +543,6 @@ main {
     color: var(--accent-color);
 }
 
-/* Leaderboard */
-.leaderboard-tabs {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-}
-
-.leaderboard-tab {
-    background: var(--light-gray);
-    border: 2px solid var(--border-color);
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all var(--transition-speed);
-    font-weight: 500;
-}
-
-.leaderboard-tab:hover {
-    background: var(--accent-color);
-    color: white;
-    border-color: var(--accent-color);
-}
-
-.leaderboard-tab.active {
-    background: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
-}
-
-#leaderboard-content {
-    background: var(--card-background);
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: var(--shadow-md);
-}
-
-.leaderboard-entry {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
-    border-bottom: 1px solid var(--border-color);
-    transition: all var(--transition-speed);
-}
-
-.leaderboard-entry:hover {
-    background: var(--light-gray);
-    transform: translateX(5px);
-}
-
-.leaderboard-entry:last-child {
-    border-bottom: none;
-}
-
-.leaderboard-rank {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    min-width: 60px;
-}
-
-.leaderboard-rank.gold { color: #FFD700; }
-.leaderboard-rank.silver { color: #C0C0C0; }
-.leaderboard-rank.bronze { color: #CD7F32; }
-
-.leaderboard-info {
-    flex: 1;
-    margin-left: 1rem;
-}
-
-.leaderboard-name {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--primary-color);
-}
-
-.leaderboard-stats {
-    color: var(--text-color);
-    opacity: 0.7;
-    font-size: 0.9rem;
-}
-
-.leaderboard-value {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--accent-color);
-    min-width: 80px;
-    text-align: right;
-}
-
 /* Search and Filter */
 .search-filter-container {
     background: var(--card-background);
@@ -726,10 +636,12 @@ main {
 }
 
 .button-primary {
-    padding: 0.9rem 1.75rem;
+    padding: 0 1.75rem;
+    height: 50px; /* Match the dropdowns' height */
     background: var(--primary-color);
     color: white;
-    border: none;
+    align-self: end;
+    border: 2px solid var(--primary-color); /* Match dropdowns' border */
     border-radius: 8px;
     cursor: pointer;
     font-weight: 600;
