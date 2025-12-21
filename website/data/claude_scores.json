@@ -1,0 +1,50 @@
+{
+  "ChatGPT": {
+    "Coding abilities": 80.0,
+    "Mathematical abilities": 77.0,
+    "Visual reasoning": 62.0,
+    "Hallucination resistance": 74.0,
+    "One-shot accuracy": 79.0,
+    "Steerability & Self-correction": 76.0
+  },
+  "Gemini": {
+    "Coding abilities": 82.0,
+    "Mathematical abilities": 86.0,
+    "Visual reasoning": 75.0,
+    "Hallucination resistance": 84.0,
+    "One-shot accuracy": 83.0,
+    "Steerability & Self-correction": 80.0
+  },
+  "Claude": {
+    "Coding abilities": 82.0,
+    "Mathematical abilities": 79.0,
+    "Visual reasoning": 65.0,
+    "Hallucination resistance": 72.0,
+    "One-shot accuracy": 82.0,
+    "Steerability & Self-correction": 77.0
+  },
+  "DeepSeek": {
+    "Coding abilities": 82.0,
+    "Mathematical abilities": 85.0,
+    "Visual reasoning": 55.0,
+    "Hallucination resistance": 80.0,
+    "One-shot accuracy": 82.0,
+    "Steerability & Self-correction": 68.0
+  },
+  "Grok": {
+    "Coding abilities": 68.0,
+    "Mathematical abilities": 74.0,
+    "Visual reasoning": 58.0,
+    "Hallucination resistance": 62.0,
+    "One-shot accuracy": 72.0,
+    "Steerability & Self-correction": 64.0
+  },
+  "Mistral": {
+    "Coding abilities": 72.0,
+    "Mathematical abilities": 73.0,
+    "Visual reasoning": 45.0,
+    "Hallucination resistance": 55.0,
+    "One-shot accuracy": 76.0,
+    "Steerability & Self-correction": 55.0
+  }
+}
