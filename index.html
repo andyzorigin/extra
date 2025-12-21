@@ -23,9 +23,9 @@
             <div class="nav-links">
                 <a href="#overview" class="nav-link"><i class="fas fa-home"></i> Overview</a>
                 <a href="#submissions" class="nav-link"><i class="fas fa-list"></i> All Submissions</a>
+                <a href="#llm-comparison" class="nav-link"><i class="fas fa-code-compare"></i> Compare LLMs</a>
                 <a href="#visualizations" class="nav-link"><i class="fas fa-chart-bar"></i> Visualizations</a>
                 <!-- <a href="#insights" class="nav-link"><i class="fas fa-lightbulb"></i> Insights</a> -->
-                <a href="#llm-comparison" class="nav-link"><i class="fas fa-code-compare"></i> Compare LLMs</a>
                 <!-- <a href="#leaderboard" class="nav-link"><i class="fas fa-trophy"></i> Leaderboard</a> -->
             </div>
             <div class="header-right">
@@ -163,53 +163,6 @@
             </div>
         </section>
 
-        <!-- Data Visualizations Section -->
-        <section id="visualizations" class="section fade-in">
-            <h2><i class="fas fa-chart-bar"></i> Data Visualizations</h2>
-            
-            <div class="viz-container">
-                <div class="viz-card">
-                    <h3>LLM Usage Distribution</h3>
-                    <div class="chart-container">
-                        <canvas id="llm-usage-chart"></canvas>
-                    </div>
-                </div>
-                
-                <div class="viz-card">
-                    <h3>Homework Coverage</h3>
-                    <div class="chart-container">
-                        <canvas id="homework-chart"></canvas>
-                    </div>
-                </div>
-                
-                <!-- <div class="viz-card full-width">
-                    <h3>Performance Metrics by LLM</h3>
-                    <div class="chart-container">
-                        <canvas id="performance-chart"></canvas>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-
-        <!-- Insights Section -->
-        <!-- <section id="insights" class="section fade-in">
-            <h2><i class="fas fa-lightbulb"></i> Key Insights on LLM Behaviors</h2>
-            
-            <div class="insights-container">
-                <div class="insight-type">
-                    <h3><i class="fas fa-file-alt"></i> Special Participation A</h3>
-                    <p class="description">Students used LLMs to solve homework problems and documented their performance</p>
-                    <div id="insights-a-content"></div>
-                </div>
-                
-                <div class="insight-type">
-                    <h3><i class="fas fa-code"></i> Special Participation B</h3>
-                    <p class="description">Students used LLMs to solve coding homework problems</p>
-                    <div id="insights-b-content"></div>
-                </div>
-            </div>
-        </section> -->
-
         <!-- LLM Comparison Section -->
         <section id="llm-comparison" class="section fade-in">
             <h2><i class="fas fa-code-compare"></i> LLM Comparison</h2>
@@ -310,6 +263,53 @@
             <div id="llm-comparison-content" class="grid-view"></div>
             -->
         </section>
+
+        <!-- Data Visualizations Section -->
+        <section id="visualizations" class="section fade-in">
+            <h2><i class="fas fa-chart-bar"></i> Data Visualizations</h2>
+            
+            <div class="viz-container">
+                <div class="viz-card">
+                    <h3>LLM Usage Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="llm-usage-chart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="viz-card">
+                    <h3>Homework Coverage</h3>
+                    <div class="chart-container">
+                        <canvas id="homework-chart"></canvas>
+                    </div>
+                </div>
+                
+                <!-- <div class="viz-card full-width">
+                    <h3>Performance Metrics by LLM</h3>
+                    <div class="chart-container">
+                        <canvas id="performance-chart"></canvas>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Insights Section -->
+        <!-- <section id="insights" class="section fade-in">
+            <h2><i class="fas fa-lightbulb"></i> Key Insights on LLM Behaviors</h2>
+            
+            <div class="insights-container">
+                <div class="insight-type">
+                    <h3><i class="fas fa-file-alt"></i> Special Participation A</h3>
+                    <p class="description">Students used LLMs to solve homework problems and documented their performance</p>
+                    <div id="insights-a-content"></div>
+                </div>
+                
+                <div class="insight-type">
+                    <h3><i class="fas fa-code"></i> Special Participation B</h3>
+                    <p class="description">Students used LLMs to solve coding homework problems</p>
+                    <div id="insights-b-content"></div>
+                </div>
+            </div>
+        </section> -->
 
         <!-- Leaderboard Section - HIDDEN -->
         <section id="leaderboard" class="section fade-in" style="display: none;">
