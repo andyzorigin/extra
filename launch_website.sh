@@ -8,7 +8,7 @@ echo "The website will be available at: http://localhost:8000"
 echo "Press Ctrl+C to stop the server"
 echo ""
 
-cd "$(dirname "$0")/website"
+cd "$(dirname "$0")"
 
 # Check if Python 3 is available
 if command -v python3 &> /dev/null
