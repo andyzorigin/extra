@@ -176,6 +176,10 @@ main {
     gap: 0.75rem;
 }
 
+#overview {
+    margin-top: 1rem;
+}
+
 .lead {
     font-size: 1.15rem;
     line-height: 1.8;
