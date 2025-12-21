@@ -197,6 +197,115 @@ function renderVisualizations() {
         }
     });
     
+    // Posts Over Time Chart - Grouped by week
+    const postsTimelineA = {};
+    const postsTimelineB = {};
+    
+    // Helper function to get week start date (Monday)
+    function getWeekStart(date) {
+        const d = new Date(date);
+        const day = d.getDay();
+        const diff = d.getDate() - day + (day === 0 ? -6 : 1); // adjust when day is Sunday
+        const monday = new Date(d.setDate(diff));
+        return monday.toISOString().split('T')[0];
+    }
+    
+    participationA.forEach(post => {
+        const weekStart = getWeekStart(post.created_at);
+        postsTimelineA[weekStart] = (postsTimelineA[weekStart] || 0) + 1;
+    });
+    
+    participationB.forEach(post => {
+        const weekStart = getWeekStart(post.created_at);
+        postsTimelineB[weekStart] = (postsTimelineB[weekStart] || 0) + 1;
+    });
+    
+    // Get all unique weeks and sort them
+    const allWeeks = [...new Set([...Object.keys(postsTimelineA), ...Object.keys(postsTimelineB)])].sort();
+    
+    // Fill in the data arrays
+    const dataA = allWeeks.map(week => postsTimelineA[week] || 0);
+    const dataB = allWeeks.map(week => postsTimelineB[week] || 0);
+    
+    charts.timeline = new Chart(document.getElementById('posts-timeline-chart'), {
+        type: 'line',
+        data: {
+            labels: allWeeks.map(week => {
+                // Format date as MM/DD
+                const d = new Date(week);
+                return `${d.getMonth() + 1}/${d.getDate()}`;
+            }),
+            datasets: [
+                {
+                    label: 'Participation A',
+                    data: dataA,
+                    borderColor: 'rgba(0, 50, 98, 1)',
+                    backgroundColor: 'rgba(0, 50, 98, 0.1)',
+                    tension: 0.4,
+                    fill: true,
+                    borderWidth: 2,
+                    pointRadius: 4,
+                    pointHoverRadius: 6
+                },
+                {
+                    label: 'Participation B',
+                    data: dataB,
+                    borderColor: 'rgba(253, 181, 21, 1)',
+                    backgroundColor: 'rgba(253, 181, 21, 0.1)',
+                    tension: 0.4,
+                    fill: true,
+                    borderWidth: 2,
+                    pointRadius: 4,
+                    pointHoverRadius: 6
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: {
+                mode: 'index',
+                intersect: false
+            },
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top'
+                },
+                tooltip: {
+                    callbacks: {
+                        title: function(context) {
+                            const weekIndex = context[0].dataIndex;
+                            return 'Week of ' + allWeeks[weekIndex];
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Number of Posts'
+                    },
+                    ticks: {
+                        stepSize: 5
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Week'
+                    },
+                    ticks: {
+                        maxRotation: 45,
+                        minRotation: 45
+                    }
+                }
+            }
+        }
+    });
+    
     // Performance Metrics Chart - COMMENTED OUT
     /*
     const llmMetrics = Object.entries(insightsA.llm_behaviors || {})
