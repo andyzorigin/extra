@@ -33,8 +33,8 @@
     "participation_type": "B",
     "author_name": "Jason Guo",
     "author_id": 647625,
-    "llm_name": "Not specified",
-    "homework": "Not specified",
+    "llm_name": "Claude",
+    "homework": "HW3",
     "links": {
       "chat_links": [
         "https://claude.ai/share/c79a2051-2b23-492a-8883-9325b0b7237e"
@@ -109,7 +109,7 @@
     "participation_type": "B",
     "author_name": "Deena Sun",
     "author_id": 983743,
-    "llm_name": "Not specified",
+    "llm_name": "Cursor",
     "homework": "HW4",
     "links": {
       "chat_links": [],
@@ -143,7 +143,7 @@
     "participation_type": "B",
     "author_name": "Andy Zhang",
     "author_id": 1683657,
-    "llm_name": "Not specified",
+    "llm_name": "Qwen",
     "homework": "HW1",
     "links": {
       "chat_links": [],
@@ -174,7 +174,7 @@
     "participation_type": "B",
     "author_name": "Tianhao Qian",
     "author_id": 1751485,
-    "llm_name": "Not specified",
+    "llm_name": "Qwen",
     "homework": "HW2",
     "links": {
       "chat_links": [],
@@ -385,7 +385,7 @@
     "participation_type": "B",
     "author_name": "Nyx Iskandar",
     "author_id": 961740,
-    "llm_name": "GPT 5",
+    "llm_name": "ChatGPT",
     "homework": "HW4",
     "links": {
       "chat_links": [],
@@ -411,7 +411,7 @@
     "participation_type": "B",
     "author_name": "Junya Tsuneishi",
     "author_id": 1308098,
-    "llm_name": "Not specified",
+    "llm_name": "ChatGPT",
     "homework": "HW1",
     "links": {
       "chat_links": [],
@@ -468,7 +468,7 @@
     "participation_type": "B",
     "author_name": "Faiaz Khan",
     "author_id": 607238,
-    "llm_name": "Not specified",
+    "llm_name": "ChatGPT",
     "homework": "HW7",
     "links": {
       "chat_links": [],
@@ -503,7 +503,7 @@
     "participation_type": "B",
     "author_name": "Ben Yu",
     "author_id": 906474,
-    "llm_name": "ChatGPT 5",
+    "llm_name": "ChatGPT",
     "homework": "HW3",
     "links": {
       "chat_links": [],
@@ -590,7 +590,7 @@
     "participation_type": "B",
     "author_name": "Alex Luu",
     "author_id": 617558,
-    "llm_name": "Llama 4 Maverick",
+    "llm_name": "Llama",
     "homework": "HW4",
     "links": {
       "chat_links": [],
@@ -618,7 +618,7 @@
     "participation_type": "B",
     "author_name": "Yaqi Su",
     "author_id": 1155278,
-    "llm_name": "Not specified",
+    "llm_name": "Claude",
     "homework": "HW2",
     "links": {
       "chat_links": [],
@@ -648,7 +648,7 @@
     "participation_type": "B",
     "author_name": "Ruizhe Song",
     "author_id": 1762083,
-    "llm_name": "ChatGPT 5",
+    "llm_name": "ChatGPT",
     "homework": "HW5",
     "links": {
       "chat_links": [
@@ -679,7 +679,7 @@
     "participation_type": "B",
     "author_name": "Tianyu Gu",
     "author_id": 1753326,
-    "llm_name": "Not specified",
+    "llm_name": "Kimi",
     "homework": "HW0",
     "links": {
       "chat_links": [],
@@ -798,7 +798,7 @@
     "participation_type": "B",
     "author_name": "Srikar Babu Gadipudi",
     "author_id": 1691230,
-    "llm_name": "Not specified",
+    "llm_name": "Kimi",
     "homework": "HW4",
     "links": {
       "chat_links": [],
@@ -828,7 +828,7 @@
     "participation_type": "B",
     "author_name": "Oliver Chen",
     "author_id": 959003,
-    "llm_name": "Not specified",
+    "llm_name": "Qwen",
     "homework": "HW10",
     "links": {
       "chat_links": [],
@@ -889,7 +889,7 @@
     "participation_type": "B",
     "author_name": "Angelina Zhang",
     "author_id": 1762358,
-    "llm_name": "Not specified",
+    "llm_name": "Claude",
     "homework": "HW6",
     "links": {
       "chat_links": [],
@@ -954,7 +954,7 @@
     "participation_type": "B",
     "author_name": "Ken Zheng",
     "author_id": 961796,
-    "llm_name": "Not specified",
+    "llm_name": "Seed",
     "homework": "HW3",
     "links": {
       "chat_links": [],
@@ -982,7 +982,7 @@
     "participation_type": "B",
     "author_name": "Andrew Choy",
     "author_id": 647739,
-    "llm_name": "Not specified",
+    "llm_name": "Kimi",
     "homework": "HW11",
     "links": {
       "chat_links": [],
@@ -1190,7 +1190,7 @@
     "participation_type": "B",
     "author_name": "Vrushank Prakash",
     "author_id": 647490,
-    "llm_name": "Gemini 3 Pro",
+    "llm_name": "Gemini",
     "homework": "HW8",
     "links": {
       "chat_links": [],
@@ -1281,7 +1281,7 @@
     "participation_type": "B",
     "author_name": "Hanyang Gu",
     "author_id": 941542,
-    "llm_name": "Gemini 3 Pro",
+    "llm_name": "Gemini",
     "homework": "HW2",
     "links": {
       "chat_links": [],
@@ -1335,7 +1335,7 @@
     "participation_type": "B",
     "author_name": "Guohao Lv",
     "author_id": 963333,
-    "llm_name": "Not specified",
+    "llm_name": "Kimi",
     "homework": "HW5",
     "links": {
       "chat_links": [],
@@ -1448,7 +1448,7 @@
     "participation_type": "B",
     "author_name": "Gustavo Jose Ortiz Zepeda",
     "author_id": 1770933,
-    "llm_name": "Not specified",
+    "llm_name": "Claude",
     "homework": "HW4",
     "links": {
       "chat_links": [],
@@ -1589,7 +1589,7 @@
     "participation_type": "B",
     "author_name": "Etaash Patel",
     "author_id": 635294,
-    "llm_name": "Not specified",
+    "llm_name": "Windsurf",
     "homework": "HW3",
     "links": {
       "chat_links": [],
@@ -1647,7 +1647,7 @@
     "participation_type": "B",
     "author_name": "Lenci Ni",
     "author_id": 612366,
-    "llm_name": "Gemini 3 Pro",
+    "llm_name": "Gemini",
     "homework": "HW5",
     "links": {
       "chat_links": [],
@@ -1678,7 +1678,7 @@
     "participation_type": "B",
     "author_name": "Fangzhou Zhao",
     "author_id": 1004026,
-    "llm_name": "Not specified",
+    "llm_name": "Claude",
     "homework": "HW11",
     "links": {
       "chat_links": [],
@@ -1706,7 +1706,7 @@
     "participation_type": "B",
     "author_name": "Mihir Rao",
     "author_id": 607379,
-    "llm_name": "GPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW3",
     "links": {
       "chat_links": [],
@@ -1732,7 +1732,7 @@
     "participation_type": "B",
     "author_name": "John Chang",
     "author_id": 636231,
-    "llm_name": "Not specified",
+    "llm_name": "Kimi",
     "homework": "HW7",
     "links": {
       "chat_links": [],
@@ -1763,7 +1763,7 @@
     "participation_type": "B",
     "author_name": "Qicheng Zhu",
     "author_id": 1308099,
-    "llm_name": "Not specified",
+    "llm_name": "Kimi",
     "homework": "HW1",
     "links": {
       "chat_links": [],
@@ -1790,7 +1790,7 @@
     "participation_type": "B",
     "author_name": "Moxin Tang",
     "author_id": 1751447,
-    "llm_name": "ChatGPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW12",
     "links": {
       "chat_links": [],
@@ -1816,7 +1816,7 @@
     "participation_type": "B",
     "author_name": "Alena Chao",
     "author_id": 639184,
-    "llm_name": "ChatGPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW0",
     "links": {
       "chat_links": [],
@@ -1842,7 +1842,7 @@
     "participation_type": "B",
     "author_name": "Imra Dawoodani",
     "author_id": 608574,
-    "llm_name": "Gemini 3 Pro",
+    "llm_name": "Gemini",
     "homework": "HW5",
     "links": {
       "chat_links": [],
@@ -1876,7 +1876,7 @@
     "participation_type": "B",
     "author_name": "Dagny Streit",
     "author_id": 619713,
-    "llm_name": "ChatGPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW9",
     "links": {
       "chat_links": [],
@@ -1966,7 +1966,7 @@
     "participation_type": "B",
     "author_name": "Hanna Roed",
     "author_id": 1751558,
-    "llm_name": "Not specified",
+    "llm_name": "Qwen",
     "homework": "HW8",
     "links": {
       "chat_links": [],
@@ -1992,7 +1992,7 @@
     "participation_type": "B",
     "author_name": "Kabir Shah",
     "author_id": 622831,
-    "llm_name": "GPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW8",
     "links": {
       "chat_links": [],
@@ -2108,7 +2108,7 @@
     "participation_type": "B",
     "author_name": "Tom Chen",
     "author_id": 1751524,
-    "llm_name": "Not specified",
+    "llm_name": "Kimi",
     "homework": "HW6",
     "links": {
       "chat_links": [],
@@ -2136,7 +2136,7 @@
     "participation_type": "B",
     "author_name": "Jiayi Zhang",
     "author_id": 959644,
-    "llm_name": "ChatGPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW5",
     "links": {
       "chat_links": [
@@ -2167,7 +2167,7 @@
     "participation_type": "B",
     "author_name": "Cameron Jordan",
     "author_id": 961708,
-    "llm_name": "Not specified",
+    "llm_name": "Qwen",
     "homework": "HW3",
     "links": {
       "chat_links": [],
@@ -2196,7 +2196,7 @@
     "participation_type": "B",
     "author_name": "Aaron Zheng",
     "author_id": 622739,
-    "llm_name": "GPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW4",
     "links": {
       "chat_links": [],
@@ -2222,7 +2222,7 @@
     "participation_type": "B",
     "author_name": "Shreyes Sridhara",
     "author_id": 611320,
-    "llm_name": "ChatGPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW10",
     "links": {
       "chat_links": [],
@@ -2278,7 +2278,7 @@
     "participation_type": "B",
     "author_name": "Natalie Wei",
     "author_id": 639336,
-    "llm_name": "Not specified",
+    "llm_name": "Claude",
     "homework": "HW9",
     "links": {
       "chat_links": [],
@@ -2304,7 +2304,7 @@
     "participation_type": "B",
     "author_name": "Joshua Lu",
     "author_id": 961792,
-    "llm_name": "Not specified",
+    "llm_name": "Qwen",
     "homework": "HW9",
     "links": {
       "chat_links": [],
@@ -2338,7 +2338,7 @@
     "author_name": "Rohan Gulati",
     "author_id": 622884,
     "llm_name": "Mistral",
-    "homework": "Not specified",
+    "homework": "HW5",
     "links": {
       "chat_links": [],
       "drive_links": [
@@ -2375,7 +2375,7 @@
     "participation_type": "B",
     "author_name": "Athul Krishnan",
     "author_id": 647698,
-    "llm_name": "Not specified",
+    "llm_name": "Claude",
     "homework": "HW7",
     "links": {
       "chat_links": [],
@@ -2404,7 +2404,7 @@
     "participation_type": "B",
     "author_name": "Devan Perkash",
     "author_id": 1720511,
-    "llm_name": "Not specified",
+    "llm_name": "Cursor",
     "homework": "HW1",
     "links": {
       "chat_links": [],
@@ -2433,7 +2433,7 @@
     "participation_type": "B",
     "author_name": "Tyler Pham",
     "author_id": 932371,
-    "llm_name": "Gemini 3 Pro",
+    "llm_name": "Gemini",
     "homework": "HW9",
     "links": {
       "chat_links": [],
@@ -2462,7 +2462,7 @@
     "participation_type": "B",
     "author_name": "Ayush Goel",
     "author_id": 617828,
-    "llm_name": "Gemini 3 Pro",
+    "llm_name": "Gemini",
     "homework": "HW0",
     "links": {
       "chat_links": [],
@@ -2489,8 +2489,8 @@
     "participation_type": "B",
     "author_name": "Sriram Srivatsan",
     "author_id": 622864,
-    "llm_name": "GPT 5.1",
-    "homework": "Not specified",
+    "llm_name": "ChatGPT",
+    "homework": "HW7",
     "links": {
       "chat_links": [],
       "drive_links": [],
@@ -2548,7 +2548,7 @@
     "participation_type": "B",
     "author_name": "Mishty Dhekial",
     "author_id": 622933,
-    "llm_name": "Not specified",
+    "llm_name": "Windsurf",
     "homework": "HW4",
     "links": {
       "chat_links": [],
@@ -2578,7 +2578,7 @@
     "participation_type": "B",
     "author_name": "Vijay Kethanaboyina",
     "author_id": 921495,
-    "llm_name": "Not specified",
+    "llm_name": "Cursor",
     "homework": "HW2",
     "links": {
       "chat_links": [],
@@ -2604,7 +2604,7 @@
     "participation_type": "B",
     "author_name": "Anshul Verma",
     "author_id": 611905,
-    "llm_name": "GPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW0",
     "links": {
       "chat_links": [
@@ -2636,8 +2636,8 @@
     "participation_type": "B",
     "author_name": "Nazar Ospanov",
     "author_id": 833750,
-    "llm_name": "Not specified",
-    "homework": "Not specified",
+    "llm_name": "Kimi",
+    "homework": "HW12",
     "links": {
       "chat_links": [],
       "drive_links": [],
@@ -2664,7 +2664,7 @@
     "participation_type": "B",
     "author_name": "Reyna Liu",
     "author_id": 1756758,
-    "llm_name": "Not specified",
+    "llm_name": "Claude",
     "homework": "HW9",
     "links": {
       "chat_links": [
@@ -2697,7 +2697,7 @@
     "participation_type": "B",
     "author_name": "Tiger Zhang",
     "author_id": 970790,
-    "llm_name": "Not specified",
+    "llm_name": "Kimi",
     "homework": "HW9",
     "links": {
       "chat_links": [],
@@ -2728,7 +2728,7 @@
     "participation_type": "B",
     "author_name": "Jin Ying",
     "author_id": 906443,
-    "llm_name": "GPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW2",
     "links": {
       "chat_links": [],
@@ -2786,7 +2786,7 @@
     "participation_type": "B",
     "author_name": "Hiya Shah",
     "author_id": 622791,
-    "llm_name": "ChatGPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW11",
     "links": {
       "chat_links": [
@@ -2818,7 +2818,7 @@
     "participation_type": "B",
     "author_name": "Kevin Tseng",
     "author_id": 749355,
-    "llm_name": "GPT 5",
+    "llm_name": "ChatGPT",
     "homework": "HW2",
     "links": {
       "chat_links": [],
@@ -2847,7 +2847,7 @@
     "participation_type": "B",
     "author_name": "Jaewon Chang",
     "author_id": 609384,
-    "llm_name": "GPT 5",
+    "llm_name": "ChatGPT",
     "homework": "HW0",
     "links": {
       "chat_links": [],
@@ -2939,7 +2939,7 @@
     "participation_type": "B",
     "author_name": "Jermaine Lei",
     "author_id": 961793,
-    "llm_name": "Not specified",
+    "llm_name": "Windsurf",
     "homework": "HW8",
     "links": {
       "chat_links": [],
@@ -2966,7 +2966,7 @@
     "participation_type": "B",
     "author_name": "Menger Wen",
     "author_id": 1751523,
-    "llm_name": "ChatGPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW7",
     "links": {
       "chat_links": [
@@ -2998,7 +2998,7 @@
     "participation_type": "B",
     "author_name": "John Wang",
     "author_id": 647712,
-    "llm_name": "Not specified",
+    "llm_name": "Claude",
     "homework": "HW3",
     "links": {
       "chat_links": [],
@@ -3056,7 +3056,7 @@
     "participation_type": "B",
     "author_name": "Jason Lee",
     "author_id": 905785,
-    "llm_name": "Not specified",
+    "llm_name": "Kimi",
     "homework": "HW10",
     "links": {
       "chat_links": [],
@@ -3083,7 +3083,7 @@
     "participation_type": "B",
     "author_name": "WeiYi Zhang",
     "author_id": 1762341,
-    "llm_name": "Not specified",
+    "llm_name": "Cursor",
     "homework": "HW5",
     "links": {
       "chat_links": [],
@@ -3112,7 +3112,7 @@
     "participation_type": "B",
     "author_name": "Sanjay Adhikesaven",
     "author_id": 961865,
-    "llm_name": "ChatGPT 5",
+    "llm_name": "ChatGPT",
     "homework": "HW10",
     "links": {
       "chat_links": [],
@@ -3252,8 +3252,8 @@
     "participation_type": "B",
     "author_name": "Evan Davis",
     "author_id": 647818,
-    "llm_name": "ChatGPT 5",
-    "homework": "Not specified",
+    "llm_name": "ChatGPT",
+    "homework": "HW12",
     "links": {
       "chat_links": [
         "https://chatgpt.com/share/6937a9b2-6d48-800d-b33e-ac9c536afb57"
@@ -3309,7 +3309,7 @@
     "participation_type": "B",
     "author_name": "Jacqueline Thibault",
     "author_id": 582128,
-    "llm_name": "ChatGPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW6",
     "links": {
       "chat_links": [
@@ -3341,7 +3341,7 @@
     "participation_type": "B",
     "author_name": "Zhuangzhe Wu",
     "author_id": 1763610,
-    "llm_name": "Not specified",
+    "llm_name": "Cursor",
     "homework": "HW6",
     "links": {
       "chat_links": [],
@@ -3370,7 +3370,7 @@
     "participation_type": "B",
     "author_name": "Peidong Zhang",
     "author_id": 1308097,
-    "llm_name": "GPT 5",
+    "llm_name": "ChatGPT",
     "homework": "HW12",
     "links": {
       "chat_links": [],
@@ -3511,7 +3511,7 @@
     "participation_type": "B",
     "author_name": "Jincheng Ou",
     "author_id": 1751537,
-    "llm_name": "Not specified",
+    "llm_name": "Cursor",
     "homework": "HW12",
     "links": {
       "chat_links": [],
@@ -3570,7 +3570,7 @@
     "participation_type": "B",
     "author_name": "Kexin Liu",
     "author_id": 906460,
-    "llm_name": "ChatGPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW9",
     "links": {
       "chat_links": [],
@@ -3598,7 +3598,7 @@
     "participation_type": "B",
     "author_name": "Martin Alvarez-Kuglen",
     "author_id": 1294638,
-    "llm_name": "Not specified",
+    "llm_name": "Claude",
     "homework": "HW8",
     "links": {
       "chat_links": [],
@@ -3629,7 +3629,7 @@
     "participation_type": "B",
     "author_name": "Neel Kolhe",
     "author_id": 1316471,
-    "llm_name": "ChatGPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW4",
     "links": {
       "chat_links": [],
@@ -3683,7 +3683,7 @@
     "participation_type": "B",
     "author_name": "Garv Goswami",
     "author_id": 610129,
-    "llm_name": "Not specified",
+    "llm_name": "ChatGPT",
     "homework": "HW3",
     "links": {
       "chat_links": [],
@@ -3768,7 +3768,7 @@
     "participation_type": "B",
     "author_name": "Shuwei Yang",
     "author_id": 932372,
-    "llm_name": "ChatGPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW1",
     "links": {
       "chat_links": [],
@@ -3822,7 +3822,7 @@
     "participation_type": "B",
     "author_name": "Rahul Bir",
     "author_id": 954911,
-    "llm_name": "Not specified",
+    "llm_name": "Windsurf",
     "homework": "HW0",
     "links": {
       "chat_links": [],
@@ -3848,7 +3848,7 @@
     "participation_type": "B",
     "author_name": "Eric Wang",
     "author_id": 906329,
-    "llm_name": "ChatGPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW5",
     "links": {
       "chat_links": [],
@@ -3902,7 +3902,7 @@
     "participation_type": "B",
     "author_name": "Anjo Pagdanganan",
     "author_id": 661976,
-    "llm_name": "ChatGPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW2",
     "links": {
       "chat_links": [],
@@ -3987,7 +3987,7 @@
     "participation_type": "B",
     "author_name": "Yuri Lee",
     "author_id": 1765152,
-    "llm_name": "Gemini 3 Pro",
+    "llm_name": "Gemini",
     "homework": "HW1",
     "links": {
       "chat_links": [],
@@ -4014,7 +4014,7 @@
     "participation_type": "B",
     "author_name": "Atharv Sampath",
     "author_id": 601019,
-    "llm_name": "Not specified",
+    "llm_name": "Claude",
     "homework": "HW10",
     "links": {
       "chat_links": [],
@@ -4041,7 +4041,7 @@
     "participation_type": "B",
     "author_name": "Keshab Agarwal",
     "author_id": 1665080,
-    "llm_name": "Not specified",
+    "llm_name": "Windsurf",
     "homework": "HW1",
     "links": {
       "chat_links": [],
@@ -4126,7 +4126,7 @@
     "participation_type": "B",
     "author_name": "Paul Struble",
     "author_id": 631881,
-    "llm_name": "GPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW7",
     "links": {
       "chat_links": [
@@ -4159,7 +4159,7 @@
     "participation_type": "B",
     "author_name": "Jeshu Mohan",
     "author_id": 632442,
-    "llm_name": "Gemini 2.5 Pro",
+    "llm_name": "Gemini",
     "homework": "HW0",
     "links": {
       "chat_links": [],
@@ -4247,7 +4247,7 @@
     "participation_type": "B",
     "author_name": "Will Cai",
     "author_id": 228223,
-    "llm_name": "Not specified",
+    "llm_name": "Claude",
     "homework": "HW12",
     "links": {
       "chat_links": [],
@@ -4276,7 +4276,7 @@
     "participation_type": "B",
     "author_name": "Kelvin Li",
     "author_id": 612982,
-    "llm_name": "Not specified",
+    "llm_name": "Qwen",
     "homework": "HW5",
     "links": {
       "chat_links": [],
@@ -4308,7 +4308,7 @@
     "participation_type": "B",
     "author_name": "Arnav Dalal",
     "author_id": 607348,
-    "llm_name": "Not specified",
+    "llm_name": "Cursor",
     "homework": "HW10",
     "links": {
       "chat_links": [],
@@ -4423,7 +4423,7 @@
     "participation_type": "B",
     "author_name": "Aryan Bansal",
     "author_id": 1316377,
-    "llm_name": "Not specified",
+    "llm_name": "Windsurf",
     "homework": "HW7",
     "links": {
       "chat_links": [],
@@ -4451,7 +4451,7 @@
     "participation_type": "B",
     "author_name": "Neil Pattanaik",
     "author_id": 1234763,
-    "llm_name": "Not specified",
+    "llm_name": "ChatGPT",
     "homework": "HW4",
     "links": {
       "chat_links": [],
@@ -4477,7 +4477,7 @@
     "participation_type": "B",
     "author_name": "Tvisha Londhe",
     "author_id": 647646,
-    "llm_name": "ChatGPT 5.1",
+    "llm_name": "ChatGPT",
     "homework": "HW8",
     "links": {
       "chat_links": [
@@ -4507,7 +4507,7 @@
     "participation_type": "B",
     "author_name": "Mehul Jaiswal",
     "author_id": 228039,
-    "llm_name": "Not specified",
+    "llm_name": "Cursor",
     "homework": "Not specified",
     "links": {
       "chat_links": [],
@@ -4536,7 +4536,7 @@
     "participation_type": "B",
     "author_name": "Xueli Sun",
     "author_id": 1751540,
-    "llm_name": "Gemini 3 Pro",
+    "llm_name": "Gemini",
     "homework": "HW10",
     "links": {
       "chat_links": [
