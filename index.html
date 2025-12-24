@@ -23,8 +23,10 @@
             <div class="nav-links">
                 <a href="#overview" class="nav-link"><i class="fas fa-home"></i> Overview</a>
                 <a href="#submissions" class="nav-link"><i class="fas fa-list"></i> All Submissions</a>
-                <a href="#llm-comparison" class="nav-link"><i class="fas fa-code-compare"></i> Compare LLMs</a>
+                <a href="#llm-comparison" class="nav-link"><i class="fas fa-code-compare"></i> Compare & Analyze LLMs</a>
+                <!-- <a href="#llm-comparison" class="nav-link"><i class="fas fa-brain"></i> LLM Analysis</a> -->
                 <a href="#visualizations" class="nav-link"><i class="fas fa-chart-bar"></i> Visualizations</a>
+                <a href="#insights-advanced" class="nav-link"><i class="fas fa-lightbulb"></i> Other Insights</a>
                 <!-- <a href="#insights" class="nav-link"><i class="fas fa-lightbulb"></i> Insights</a> -->
                 <!-- <a href="#leaderboard" class="nav-link"><i class="fas fa-trophy"></i> Leaderboard</a> -->
             </div>
@@ -81,7 +83,7 @@
                     <div class="stat-card stat-card-animated">
                         <div class="stat-icon"><i class="fas fa-robot"></i></div>
                         <div class="stat-number" id="total-llms" data-count="6">6</div>
-                        <div class="stat-label">LLMs Analyzed</div>
+                        <div class="stat-label">Core LLMs Analyzed</div>
                         <div class="stat-sublabel">Different Models</div>
                     </div>
                 </a>
@@ -262,11 +264,34 @@
             
             <div id="llm-comparison-content" class="grid-view"></div>
             -->
+            
+            <br>
+            <!-- Common Pitfalls -->
+            <div class="viz-card">
+                <div class="viz-header">
+                    <h3><i class="fas fa-exclamation-circle"></i> Common Pitfall Patterns</h3>
+                    <p>Recurring issues and how to avoid them!</p>
+                </div>
+                <div id="common-pitfalls"></div>
+            </div>
+
+
         </section>
+
+        <!-- LLM Analysis Section -->
+        <!-- <section id="llm-analysis" class="section fade-in">
+            <h2><i class="fas fa-brain"></i> LLM Deep Dive Analysis</h2>
+            <p class="lead">
+                Comprehensive analysis of each LLM's strengths, weaknesses, and best practices based on student experiences across all submissions.
+            </p>
+            
+            <div id="llm-analysis-content"></div>
+        </section> -->
+
 
         <!-- Data Visualizations Section -->
         <section id="visualizations" class="section fade-in">
-            <h2><i class="fas fa-chart-bar"></i> Data Visualizations</h2>
+            <h2><i class="fas fa-chart-bar"></i>Data Visualizations & Patterns</h2>
             
             <div class="viz-container">
                 <div class="viz-card">
@@ -289,6 +314,17 @@
                         <canvas id="posts-timeline-chart"></canvas>
                     </div>
                 </div>
+
+                <!-- LLM Evolution Timeline -->
+                <div class="viz-card">
+                    <h3>LLM Usage Evolution over Time </h3>
+                    <div class="viz-header">
+                        <p>How student preferences for different LLMs changed throughout the semester</p>
+                    </div>
+                    <div class="chart-wrapper">
+                        <canvas id="llm-evolution-chart"></canvas>
+                    </div>
+                </div>
                 
                 <!-- <div class="viz-card full-width">
                     <h3>Performance Metrics by LLM</h3>
@@ -297,6 +333,54 @@
                     </div>
                 </div> -->
             </div>
+        </section>
+
+        <!-- Advanced Insights Section -->
+        <section id="insights-advanced" class="section fade-in">
+            <h2><i class="fas fa-lightbulb"></i> Other Interesting Insights</h2>
+
+            <!-- Category Heatmap -->
+            <!-- <div class="insight-card">
+                <div class="insight-header">
+                    <h3><i class="fas fa-fire"></i> Problem Category Heatmap</h3>
+                    <p>Which LLMs encounter which types of issues most frequently?</p>
+                </div>
+                <div id="category-heatmap"></div>
+            </div> -->
+
+            <!-- Homework Difficulty Analysis -->
+            <div class="viz-card">
+                <div class="insight-header">
+                    <h3><i class="fas fa-graduation-cap"></i> Homework Challenge Analysis</h3>
+                    <p>Issue density and LLM performance across different homework assignments</p>
+                </div>
+                <div class="homework-analysis-grid">
+                    <div class="chart-wrapper">
+                        <canvas id="homework-difficulty-chart"></canvas>
+                    </div>
+                    <div id="homework-insights-text"></div>
+                </div>
+            </div>
+
+            <!-- A vs B Performance -->
+            <!-- <div class="insight-card">
+                <div class="insight-header">
+                    <h3><i class="fas fa-balance-scale"></i> Coding vs Non-Coding Performance</h3>
+                    <p>How each LLM performs on analytical problems versus coding tasks</p>
+                </div>
+                <div id="a-vs-b-comparison"></div>
+            </div> -->
+
+            <!-- Success Stories -->
+            <!-- <div class="insight-card">
+                <div class="insight-header">
+                    <h3><i class="fas fa-star"></i> Notable Success Stories</h3>
+                    <p>Exceptional interactions and learning experiences</p>
+                </div>
+                <div id="success-stories"></div>
+            </div> -->
+
+
         </section>
 
         <!-- Insights Section -->
@@ -618,5 +702,3 @@
     </script>
 </body>
 </html>
-
-

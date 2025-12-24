@@ -13,6 +13,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     initializeUI();
     renderOverview();
     renderVisualizations();
+    renderLLMAnalysis();
+    renderAdvancedInsights();
     // renderInsights(); // Commented out - insights section is commented out in HTML
     // renderLLMComparison('a'); // Commented out - now using radar charts instead
     renderLeaderboard('posts');
@@ -1087,3 +1089,819 @@ function setupScrollTop() {
 
 // Make toggleContent available globally
 window.toggleContent = toggleContent;
+
+// Render LLM Analysis Section
+function renderLLMAnalysis() {
+    const container = document.getElementById('llm-analysis-content');
+    if (!container) return;
+    
+    // Analyze all submissions to extract LLM insights
+    const llmData = analyzeLLMData();
+    
+    // Sort LLMs by total submissions
+    const sortedLLMs = Object.keys(llmData).sort((a, b) => 
+        llmData[b].totalSubmissions - llmData[a].totalSubmissions
+    );
+    
+    let html = '<div class="llm-analysis-grid">';
+    
+    sortedLLMs.forEach(llmName => {
+        const data = llmData[llmName];
+        const llmClass = llmName.toLowerCase().replace(/\s+/g, '-');
+        
+        html += `
+            <div class="llm-analysis-card ${llmClass}">
+                <div class="llm-analysis-header">
+                    <h3>${llmName}</h3>
+                    <div class="llm-stats-badge">
+                        <span><i class="fas fa-file-alt"></i> ${data.participationA} A</span>
+                        <span><i class="fas fa-code"></i> ${data.participationB} B</span>
+                    </div>
+                </div>
+                
+                <div class="llm-analysis-body">
+                    <div class="analysis-section">
+                        <h4><i class="fas fa-check-circle"></i> Key Strengths</h4>
+                        <ul class="strengths-list">
+                            ${data.strengths.slice(0, 5).map(s => `<li>${s}</li>`).join('')}
+                        </ul>
+                    </div>
+                    
+                    <div class="analysis-section">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Notable Weaknesses</h4>
+                        <ul class="weaknesses-list">
+                            ${data.weaknesses.slice(0, 5).map(w => `<li>${w}</li>`).join('')}
+                        </ul>
+                    </div>
+                    
+                    <div class="analysis-section best-practices">
+                        <h4><i class="fas fa-lightbulb"></i> Best Practices</h4>
+                        <ul class="practices-list">
+                            ${data.bestPractices.slice(0, 4).map(p => `<li>${p}</li>`).join('')}
+                        </ul>
+                    </div>
+                    
+                    <div class="analysis-footer">
+                        <div class="performance-metrics">
+                            <div class="metric">
+                                <i class="fas fa-bolt"></i>
+                                <span>One-shot Success: ${data.oneShotRate}%</span>
+                            </div>
+                            <div class="metric">
+                                <i class="fas fa-brain"></i>
+                                <span>Avg Explanation Quality: ${data.explanationQuality}/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+    
+    html += '</div>';
+    container.innerHTML = html;
+}
+
+// Analyze LLM data from all submissions
+function analyzeLLMData() {
+    const llmData = {};
+    
+    // Initialize data structure for each LLM
+    const initializeLLM = (name) => {
+        if (!llmData[name]) {
+            llmData[name] = {
+                totalSubmissions: 0,
+                participationA: 0,
+                participationB: 0,
+                strengths: [],
+                weaknesses: [],
+                bestPractices: [],
+                categories: {},
+                oneShotRate: 0,
+                explanationQuality: 0
+            };
+        }
+    };
+    
+    // Process all submissions
+    allSubmissions.forEach(sub => {
+        const llmName = normalizeLLMName(sub.llm_name);
+        if (!llmName || llmName === 'Not specified') return;
+        
+        initializeLLM(llmName);
+        const llm = llmData[llmName];
+        
+        llm.totalSubmissions++;
+        if (sub.participation_type === 'A') llm.participationA++;
+        else if (sub.participation_type === 'B') llm.participationB++;
+        
+        // Track categories
+        if (sub.categories) {
+            sub.categories.forEach(cat => {
+                llm.categories[cat] = (llm.categories[cat] || 0) + 1;
+            });
+        }
+        
+        // Extract insights from content
+        if (sub.content) {
+            extractInsights(sub.content, llm, sub.participation_type);
+        }
+    });
+    
+    // Finalize analysis for each LLM
+    Object.keys(llmData).forEach(llmName => {
+        const llm = llmData[llmName];
+        
+        // Calculate metrics
+        const correctCount = (llm.categories['correct solutions'] || 0);
+        const oneShotCount = (llm.categories['one-shot solving'] || 0);
+        llm.oneShotRate = Math.round((oneShotCount / llm.totalSubmissions) * 100) || 0;
+        
+        const explainCount = (llm.categories['explanations'] || 0);
+        llm.explanationQuality = Math.min(5, Math.round((explainCount / llm.totalSubmissions) * 5)) || 3;
+        
+        // Deduplicate and sort insights
+        llm.strengths = [...new Set(llm.strengths)].slice(0, 7);
+        llm.weaknesses = [...new Set(llm.weaknesses)].slice(0, 7);
+        llm.bestPractices = [...new Set(llm.bestPractices)].slice(0, 6);
+        
+        // Add generic insights if not enough specific ones
+        fillGenericInsights(llm, llmName);
+    });
+    
+    return llmData;
+}
+
+// Normalize LLM names to handle variations
+function normalizeLLMName(name) {
+    if (!name || name === 'Not specified') return null;
+    
+    const normalized = name.toLowerCase();
+    if (normalized.includes('chatgpt') || normalized.includes('gpt')) return 'ChatGPT';
+    if (normalized.includes('gemini')) return 'Gemini';
+    if (normalized.includes('claude')) return 'Claude';
+    if (normalized.includes('deepseek')) return 'DeepSeek';
+    if (normalized.includes('grok')) return 'Grok';
+    if (normalized.includes('mistral')) return 'Mistral';
+    if (normalized.includes('llama')) return 'Llama';
+    
+    return name;
+}
+
+// Extract insights from student descriptions
+function extractInsights(content, llm, participationType) {
+    const lowerContent = content.toLowerCase();
+    
+    // Strengths patterns
+    if (lowerContent.includes('one-shot') || lowerContent.includes('one shot') || lowerContent.includes('first try')) {
+        llm.strengths.push('High success rate on one-shot problem solving');
+    }
+    if (lowerContent.includes('clear') && lowerContent.includes('explanation')) {
+        llm.strengths.push('Provides clear and detailed explanations');
+    }
+    if (lowerContent.includes('accurate') || lowerContent.includes('correct')) {
+        llm.strengths.push('Produces accurate solutions for most problems');
+    }
+    if (lowerContent.includes('helpful') || lowerContent.includes('useful')) {
+        llm.strengths.push('Helpful for learning and understanding concepts');
+    }
+    if (lowerContent.includes('reasoning') && !lowerContent.includes('weak reasoning')) {
+        llm.strengths.push('Strong analytical and reasoning capabilities');
+    }
+    if (lowerContent.includes('adaptable') || lowerContent.includes('flexible')) {
+        llm.strengths.push('Adapts well to different prompting styles');
+    }
+    if (lowerContent.includes('intuition') || lowerContent.includes('conceptual')) {
+        llm.strengths.push('Good conceptual intuition for deep learning topics');
+    }
+    if (participationType === 'B' && (lowerContent.includes('code') && lowerContent.includes('correct'))) {
+        llm.strengths.push('Generates functionally correct code implementations');
+    }
+    
+    // Weaknesses patterns
+    if (lowerContent.includes('hallucination') || lowerContent.includes('hallucinate')) {
+        llm.weaknesses.push('Occasional hallucinations or fabricated information');
+    }
+    if (lowerContent.includes('verbose') || lowerContent.includes('too long') || lowerContent.includes('wordy')) {
+        llm.weaknesses.push('Tendency to be overly verbose in explanations');
+    }
+    if (lowerContent.includes('skip') && lowerContent.includes('step')) {
+        llm.weaknesses.push('Sometimes skips important intermediate steps');
+    }
+    if (lowerContent.includes('context') && (lowerContent.includes('lose') || lowerContent.includes('lost'))) {
+        llm.weaknesses.push('Can lose context in longer conversations');
+    }
+    if (lowerContent.includes('calculation') && lowerContent.includes('error')) {
+        llm.weaknesses.push('Prone to computational or calculation errors');
+    }
+    if (lowerContent.includes('numerical') && (lowerContent.includes('mistake') || lowerContent.includes('wrong'))) {
+        llm.weaknesses.push('Struggles with precise numerical computations');
+    }
+    if (lowerContent.includes('confused') || lowerContent.includes('confusion')) {
+        llm.weaknesses.push('May get confused with ambiguous problem statements');
+    }
+    if (lowerContent.includes('visual') || lowerContent.includes('image')) {
+        if (lowerContent.includes('cannot') || lowerContent.includes('does not support')) {
+            llm.weaknesses.push('Limited or no support for visual/image inputs');
+        }
+    }
+    if (participationType === 'B' && lowerContent.includes('code') && lowerContent.includes('bug')) {
+        llm.weaknesses.push('Generated code may contain subtle bugs');
+    }
+    
+    // Best practices patterns
+    if (lowerContent.includes('clear prompt') || lowerContent.includes('specific prompt')) {
+        llm.bestPractices.push('Use clear and specific prompts for best results');
+    }
+    if (lowerContent.includes('hint') || lowerContent.includes('nudge')) {
+        llm.bestPractices.push('Provide hints or nudges for complex multi-step problems');
+    }
+    if (lowerContent.includes('step by step') || lowerContent.includes('step-by-step')) {
+        llm.bestPractices.push('Ask for step-by-step breakdowns when needed');
+    }
+    if (lowerContent.includes('latex') || lowerContent.includes('formatted')) {
+        llm.bestPractices.push('Format mathematical expressions properly (LaTeX)');
+    }
+    if (lowerContent.includes('verify') || lowerContent.includes('check')) {
+        llm.bestPractices.push('Ask the model to verify its own work');
+    }
+    if (lowerContent.includes('follow-up') || lowerContent.includes('iterate')) {
+        llm.bestPractices.push('Use iterative prompting for refining answers');
+    }
+    if (lowerContent.includes('context') && lowerContent.includes('provide')) {
+        llm.bestPractices.push('Provide sufficient context for complex problems');
+    }
+    if (participationType === 'B' && lowerContent.includes('test')) {
+        llm.bestPractices.push('Request test cases for generated code');
+    }
+}
+
+// Fill in generic insights based on LLM name
+function fillGenericInsights(llm, llmName) {
+    // Generic strengths
+    const genericStrengths = {
+        'ChatGPT': [
+            'Widely trained on diverse problem types',
+            'Consistent performance across different domains',
+            'Good balance between speed and accuracy'
+        ],
+        'Claude': [
+            'Thoughtful and methodical approach to problems',
+            'Strong ethical reasoning and safety considerations',
+            'Excellent at following complex instructions'
+        ],
+        'Gemini': [
+            'Strong integration with Google ecosystem',
+            'Multimodal capabilities for handling images',
+            'Fast response times'
+        ],
+        'DeepSeek': [
+            'Advanced reasoning with deep thinking mode',
+            'Strong performance on analytical problems',
+            'Good at mathematical derivations'
+        ],
+        'Grok': [
+            'Creative and engaging responses',
+            'Good at exploring multiple solution approaches',
+            'Strong conceptual understanding'
+        ],
+        'Mistral': [
+            'Efficient and focused responses',
+            'Good at technical problem solving',
+            'Strong European AI perspective'
+        ]
+    };
+    
+    // Generic weaknesses
+    const genericWeaknesses = {
+        'ChatGPT': [
+            'May require prompt engineering for optimal results',
+            'Can be inconsistent across different versions'
+        ],
+        'Claude': [
+            'Sometimes overly cautious in responses',
+            'May decline tasks that are actually appropriate'
+        ],
+        'Gemini': [
+            'Still maturing in some advanced capabilities',
+            'May vary in quality across different modalities'
+        ],
+        'DeepSeek': [
+            'Thinking time can be lengthy for complex problems',
+            'May over-explain simple concepts'
+        ],
+        'Grok': [
+            'Can be verbose and overly enthusiastic',
+            'May spend too long on preliminary thinking'
+        ],
+        'Mistral': [
+            'Smaller context window than some competitors',
+            'May struggle with very long documents'
+        ]
+    };
+    
+    // Generic best practices
+    const genericPractices = {
+        'ChatGPT': [
+            'Experiment with different prompt formats',
+            'Use system messages for consistent behavior',
+            'Break complex problems into smaller parts'
+        ],
+        'Claude': [
+            'Be explicit about your learning objectives',
+            'Use XML tags for structured input when helpful',
+            'Engage in dialogue rather than one-off queries'
+        ],
+        'Gemini': [
+            'Leverage multimodal inputs when relevant',
+            'Use iterative refinement for best results',
+            'Combine text and visual information strategically'
+        ],
+        'DeepSeek': [
+            'Enable deep thinking mode for complex problems',
+            'Be patient with reasoning time',
+            'Request structured output formats'
+        ],
+        'Grok': [
+            'Set clear boundaries on response length',
+            'Ask for concise summaries after detailed explanations',
+            'Use it for brainstorming and exploration'
+        ],
+        'Mistral': [
+            'Keep prompts focused and concise',
+            'Use it for rapid prototyping',
+            'Leverage its efficiency for quick iterations'
+        ]
+    };
+    
+    // Add generic insights if we don't have enough specific ones
+    if (llm.strengths.length < 4 && genericStrengths[llmName]) {
+        genericStrengths[llmName].forEach(s => {
+            if (llm.strengths.length < 5 && !llm.strengths.includes(s)) {
+                llm.strengths.push(s);
+            }
+        });
+    }
+    
+    if (llm.weaknesses.length < 3 && genericWeaknesses[llmName]) {
+        genericWeaknesses[llmName].forEach(w => {
+            if (llm.weaknesses.length < 5 && !llm.weaknesses.includes(w)) {
+                llm.weaknesses.push(w);
+            }
+        });
+    }
+    
+    if (llm.bestPractices.length < 3 && genericPractices[llmName]) {
+        genericPractices[llmName].forEach(p => {
+            if (llm.bestPractices.length < 4 && !llm.bestPractices.includes(p)) {
+                llm.bestPractices.push(p);
+            }
+        });
+    }
+}
+
+// Render Advanced Insights Section
+function renderAdvancedInsights() {
+    renderCategoryHeatmap();
+    renderHomeworkDifficulty();
+    renderLLMEvolution();
+    renderAVsBComparison();
+    renderSuccessStories();
+    renderCommonPitfalls();
+}
+
+// 1. Category Heatmap - shows which LLMs have which issues
+function renderCategoryHeatmap() {
+    const container = document.getElementById('category-heatmap');
+    if (!container) return;
+    
+    const majorLLMs = ['ChatGPT', 'Claude', 'Gemini', 'DeepSeek', 'Grok', 'Mistral'];
+    const categories = ['hallucinations', 'errors', 'explanations', 'correct solutions', 'one-shot solving', 'prompt engineering', 'confusion'];
+    
+    // Count category occurrences for each LLM
+    const heatmapData = {};
+    majorLLMs.forEach(llm => {
+        heatmapData[llm] = {};
+        categories.forEach(cat => {
+            heatmapData[llm][cat] = 0;
+        });
+    });
+    
+    allSubmissions.forEach(sub => {
+        const llmName = normalizeLLMName(sub.llm_name);
+        if (majorLLMs.includes(llmName) && sub.categories) {
+            sub.categories.forEach(cat => {
+                if (categories.includes(cat)) {
+                    heatmapData[llmName][cat]++;
+                }
+            });
+        }
+    });
+    
+    // Create heatmap HTML
+    let html = '<div class="heatmap-container">';
+    html += '<table class="heatmap-table"><thead><tr><th>LLM</th>';
+    categories.forEach(cat => {
+        html += `<th>${cat.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}</th>`;
+    });
+    html += '</tr></thead><tbody>';
+    
+    majorLLMs.forEach(llm => {
+        html += `<tr><td class="llm-name">${llm}</td>`;
+        categories.forEach(cat => {
+            const count = heatmapData[llm][cat];
+            const maxCount = Math.max(...Object.values(heatmapData).map(d => d[cat]));
+            const intensity = maxCount > 0 ? (count / maxCount) : 0;
+            const color = cat === 'correct solutions' || cat === 'one-shot solving' || cat === 'explanations' 
+                ? `rgba(40, 167, 69, ${intensity * 0.8})` 
+                : cat === 'hallucinations' || cat === 'errors' || cat === 'confusion'
+                ? `rgba(220, 53, 69, ${intensity * 0.8})`
+                : `rgba(59, 126, 161, ${intensity * 0.8})`;
+            html += `<td class="heatmap-cell" style="background-color: ${color}" title="${llm} - ${cat}: ${count} mentions">${count || ''}</td>`;
+        });
+        html += '</tr>';
+    });
+    
+    html += '</tbody></table></div>';
+    container.innerHTML = html;
+}
+
+// 2. Homework Difficulty Analysis
+function renderHomeworkDifficulty() {
+    const canvas = document.getElementById('homework-difficulty-chart');
+    const textContainer = document.getElementById('homework-insights-text');
+    if (!canvas || !textContainer) return;
+    
+    // Analyze homework issues
+    const hwData = {};
+    allSubmissions.forEach(sub => {
+        if (sub.homework && sub.homework !== 'Not specified') {
+            if (!hwData[sub.homework]) {
+                hwData[sub.homework] = {
+                    total: 0,
+                    issues: 0,
+                    hallucinations: 0,
+                    errors: 0,
+                    correct: 0,
+                    oneShot: 0
+                };
+            }
+            hwData[sub.homework].total++;
+            if (sub.categories) {
+                if (sub.categories.includes('hallucinations')) hwData[sub.homework].hallucinations++;
+                if (sub.categories.includes('errors')) hwData[sub.homework].errors++;
+                if (sub.categories.includes('correct solutions')) hwData[sub.homework].correct++;
+                if (sub.categories.includes('one-shot solving')) hwData[sub.homework].oneShot++;
+                hwData[sub.homework].issues += sub.categories.filter(c => 
+                    ['hallucinations', 'errors', 'confusion'].includes(c)
+                ).length;
+            }
+        }
+    });
+    
+    // Sort by homework number
+    const sortedHW = Object.keys(hwData).sort((a, b) => {
+        const numA = parseInt(a.replace(/\D/g, '')) || 0;
+        const numB = parseInt(b.replace(/\D/g, '')) || 0;
+        return numA - numB;
+    }).slice(0, 12);
+    
+    // Create chart
+    const ctx = canvas.getContext('2d');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: sortedHW,
+            datasets: [
+                {
+                    label: 'Total Submissions',
+                    data: sortedHW.map(hw => hwData[hw].total),
+                    backgroundColor: 'rgba(59, 126, 161, 0.6)',
+                    borderColor: 'rgba(59, 126, 161, 1)',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Issues Reported',
+                    data: sortedHW.map(hw => hwData[hw].issues),
+                    backgroundColor: 'rgba(220, 53, 69, 0.6)',
+                    borderColor: 'rgba(220, 53, 69, 1)',
+                    borderWidth: 2
+                },
+                {
+                    label: 'One-Shot Successes',
+                    data: sortedHW.map(hw => hwData[hw].oneShot),
+                    backgroundColor: 'rgba(40, 167, 69, 0.6)',
+                    borderColor: 'rgba(40, 167, 69, 1)',
+                    borderWidth: 2
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: { beginAtZero: true, title: { display: true, text: 'Count' } },
+                x: { title: { display: true, text: 'Homework' } }
+            }
+        }
+    });
+    
+    // Generate insights text
+    const mostChallenging = sortedHW.reduce((max, hw) => 
+        (hwData[hw].issues / hwData[hw].total) > (hwData[max].issues / hwData[max].total) ? hw : max
+    );
+    const easiest = sortedHW.reduce((min, hw) => 
+        (hwData[hw].oneShot / hwData[hw].total) > (hwData[min].oneShot / hwData[min].total) ? hw : min
+    );
+    
+    textContainer.innerHTML = `
+        <div class="hw-insight-box">
+            <div class="hw-insight-item">
+                <i class="fas fa-trophy"></i>
+                <div>
+                    <strong>Most One-Shot Friendly:</strong>
+                    <p>${easiest} - ${Math.round((hwData[easiest].oneShot / hwData[easiest].total) * 100)}% one-shot success rate</p>
+                </div>
+            </div>
+            <div class="hw-insight-item">
+                <i class="fas fa-mountain"></i>
+                <div>
+                    <strong>Most Challenging:</strong>
+                    <p>${mostChallenging} - ${Math.round((hwData[mostChallenging].issues / hwData[mostChallenging].total) * 100)}% issue rate</p>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+// 3. LLM Evolution Timeline
+function renderLLMEvolution() {
+    const canvas = document.getElementById('llm-evolution-chart');
+    if (!canvas) return;
+    
+    const majorLLMs = ['ChatGPT', 'Claude', 'Gemini', 'DeepSeek', 'Grok', 'Mistral'];
+    
+    // Group by month
+    const monthlyData = {};
+    allSubmissions.forEach(sub => {
+        const llmName = normalizeLLMName(sub.llm_name);
+        if (!majorLLMs.includes(llmName)) return;
+        
+        const date = new Date(sub.created_at);
+        const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`;
+        
+        if (!monthlyData[monthKey]) {
+            monthlyData[monthKey] = {};
+            majorLLMs.forEach(llm => monthlyData[monthKey][llm] = 0);
+        }
+        monthlyData[monthKey][llmName]++;
+    });
+    
+    const sortedMonths = Object.keys(monthlyData).sort();
+    
+    const colors = {
+        'ChatGPT': 'rgba(16, 163, 127, 1)',
+        'Gemini': 'rgba(66, 133, 244, 1)',
+        'Claude': 'rgba(204, 131, 82, 1)',
+        'DeepSeek': 'rgba(139, 69, 255, 1)',
+        'Grok': 'rgba(255, 99, 132, 1)',
+        'Mistral': 'rgba(255, 159, 64, 1)'
+    };
+    
+    const datasets = majorLLMs.map(llm => ({
+        label: llm,
+        data: sortedMonths.map(month => monthlyData[month][llm]),
+        borderColor: colors[llm],
+        backgroundColor: colors[llm].replace('1)', '0.3)'),
+        tension: 0.4,
+        fill: true
+    }));
+    
+    const ctx = canvas.getContext('2d');
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: sortedMonths.map(m => {
+                const [year, month] = m.split('-');
+                return new Date(year, month - 1).toLocaleString('default', { month: 'short', year: 'numeric' });
+            }),
+            datasets: datasets
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: { display: true, position: 'top' }
+            },
+            scales: {
+                y: { beginAtZero: true, title: { display: true, text: 'Submissions' } },
+                x: { title: { display: true, text: 'Month' } }
+            }
+        }
+    });
+}
+
+// 4. A vs B Comparison
+function renderAVsBComparison() {
+    const container = document.getElementById('a-vs-b-comparison');
+    if (!container) return;
+    
+    const majorLLMs = ['ChatGPT', 'Claude', 'Gemini', 'DeepSeek', 'Grok', 'Mistral'];
+    const comparison = {};
+    
+    majorLLMs.forEach(llm => {
+        comparison[llm] = {
+            a: { total: 0, correct: 0, oneShot: 0, issues: 0 },
+            b: { total: 0, correct: 0, oneShot: 0, issues: 0 }
+        };
+    });
+    
+    allSubmissions.forEach(sub => {
+        const llmName = normalizeLLMName(sub.llm_name);
+        if (!majorLLMs.includes(llmName)) return;
+        
+        const type = sub.participation_type === 'A' ? 'a' : 'b';
+        comparison[llmName][type].total++;
+        
+        if (sub.categories) {
+            if (sub.categories.includes('correct solutions')) comparison[llmName][type].correct++;
+            if (sub.categories.includes('one-shot solving')) comparison[llmName][type].oneShot++;
+            comparison[llmName][type].issues += sub.categories.filter(c => 
+                ['hallucinations', 'errors', 'confusion'].includes(c)
+            ).length;
+        }
+    });
+    
+    let html = '<div class="comparison-grid">';
+    
+    majorLLMs.forEach(llm => {
+        const data = comparison[llm];
+        const aSuccessRate = data.a.total > 0 ? Math.round((data.a.oneShot / data.a.total) * 100) : 0;
+        const bSuccessRate = data.b.total > 0 ? Math.round((data.b.oneShot / data.b.total) * 100) : 0;
+        const better = aSuccessRate > bSuccessRate ? 'analytical' : aSuccessRate < bSuccessRate ? 'coding' : 'balanced';
+        
+        html += `
+            <div class="comparison-card">
+                <h4>${llm}</h4>
+                <div class="comparison-bars">
+                    <div class="comparison-bar-row">
+                        <span class="bar-label"><i class="fas fa-file-alt"></i> Analytical (A)</span>
+                        <div class="bar-container">
+                            <div class="bar analytical" style="width: ${Math.max(aSuccessRate, 5)}%">
+                                <span class="bar-value">${aSuccessRate}%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-bar-row">
+                        <span class="bar-label"><i class="fas fa-code"></i> Coding (B)</span>
+                        <div class="bar-container">
+                            <div class="bar coding" style="width: ${Math.max(bSuccessRate, 5)}%">
+                                <span class="bar-value">${bSuccessRate}%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comparison-verdict ${better}">
+                    ${better === 'analytical' ? '📊 Stronger at analytical tasks' : 
+                      better === 'coding' ? '💻 Stronger at coding tasks' : 
+                      '⚖️ Balanced performance'}
+                </div>
+            </div>
+        `;
+    });
+    
+    html += '</div>';
+    container.innerHTML = html;
+}
+
+// 5. Success Stories
+function renderSuccessStories() {
+    const container = document.getElementById('success-stories');
+    if (!container) return;
+    
+    // Find submissions with high engagement and positive categories
+    const successfulSubmissions = allSubmissions
+        .filter(sub => 
+            sub.categories && 
+            sub.categories.includes('correct solutions') &&
+            sub.categories.includes('one-shot solving') &&
+            sub.view_count > 100
+        )
+        .sort((a, b) => b.view_count - a.view_count)
+        .slice(0, 5);
+    
+    let html = '<div class="success-stories-grid">';
+    
+    successfulSubmissions.forEach(sub => {
+        const excerpt = sub.content.substring(0, 200).replace(/\n/g, ' ') + '...';
+        html += `
+            <div class="success-story-card">
+                <div class="success-badge"><i class="fas fa-star"></i> Success</div>
+                <h4>${escapeHtml(sub.title)}</h4>
+                <div class="success-meta">
+                    <span><i class="fas fa-user"></i> ${escapeHtml(sub.author_name)}</span>
+                    <span><i class="fas fa-robot"></i> ${escapeHtml(sub.llm_name)}</span>
+                    <span><i class="fas fa-book"></i> ${escapeHtml(sub.homework)}</span>
+                </div>
+                <p class="success-excerpt">${escapeHtml(excerpt)}</p>
+                <div class="success-stats">
+                    <span><i class="fas fa-eye"></i> ${sub.view_count} views</span>
+                    <span class="success-tag">One-shot solve</span>
+                </div>
+            </div>
+        `;
+    });
+    
+    html += '</div>';
+    container.innerHTML = html;
+}
+
+// 6. Common Pitfalls
+function renderCommonPitfalls() {
+    const container = document.getElementById('common-pitfalls');
+    if (!container) return;
+    
+    // Analyze common issues
+    const pitfalls = {
+        'hallucinations': {
+            count: 0,
+            icon: 'fa-ghost',
+            title: 'Hallucinations & Fabrications',
+            solutions: [
+                'Cross-verify important facts with authoritative sources',
+                'Ask the model to cite sources or explain reasoning',
+                'Use multiple LLMs for fact-checking critical information'
+            ]
+        },
+        'errors': {
+            count: 0,
+            icon: 'fa-bug',
+            title: 'Calculation & Logic Errors',
+            solutions: [
+                'Request step-by-step breakdowns for complex problems',
+                'Ask the model to verify its own work',
+                'Provide clear context and constraints'
+            ]
+        },
+        'confusion': {
+            count: 0,
+            icon: 'fa-question-circle',
+            title: 'Confusion & Misunderstanding',
+            solutions: [
+                'Use clear, unambiguous language in prompts',
+                'Break complex questions into smaller parts',
+                'Provide examples of desired output format'
+            ]
+        },
+        'verbose': {
+            count: 0,
+            icon: 'fa-comment-dots',
+            title: 'Overly Verbose Responses',
+            solutions: [
+                'Explicitly request concise answers',
+                'Set word or paragraph limits in your prompt',
+                'Ask for summaries instead of full explanations'
+            ]
+        }
+    };
+    
+    // Count occurrences
+    allSubmissions.forEach(sub => {
+        if (sub.categories) {
+            if (sub.categories.includes('hallucinations')) pitfalls['hallucinations'].count++;
+            if (sub.categories.includes('errors')) pitfalls['errors'].count++;
+            if (sub.categories.includes('confusion')) pitfalls['confusion'].count++;
+        }
+        if (sub.content && sub.content.toLowerCase().includes('verbose')) {
+            pitfalls['verbose'].count++;
+        }
+    });
+    
+    // Sort by count
+    const sortedPitfalls = Object.entries(pitfalls)
+        .sort((a, b) => b[1].count - a[1].count)
+        .filter(([_, data]) => data.count > 0);
+    
+    let html = '<div class="pitfalls-grid">';
+    
+    sortedPitfalls.forEach(([key, data]) => {
+        html += `
+            <div class="pitfall-card">
+                <div class="pitfall-header">
+                    <i class="fas ${data.icon}"></i>
+                    <h4>${data.title}</h4>
+                    <span class="pitfall-count">${data.count} occurrences</span>
+                </div>
+                <div class="pitfall-solutions">
+                    <strong>How to Avoid:</strong>
+                    <ul>
+                        ${data.solutions.map(s => `<li>${s}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+        `;
+    });
+    
+    html += '</div>';
+    container.innerHTML = html;
+}

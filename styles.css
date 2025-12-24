@@ -1697,6 +1697,682 @@ footer {
     }
 }
 
+/* Advanced Insights Section */
+.insight-card {
+    background: var(--card-background);
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    transition: box-shadow var(--transition-speed);
+}
+
+.insight-card:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.insight-header {
+    margin-bottom: 2rem;
+}
+
+.insight-header h3 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.insight-header p {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+/* Category Heatmap */
+.heatmap-container {
+    overflow-x: auto;
+}
+
+.heatmap-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 4px;
+    font-size: 0.9rem;
+}
+
+.heatmap-table th,
+.heatmap-table td {
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.heatmap-table thead th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.heatmap-table .llm-name {
+    background: var(--accent-color);
+    color: white;
+    font-weight: 600;
+    text-align: left;
+}
+
+.heatmap-cell {
+    background: var(--light-gray);
+    transition: transform var(--transition-speed);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.heatmap-cell:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    position: relative;
+}
+
+/* Homework Analysis */
+.homework-analysis-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.chart-wrapper {
+    position: relative;
+    height: 400px;
+}
+
+.hw-insight-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hw-insight-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: var(--light-gray);
+    border-radius: 12px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.hw-insight-item i {
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+.hw-insight-item strong {
+    display: block;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.hw-insight-item p {
+    color: var(--text-color);
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* A vs B Comparison */
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.comparison-card {
+    background: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    transition: border-color var(--transition-speed);
+}
+
+.comparison-card:hover {
+    border-color: var(--accent-color);
+}
+
+.comparison-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.comparison-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.comparison-bar-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bar-label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bar-container {
+    background: var(--card-background);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 32px;
+    position: relative;
+}
+
+.bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 0.75rem;
+    transition: width 0.6s ease;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.bar.analytical {
+    background: linear-gradient(90deg, rgba(59, 126, 161, 0.8), rgba(59, 126, 161, 1));
+    color: white;
+}
+
+.bar.coding {
+    background: linear-gradient(90deg, rgba(253, 181, 21, 0.8), rgba(253, 181, 21, 1));
+    color: #333;
+}
+
+.bar-value {
+    font-weight: 700;
+}
+
+.comparison-verdict {
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.comparison-verdict.analytical {
+    background: rgba(59, 126, 161, 0.15);
+    color: var(--accent-color);
+}
+
+.comparison-verdict.coding {
+    background: rgba(253, 181, 21, 0.15);
+    color: #d9a500;
+}
+
+.comparison-verdict.balanced {
+    background: rgba(40, 167, 69, 0.15);
+    color: var(--success-color);
+}
+
+/* Success Stories */
+.success-stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.success-story-card {
+    background: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-top: 4px solid var(--success-color);
+    position: relative;
+}
+
+.success-badge {
+    position: absolute;
+    top: -12px;
+    right: 1rem;
+    background: var(--success-color);
+    color: white;
+    padding: 0.4rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.success-story-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.success-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.success-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.success-excerpt {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    opacity: 0.85;
+}
+
+.success-stats {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.success-stats span {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.success-tag {
+    background: var(--success-color);
+    color: white;
+    padding: 0.25rem 0.65rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Common Pitfalls */
+.pitfalls-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.pitfall-card {
+    background: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--warning-color);
+}
+
+.pitfall-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.pitfall-header i {
+    font-size: 1.5rem;
+    color: var(--warning-color);
+}
+
+.pitfall-header h4 {
+    color: var(--primary-color);
+    flex: 1;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.pitfall-count {
+    background: var(--warning-color);
+    color: white;
+    padding: 0.25rem 0.65rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.pitfall-solutions {
+    margin-top: 1rem;
+}
+
+.pitfall-solutions strong {
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.pitfall-solutions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pitfall-solutions li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.pitfall-solutions li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--success-color);
+    font-weight: bold;
+}
+
+/* Responsive Design for Advanced Insights */
+@media (max-width: 1200px) {
+    .homework-analysis-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .chart-wrapper {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .insight-card {
+        padding: 1.25rem;
+    }
+    
+    .heatmap-table {
+        font-size: 0.75rem;
+    }
+    
+    .heatmap-table th,
+    .heatmap-table td {
+        padding: 0.5rem;
+    }
+    
+    .comparison-grid,
+    .success-stories-grid,
+    .pitfalls-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .success-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* LLM Analysis Section */
+.llm-analysis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.llm-analysis-card {
+    background: var(--card-background);
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    border: 2px solid transparent;
+}
+
+.llm-analysis-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* LLM-specific colors */
+.llm-analysis-card.chatgpt {
+    border-color: rgba(16, 163, 127, 0.3);
+}
+
+.llm-analysis-card.chatgpt .llm-analysis-header {
+    background: linear-gradient(135deg, rgba(16, 163, 127, 0.15), rgba(16, 163, 127, 0.05));
+}
+
+.llm-analysis-card.gemini {
+    border-color: rgba(66, 133, 244, 0.3);
+}
+
+.llm-analysis-card.gemini .llm-analysis-header {
+    background: linear-gradient(135deg, rgba(66, 133, 244, 0.15), rgba(66, 133, 244, 0.05));
+}
+
+.llm-analysis-card.claude {
+    border-color: rgba(204, 131, 82, 0.3);
+}
+
+.llm-analysis-card.claude .llm-analysis-header {
+    background: linear-gradient(135deg, rgba(204, 131, 82, 0.15), rgba(204, 131, 82, 0.05));
+}
+
+.llm-analysis-card.deepseek {
+    border-color: rgba(139, 69, 255, 0.3);
+}
+
+.llm-analysis-card.deepseek .llm-analysis-header {
+    background: linear-gradient(135deg, rgba(139, 69, 255, 0.15), rgba(139, 69, 255, 0.05));
+}
+
+.llm-analysis-card.grok {
+    border-color: rgba(255, 99, 132, 0.3);
+}
+
+.llm-analysis-card.grok .llm-analysis-header {
+    background: linear-gradient(135deg, rgba(255, 99, 132, 0.15), rgba(255, 99, 132, 0.05));
+}
+
+.llm-analysis-card.mistral {
+    border-color: rgba(255, 159, 64, 0.3);
+}
+
+.llm-analysis-card.mistral .llm-analysis-header {
+    background: linear-gradient(135deg, rgba(255, 159, 64, 0.15), rgba(255, 159, 64, 0.05));
+}
+
+.llm-analysis-card.llama {
+    border-color: rgba(123, 97, 255, 0.3);
+}
+
+.llm-analysis-card.llama .llm-analysis-header {
+    background: linear-gradient(135deg, rgba(123, 97, 255, 0.15), rgba(123, 97, 255, 0.05));
+}
+
+.llm-analysis-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.llm-analysis-header h3 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+.llm-stats-badge {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.llm-stats-badge span {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.llm-analysis-body {
+    padding: 1.5rem;
+}
+
+.analysis-section {
+    margin-bottom: 1.75rem;
+}
+
+.analysis-section:last-child {
+    margin-bottom: 0;
+}
+
+.analysis-section h4 {
+    font-size: 1.15rem;
+    color: var(--accent-color);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+.analysis-section h4 i {
+    font-size: 1rem;
+}
+
+.strengths-list,
+.weaknesses-list,
+.practices-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.strengths-list li,
+.weaknesses-list li,
+.practices-list li {
+    padding: 0.65rem 0.75rem 0.65rem 2rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    position: relative;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    transition: background-color var(--transition-speed);
+}
+
+.strengths-list li {
+    background: rgba(40, 167, 69, 0.08);
+    border-left: 3px solid var(--success-color);
+}
+
+.strengths-list li:hover {
+    background: rgba(40, 167, 69, 0.15);
+}
+
+.strengths-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0.75rem;
+    color: var(--success-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.weaknesses-list li {
+    background: rgba(255, 193, 7, 0.08);
+    border-left: 3px solid var(--warning-color);
+}
+
+.weaknesses-list li:hover {
+    background: rgba(255, 193, 7, 0.15);
+}
+
+.weaknesses-list li::before {
+    content: "!";
+    position: absolute;
+    left: 0.75rem;
+    color: var(--warning-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.practices-list li {
+    background: rgba(59, 126, 161, 0.08);
+    border-left: 3px solid var(--accent-color);
+}
+
+.practices-list li:hover {
+    background: rgba(59, 126, 161, 0.15);
+}
+
+.practices-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0.75rem;
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.analysis-footer {
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.performance-metrics {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.performance-metrics .metric {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    background: var(--light-gray);
+    border-radius: 20px;
+}
+
+.performance-metrics .metric i {
+    color: var(--accent-color);
+}
+
+/* Responsive design for LLM Analysis */
+@media (max-width: 1200px) {
+    .llm-analysis-grid {
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .llm-analysis-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .llm-analysis-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .performance-metrics {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
 /* Print Styles */
 @media print {
     .chatbot-container,
